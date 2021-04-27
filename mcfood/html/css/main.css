@@ -17,12 +17,53 @@ header {width:100%; height:200px; background-color: bisque;}
 .imgbox {width:1920px; height:460px; margin:0 auto;}
 
 
-#contents {width:1200px; height:5800px; background-color: coral; margin:0 auto;}
+#contents {width:1200px; background-color: coral; margin:0 auto;}
 
 .del_left {float:left; margin:60px 0 90px 0;}
 .del_right {float:right; margin:60px 0 90px 0;}
 
+.tit h3 {font-size: 40px; margin:0 0 12px 10px;}
+.tit h4 {font-size: 19px; margin:0 0 10px 10px; color:#808080; line-height: 20px;}
 
+.new_con {margin:0 auto 45px 0;}
+.item_cont {width:25%; float:left; margin:5px 0 60px 0; padding:0 5px;}
+.item_img {width:100%; overflow:hidden;}
+.item_img img {width:100%; transition: 0.4s;}
+.item_img img:hover{transform: scale(1.2);}
+.item_info span {display: block;}
+.item_info strong {display: block; font-size: 16px;}
+.item_explain {font-size: 13px; color: #777;}
+.price {font-size: 16px; font-weight: bold;}
+.t {font-size: 13px; color:#888888}
+
+.newmore {text-align: center; margin:0 0 70px;}
+.newmore a {padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
+.newmore a:hover{cursor:pointer; background-color:darkslateblue; color:#fff; border:none;}
+
+
+.mainMiniBanner {width:100%; margin:0 0 100px; background-color: rgba(18,42,78,0.1);}
+.mini_cont {width:1200px; margin:0 auto; padding:40px 0 55px;}
+span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-weight: 700; font-size: 30px; line-height: 70px;}
+.txt {display:block; width:100%; padding:0 30px; font-size: 19px; line-height: 25px;}
+
+.best_con {margin:0 auto 45px 0;}
+
+
+.goods_tab {margin:20px auto 70px; padding:10px;}
+.goods_tab > ul {width:100%;}
+.goods_tab li {display: inline-block; margin:2px 7px 6px;}
+.goods_tab li > a {color:#fff; background-color: #1e1a34; border:1px solid #1e1a34; border-radius: 20px; display: block; line-height: 38px; padding:5px 30px; font-size: 17px; transition: 0.1;}
+.goods_tab li > a:hover {opacity: 0.7;}
+
+
+.bestmore {text-align: center; margin:0 0 70px;}
+.bestmore a {padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
+.bestmore a:hover{cursor:pointer; background-color:darkslateblue; color:#fff; border:none;}
+
+.eventImg {margin:30px 0;}
+
+.mdleft {width:50%; height:50%; overflow: hidden;}
+.mdright {width:50%; height:50%; overflow: hidden;}
 
 footer {width:100%; height:440px; background-color: darkgrey;}
 #foot_wrap {width:1200px; height:440px; background-color: gold; margin:0 auto;}

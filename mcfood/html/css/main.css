@@ -134,7 +134,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 .mdleft {width:50%; overflow: hidden; float:left; padding:0 10px 0 0;}
 .mdleft img {width:100%;}
 .mdright {width:50%; overflow: hidden; float:left;}
-.right_box {width:50%; overflow:hidden; float:left; padding:0 10px 5px 0; display: inline-block; position: relative;}
+.right_box {width:50%; overflow:hidden; float:left; padding:0 10px 5px 0;  position: relative;}
 
 .right_box > a > img {width:100%; height:100%}
 

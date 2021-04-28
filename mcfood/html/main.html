@@ -28,7 +28,7 @@
                     <li><a href="#">1:1문의하기</a></li>
                   </ul>  
                 </li>
-                <li><a href="#">장바구니</a></li>
+                <li><a href="#">장바구니<span class="count">0</span></a></li>
                 <li><a href="#">새벽배송가능지역</a></li>
               </ul>
             </div> <!--end header_list-->
@@ -40,19 +40,119 @@
               </a>
             </div> <!--end headerLogo-->
           </div> <!--end header_bottom-->
+          
           <div class="header_gnb">
             <div class="gnb">
               <nav>
                 <div class="gnb_menu1">
-                  전체 카테고리
+                  <ul class="gnb_menu_list1">
+                    <li class="menu_tit1">
+                      <a href="#">
+                        <div class="menu_tit_line">
+                          <span class="line01"></span>
+                          <span class="line02"></span>
+                          <span class="line03"></span>
+                        </div>
+                        <strong>전체 카테고리</strong>
+                      </a>
+                    </li>
+                  </ul> <!--end gnb_menu_list1-->
+                  <div class="gnb_category">
+                    <div class="cate_all">
+                      <div class="cate_box1">
+                        <div>
+                          <a href="#">간편분류</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">신메뉴</a></li>
+                          <li><a href="#">베스트</a></li>
+                          <li><a href="#">세일</a></li>
+                          <li><a href="#">이벤트ㆍ기획전</a></li>
+                        </ul>
+                      </div> <!--cate_box1-->
+
+                      <div class="cate_box2">
+                        <div>
+                          <a href="#">반찬</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">밑반찬</a></li>
+                          <li><a href="#">김치</a></li>
+                          <li><a href="#">요리ㆍ밀키트</a></li>
+                          <li><a href="#">키즈</a></li>
+                          <li><a href="#">국ㆍ찌개</a></li>
+                          <li><a href="#">샐러드ㆍ기타</a></li>
+                        </ul>
+                      </div> <!--cate_box2-->
+
+                      <div class="cate_box3">
+                        <div>
+                          <a href="#">위클리세트</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">베이직</a></li>
+                          <li><a href="#">클래식</a></li>
+                          <li><a href="#">프리미엄</a></li>         
+                        </ul>
+                      </div> <!--cate_box3-->
+
+                      <div class="cate_box4">
+                        <div>
+                          <a href="#">몽촌가이드</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">첫 구매가이드</a></li>
+                          <li><a href="#">배송안내</a></li>
+                          <li><a href="#">맛있게 먹는 팁</a></li>
+                          <li><a href="#">아이스팩&생수</a></li>
+                          <li><a href="#">맴버십</a></li>
+                        </ul>
+                      </div> <!--cate_box4-->
+
+                      <div class="cate_box5">
+                        <div>
+                          <a href="#">고객센터</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">공지사항</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">1:1고객게시판</a></li>
+                        </ul>
+                      </div> <!--cate_box5-->
+
+                      <div class="cate_box6">
+                        <div>
+                          <a href="#">브랜드 스토리</a>
+                        </div>
+                        <div class="line"></div>
+                        <ul>
+                          <li><a href="#">브랜드 스토리</a></li>
+                          <li><a href="#">식자재 취급 원칙</a></li>
+                          <li><a href="#">우수한 포장재</a></li>
+                          <li><a href="#">신선한 물류</a></li>
+                        </ul>
+                      </div>  <!--cate_box6-->
+                    </div> <!--end cate_all-->
+                  </div> <!--end gnb_category-->
                 </div> <!--end gnb_menu1-->
+
+
                 <div class="gnb_menu2">
                   <ul>
-                    <li><a href="#">신메뉴</a></li>
-                    <li><a href="#">베스트</a></li>
-                    <li><a href="#">위클리세트</a></li>
-                    <li><a href="#">몽촌가이드</a></li>
-                    <li><a href="#">이벤트</a></li>
+                    <li class="menu_tit2"><a href="#">신메뉴</a></li>
+                    <li>|</li>
+                    <li class="menu_tit2"><a href="#">베스트</a></li>
+                    <li>|</li>
+                    <li class="menu_tit2"><a href="#">위클리세트</a></li>
+                    <li>|</li>
+                    <li class="menu_tit2"><a href="#">몽촌가이드</a></li>
+                    <li>|</li>
+                    <li class="menu_tit2"><a href="#">이벤트</a></li>
                   </ul>
                 </div> <!--end gnb_menu2-->
               </nav>
@@ -415,14 +515,29 @@
             <a href="#"><span>@mongchon_banchan</span></a>
           </div>
           <div class="insta_widget">
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-            <div class="insta_item"></div>
-          </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns1.jpg" alt="sns1"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns2.jpg" alt="sns2"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns3.jpg" alt="sns3"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns4.jpg" alt="sns4"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns5.jpg" alt="sns5"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns6.jpg" alt="sns6"></a>
+            </div>
+            <div class="insta_item">
+              <a href="#"><img src="img/sns7.jpg" alt="sns7"></a>
+            </div>
+          </div> <!--insta_widget-->
+          <a href="#">MORE +</a>
         </div> <!--end instaCon-->
       </div><!--end contents-->
 

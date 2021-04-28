@@ -144,14 +144,10 @@
 
                 <div class="gnb_menu2">
                   <ul>
-                    <li class="menu_tit2"><a href="#">신메뉴</a></li>
-                    <li>|</li>
-                    <li class="menu_tit2"><a href="#">베스트</a></li>
-                    <li>|</li>
-                    <li class="menu_tit2"><a href="#">위클리세트</a></li>
-                    <li>|</li>
-                    <li class="menu_tit2"><a href="#">몽촌가이드</a></li>
-                    <li>|</li>
+                    <li class="menu_tit2"><a href="#">신메뉴</a></li>                    
+                    <li class="menu_tit2"><a href="#">베스트</a></li>                    
+                    <li class="menu_tit2"><a href="#">위클리세트</a></li>                    
+                    <li class="menu_tit2"><a href="#">몽촌가이드</a></li>                    
                     <li class="menu_tit2"><a href="#">이벤트</a></li>
                   </ul>
                 </div> <!--end gnb_menu2-->
@@ -475,24 +471,41 @@
               </div>
               <div class="mdright">
                 <div class="right_box">
-                  <a href="#"><img src="img/mdr1.jpg" alt="mdr1"></a>
+                  <a href="#">
+                    <img src="img/mdr1.jpg" alt="mdr1">
+                    <div class="imgtext">
+                      <span>취나물볶음 <br>5,300원</span>
+                    </div>
+                  </a>
                 </div>
                 <div class="right_box">
-                  <a href="#"><img src="img/mdr2.jpg" alt="mdr2"></a>
+                  <a href="#">
+                    <img src="img/mdr2.jpg" alt="mdr2">
+                    <div class="imgtext">
+                      <span>비름나물된장무침<br>4,300원</span>
+                    </div>
+                  </a>
                 </div>
                 <div class="right_box">
-                  <a href="#"><img src="img/mdr3.jpg" alt="mdr3"></a>
+                  <a href="#">
+                    <img src="img/mdr3.jpg" alt="mdr3">
+                    <div class="imgtext">
+                      <span>고추장멸치볶음 <br>4,300원</span>
+                    </div>
+                  </a>
                 </div>
                 <div class="right_box">
-                  <a href="#"><img src="img/mdr4.jpg" alt="mdr4"></a>
+                  <a href="#">
+                    <img src="img/mdr4.jpg" alt="mdr4">
+                    <div class="imgtext">
+                      <span>[프라이시리즈]눈꽃튀김새우 <br>12,900원</span>
+                    </div>
+                  </a>
                 </div>
               </div><!--end mdright-->  
             </div><!--end mdImg-->
           </div><!--end mainmd-->
         </div> <!--end mainMDWrap-->
-        <div class="none">
-          <p>test</p>
-        </div>
 
 
         <!-- 멤버십 미니배너 -->
@@ -537,14 +550,11 @@
               <a href="#"><img src="img/sns7.jpg" alt="sns7"></a>
             </div>
           </div> <!--insta_widget-->
-          <a href="#">MORE +</a>
+          <div class="instamore">
+            <a><span>MORE + </span></a>
+          </div>
         </div> <!--end instaCon-->
       </div><!--end contents-->
-
-
-
-
-
 
 
 
@@ -568,22 +578,24 @@
               </ul>
               <ul class="footerSns">
                 <li>
-                  <a href="#">인스타그램</a>
-                  <a href="#">페이스북</a>
-                  <a href="#">카카오톡</a>
+                  <a href="#"><img src="img/insta.png" alt="인스타그램"></a>
+                  <a href="#"><img src="img/facebook.png" alt="페이스북"></a>
+                  <a href="#"><img src="img/kakao.png" alt="카카오톡"></a>
                 </li>
               </ul>
             </div> <!--end footer_list-->
           </div> <!--end foot_list_wrap-->
+
+
           <div class="foot_cont"> 
             <div class="foot_content">
               <div class="foot_1st">
                 <ul>
-                  <li>CUSTOMER CENTER</li>
-                  <li>1688-6285</li>
-                  <li>평일 09:00 ~ 18:00</li>
-                  <li>점심 13:00 ~ 14:00 / 주말 및 공휴일 휴무</li>
-                  <li>* 주말 및 공휴일은 1:1문의를 이용해주세요.</li>
+                  <li class="foot_title">CUSTOMER CENTER</li>
+                  <li class="foot_num"><a href="#">1688-6285</a></li>
+                  <li class="li_cont">평일 09:00 ~ 18:00</li>
+                  <li class="li_cont">점심 13:00 ~ 14:00 / 주말 및 공휴일 휴무</li>
+                  <li class="li_cont">* 주말 및 공휴일은 1:1문의를 이용해주세요.</li>
                 </ul>
               </div>
               <div class="foot_2st">
@@ -599,7 +611,7 @@
                     </dl>
                     <dl>
                       <dt>사업자등록번호 :</dt>
-                      <dd>"770-86-00646 " 사업자번호조회</dd>
+                      <dd>"770-86-00646 " <a href="">사업자번호조회</a></dd>
                     </dl>
                     <dl>
                       <dt>통신판매업신고번호 :</dt>
@@ -634,9 +646,16 @@
                       <dd>호스팅제공 : 엔에이치엔고도(주)</dd>
                     </dl>
                   </div><!--end foot_info_list-->
-                  <p>© <strong>몽촌반찬</strong> . ALL RIGHTS RESERVED.</p>
-                </div>
-              </div>
+                  <p class="copyright">© <strong>몽촌반찬</strong> . ALL RIGHTS RESERVED.</p>
+                </div> <!--end foot_info-->
+                <div class="acclink">
+                  <ul>
+                    <li><a href="#"><img src="img/acc1.gif" alt="대한통운"></a></li>
+                    <li><a href="#"><img src="img/acc2.gif" alt="KG이니시스"></a></li>
+                    <li><a href="#"><img src="img/acc3.gif" alt="공정거래위원회"></a></li>
+                  </ul>
+                </div><!--end footerlink-->
+              </div><!--end foot_2st-->
             </div>
           </div><!--end foot_cont-->
         </div> <!--end foot_wrap-->

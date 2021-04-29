@@ -2,7 +2,7 @@
 
 
 /* 슬라이더  */
-#slider {width:100%; height:460px;}
+#slider {width:100%; height:460px; position: relative;}
 .imgbox {width:1920px; height:460px; margin:0 auto;}
 
 
@@ -27,10 +27,11 @@
 /* 신제품 */
 .mainNewWrap {width:1200px; margin:0 auto;}
 .new_con {margin:0 auto 45px 0;}
-.item_cont {width:25%; height:25%; float:left; margin:5px 0 60px 0; padding:0 5px;}
-.item_img {width:100%; height:100%; overflow:hidden;}
-.item_img img {width:100%; height:100%; transition: 0.4s;}
-.item_img img:hover{transform: scale(1.1);}
+.item_cont {width:25%; height:25%; float:left; margin:5px 0 55px 0; padding:0 5px;}
+.item_img {width:288px; height:288px; overflow:hidden; position: relative;}
+.item_img > a > img {width:100%; height:100%; transition: 0.4s;}
+.item_img > a > img:hover{transform: scale(1.1);}
+.item_info {margin:5px 0 0 0;}
 .item_info span {display: block;}
 .item_info strong {display: block; font-size: 16px;}
 .item_explain {font-size: 13px; color: #777;}
@@ -65,6 +66,14 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 .goods_tab li > a {color:#1e1a34; border:1px solid #ccc; border-radius: 20px; display: block; line-height: 38px; padding:5px 30px; font-size: 17px; transition: 0.1;}
 .goods_tab li > a:hover {background-color: darkslateblue; color:#fff; border:1px solid darkslateblue;}
 
+/* 베스트 아이콘 */
+.item_img > .best_icon {position: absolute; top:20px; left:20px; font-size:12px; color:#fff; background: #1e1a34; padding: 10px 15px;}
+
+/* 베스트 장바구니 */
+.item_img > .item_link {position: absolute; bottom: 20px; right: -3px; width:30%; height: 40px; text-align: center; line-height: 1;}
+.item_link > .icon_btn {display: inline-block; width: 45px;; height: 45px; background: rgba(256, 256, 256, 0.7); border-radius: 50%; transition: 0.3s; border: none;}
+.icon_btn > img {width:24px; vertical-align: middle;}
+.icon_btn:hover {background: rgba(256, 256, 256, 1);}
 
 /* 베스트 더보기 버튼 */
 .bestmore {text-align: center; margin:0 0 70px;}
@@ -87,7 +96,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 .mdright {width:50%; overflow: hidden; float:left;}
 .right_box {width:50%; overflow:hidden; float:left; padding:0 10px 5px 0;  position: relative;}
 
-.right_box > a > img {width:100%; height:100%}
+.right_box > a > img {width:100%; height:100%; transition:0.3s;}
 
 /* 이미지 뒤에 글씨 넣기 */
 .right_box > a > .imgtext {float:left;  width:97%; height:97%; position:absolute; top:0; left:0; background-color:rgba(0,0,0,0); transition: 0.5s;}
@@ -104,6 +113,11 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 .insta_widget {width:100%; height:200px;}
 .insta_item {width:160px; height:160px; background-color: red; float: left; margin:0 5px; overflow: hidden;}
 .insta_item img {width:100%; height: 100%;}
+
+
+.insta_widget > .insta_item:hover {opacity: 0.7;}
+
+
 /* .instaCon {text-align: center;} */
 .instamore {text-align: center; margin:0 0 70px;}
 .instamore a {display: inline-block; padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}

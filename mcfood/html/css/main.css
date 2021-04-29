@@ -19,8 +19,8 @@
 
 
 /* 각 제목 */
-.tit h3 {font-size: 40px; margin:0 0 12px 10px;}
-.tit h4 {font-size: 19px; margin:0 0 10px 10px; color:#1e1a34; line-height: 20px; font-weight: bold;}
+.tit h3 {font-size: 35px; margin:0 0 12px 5px;}
+.tit h4 {font-size: 15px; margin:0 0 10px 5px; color:#1e1a34; line-height: 20px; font-weight: bold;}
 
 
 
@@ -40,15 +40,15 @@
 
 /* 신제품 더보기 버튼 */
 .newmore {text-align: center; margin:0 0 70px;}
-.newmore a {padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
-.newmore a:hover{cursor:pointer; background-color:darkslateblue; color:#fff; border:none;}
+.newmore a {padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 15px;}
+.newmore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:none;}
 
 
 
 /* 회색바탕 배너 */
 .mainMiniBanner {width:100%; margin:0 0 100px; background-color: rgba(18,42,78,0.1);}
 .mini_cont {width:1200px; margin:0 auto; padding:40px 0 55px;}
-span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-weight: 700; font-size: 30px; line-height: 70px;}
+span.tit {display: block; overflow: hidden; width:100%; padding:0 5px; font-weight: 700; font-size: 30px; line-height: 70px;}
 .txt {display:block; width:100%; padding:0 30px; font-size: 19px; line-height: 25px;}
 .none {opacity: 0; cursor:default;}
 
@@ -60,11 +60,11 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 
 
 /* 베스트 상품 선택 목록 */
-.goods_tab {margin:20px auto 30px; padding:10px; text-align: center;}
+.goods_tab {margin:10px auto 30px; text-align: center;}
 .goods_tab > ul {width:100%; display:inline-block;}
-.goods_tab li {display: inline-block; margin:2px 7px 6px;}
-.goods_tab li > a {color:#1e1a34; border:1px solid #ccc; border-radius: 20px; display: block; line-height: 38px; padding:5px 30px; font-size: 17px; transition: 0.1;}
-.goods_tab li > a:hover {background-color: darkslateblue; color:#fff; border:1px solid darkslateblue;}
+.goods_tab li {display: inline-block; margin:2px 4px 6px;}
+.goods_tab li > a {color:#1e1a34; border:1px solid #ccc; border-radius: 20px; display: block; line-height: 38px; padding:5px 15px; font-size: 15px; transition: 0.1;}
+.goods_tab li > a:hover {background-color: #1e1a34; color:#fff; border:1px solid darkslateblue;}
 
 /* 베스트 아이콘 */
 .item_img > .best_icon {position: absolute; top:20px; left:20px; font-size:12px; color:#fff; background: #1e1a34; padding: 10px 15px;}
@@ -77,8 +77,8 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 
 /* 베스트 더보기 버튼 */
 .bestmore {text-align: center; margin:0 0 70px;}
-.bestmore a {padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
-.bestmore a:hover{cursor:pointer; background-color:darkslateblue; color:#fff; border:none;}
+.bestmore a {padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 15px;}
+.bestmore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:none;}
 
 
 
@@ -108,7 +108,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 
 /* 인스타 */
 .instaCon {width:1200px; margin:0 auto;}
-.instaTit h3 {margin:0 10px 45px 10px; font-size:40px; display: inline-block;}
+.instaTit h3 {margin:0 10px 45px 5px; font-size:40px; display: inline-block;}
 .instaTit a > span {font-size: 22px; color:#808080; padding:0 0 0 20px;}
 .insta_widget {width:100%; height:200px;}
 .insta_item {width:160px; height:160px; background-color: red; float: left; margin:0 5px; overflow: hidden;}
@@ -120,7 +120,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 10px; font-wei
 
 /* .instaCon {text-align: center;} */
 .instamore {text-align: center; margin:0 0 70px;}
-.instamore a {display: inline-block; padding:20px 70px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
-.instamore a:hover{cursor:pointer; background-color:darkslateblue; color:#fff; border:1px solid darkslateblue;}
+.instamore a {display: inline-block; padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
+.instamore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:1px solid darkslateblue;}
 
 

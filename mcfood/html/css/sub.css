@@ -1,21 +1,22 @@
 @charset "utf-8";
 
-#sub {width:100%; margin:0 auto; background-color: red;}
+#sub {width:100%; margin:0 auto;}
 
 
 
 /* #contents > .product > .product_box */
-#contents {width:100%; margin:0 auto; background-color: gainsboro;}
-.product {width:1200px; height:750px; background-color:blueviolet; position: relative; margin:0 auto;}
-.product > .product_box1 {width:50%; height:600px; float: left; background-color: aquamarine;}
-.product > .product_box2 {width:50%; height:600px; float: right; background-color: burlywood;}
+#contents {width:100%; height:1000px; margin:0 auto; }
+.product {width:1200px; height:100%; background-color:blueviolet; position: relative; margin:30px auto 0;}
+.product > .product_left {width:50%; height:600px; float: left; background-color: aquamarine;}
+div.category {width:100%; height:25px;}
+div.category > ul >li {float:left; font-size: 14px; color: #666; display: block; margin-right: 10px;}
 
-.img_box {margin:0 auto; width:540px; height:540px; overflow: hidden;}
+.img_box {width:500px; height:500px; overflow: hidden;}
 .img_box > a > img {width:100%; height: 100%; transition: 0.3s;}
 .img_box > a > img:hover {opacity: 0.8;}
-.score_box {margin:0 auto; width:540px; height:60px; background-color: brown;}
+.score_box {width:500px; height:60px; background-color: brown;}
 
-
+.product > .product_right {width:50%; height:600px; float: right; background-color: burlywood;}
 .product_info > .table_box {margin:0 auto; width:80%; height:250px; background-color: coral;}
 .table_box > h3 {font-size: 26px;}
 
@@ -27,7 +28,7 @@
 
 
 /* #info > .detail, .review, .inquiry, .shipping */
-#info {width:100%; margin:0 auto; background-color: yellow;}
+#info {width:100%; margin:0 auto;}
 
 .info_ul {width: 100%; height: 30px; overflow: hidden; margin: 0 auto;}
 .info_ul > li {float:left; position: relative; width: 25%; text-align: center; }

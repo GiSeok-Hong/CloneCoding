@@ -2,7 +2,7 @@
 
 
 /* 슬라이더  */
-#slider {width:100%; height:460px; position: relative;}
+#slider {width:100%; height:460px; position: relative; background-color: #ededed;}
 .imgbox {width:1920px; height:460px; margin:0 auto;}
 
 
@@ -12,22 +12,32 @@
 
 
 /* 배송안내 이미지 */
-.del_con {width:1200px; margin:0 auto;}
-.del_left {float:left; margin:60px 0 90px 0;}
-.del_right {float:right; margin:60px 0 90px 0;}
+.del_con {width:1200px; margin:0 auto; height: 300px;}
+.del_left {float:left; margin:60px 0 90px 5px; width: 590px; height: 150px; background-image: url("../img/del_left.jpg"); background-repeat: no-repeat;}
+.del_left > p {color:#666; margin:30px 0 5px 40px; font-size: 17px; font-weight: bold;}
+.del_left > strong {display: block; font-size: 20px; margin:0 0 15px 40px;}
+.del_left > span {display: block; font-size:14px; margin:0 0 5px 40px;}
+.del_left > span > a {color:#666;}
+.del_right {float:right; margin:60px 5px 90px 0; width: 590px; height: 150px; background-image: url("../img/del_right.jpg"); background-repeat: no-repeat;}
+.del_right > p {color:#666; margin:30px 0 5px 40px; font-size: 17px; font-weight:bold;}
+.del_right > strong {display: block; font-size: 20px; margin:0 0 15px 40px;}
+.del_right > span {display: block; font-size:14px; margin:0 0 5px 40px; color:#666;}
 
 
 
 /* 각 제목 */
-.tit h3 {font-size: 35px; margin:0 0 12px 5px;}
-.tit h4 {font-size: 15px; margin:0 0 10px 5px; color:#1e1a34; line-height: 20px; font-weight: bold;}
+div.tit {width: 100%; height:80px; text-align: center; margin-bottom: 10px;}
+div.tit h3 {font-size: 35px; margin:0 0 12px 5px;}
+div.tit h4 {font-size: 15px; margin:0 0 10px 5px; color:#1e1a34; line-height: 20px; font-weight: bold;}
 
 
 
 /* 신제품 */
-.mainNewWrap {width:1200px; margin:0 auto;}
-.new_con {margin:0 auto 45px 0;}
-.item_cont {width:25%; height:25%; float:left; margin:5px 0 55px 0; padding:0 5px;}
+.mainNewWrap {width:1200px; height:1100px; margin:0 auto;}
+.new_con {width:1200px; height:900px; }
+
+/* 제품 박스 */
+.item_cont {width:25%; float:left; margin:5px 0 55px 0; padding:0 5px;}
 .item_img {width:288px; height:288px; overflow:hidden; position: relative;}
 .item_img > a > img {width:100%; height:100%; transition: 0.4s;}
 .item_img > a > img:hover{transform: scale(1.1);}
@@ -35,28 +45,28 @@
 .item_info span {display: block;}
 .item_info strong {display: block; font-size: 16px;}
 .item_explain {font-size: 13px; color: #777;}
-.price {font-size: 16px; font-weight: bold;}
+.price {font-size: 16px;}
 .t {font-size: 13px; color:#888888}
 
 /* 신제품 더보기 버튼 */
-.newmore {text-align: center; margin:0 0 70px;}
+.newmore {text-align: center;}
 .newmore a {padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 15px;}
 .newmore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:none;}
 
 
 
 /* 회색바탕 배너 */
-.mainMiniBanner {width:100%; margin:0 0 100px; background-color: rgba(18,42,78,0.1);}
+.mainMiniBanner {width:100%; height:190px; margin:0 0 100px; background-color: rgba(18,42,78,0.1);}
 .mini_cont {width:1200px; margin:0 auto; padding:40px 0 55px;}
-span.tit {display: block; overflow: hidden; width:100%; padding:0 5px; font-weight: 700; font-size: 30px; line-height: 70px;}
-.txt {display:block; width:100%; padding:0 30px; font-size: 19px; line-height: 25px;}
+span.tit {display:block; overflow: hidden; padding:0 5px; font-weight: 700; font-size: 30px; line-height: 70px;}
+span.txt {display:block;  padding:0 30px; font-size: 19px; line-height: 25px;}
 .none {opacity: 0; cursor:default;}
 
 
 
 /* 베스트 상품 */
-.mainBestWrap {width:1200px; margin:0 auto;}
-.best_con {margin:0 auto 45px 0;}
+.mainBestWrap {width:1200px; height:1100px; margin:0 auto;}
+.best_con {width:1200px; height:900px; }
 
 
 /* 베스트 상품 선택 목록 */
@@ -76,20 +86,23 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 5px; font-weig
 .icon_btn:hover {background: rgba(256, 256, 256, 1);}
 
 /* 베스트 더보기 버튼 */
-.bestmore {text-align: center; margin:0 0 70px;}
+.bestmore {text-align: center;}
 .bestmore a {padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 15px;}
 .bestmore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:none;}
 
 
 
-/* 이벤트 이미지 */
-.event_con {width:1200px; margin:0 auto;}
-.eventImg {margin:30px 0;}
-
-
+/* 이벤트 */
+.event_con {width:1200px; margin:50px auto; height: 600px;}
+.eventImg {margin:30px 0; width: 1200px; height: 400px; background-image: url(../img/event.jpg); background-repeat: no-repeat;}
+.eventImg > .logo {display: inline-block; margin:80px 0 0 70px; font-size: 20px; padding: 10px 15px; color:#fff; background-color: deeppink; border-radius: 20px;}
+.eventImg > strong {display: block; margin:20px 0 10px 65px; font-size: 45px;}
+.eventImg > p {margin:0 0 30px 70px; font-size: 26px;}
+.eventImg > span {display: block; margin:0 0 0 70px; font-size: 20px; }
+.eventImg > span > a {color: #666;}
 
 /* md 추천 */
-.mainMDWrap {margin:50px auto; width:1200px;}
+.mainMDWrap {margin:50px auto 100px; width:1200px; height: 700px;}
 .mainmd {margin:30px 0; height:600px;}
 .mdleft {width:50%; overflow: hidden; float:left; padding:0 10px 0 0;}
 .mdleft img {width:100%;}
@@ -107,7 +120,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 5px; font-weig
 
 
 /* 인스타 */
-.instaCon {width:1200px; margin:0 auto;}
+.instaCon {width:1200px; height:380px; margin:0 auto 50px;}
 .instaTit h3 {margin:0 10px 45px 5px; font-size:40px; display: inline-block;}
 .instaTit a > span {font-size: 22px; color:#808080; padding:0 0 0 20px;}
 .insta_widget {width:100%; height:200px;}
@@ -120,7 +133,7 @@ span.tit {display: block; overflow: hidden; width:100%; padding:0 5px; font-weig
 
 /* .instaCon {text-align: center;} */
 .instamore {text-align: center; margin:0 0 70px;}
-.instamore a {display: inline-block; padding:15px 20px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 19px;}
+.instamore a {display: inline-block; padding:10px 15px; border-radius:40px; border:1px solid #ccc; color: #333; font-size: 15px;}
 .instamore a:hover{cursor:pointer; background-color:#1e1a34; color:#fff; border:1px solid darkslateblue;}
 
 

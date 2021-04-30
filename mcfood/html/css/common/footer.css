@@ -6,7 +6,7 @@ footer {width:100%; position: relative;}
 .foot_list_wrap {width:100%; height:50px; background-color: #333;}
 .foot_list_wrap > .footer_list {max-width:1200px; margin:0 auto;}
 .footer_list > .footerEtc {float:left; height:50px;}
-.footerEtc a {display: inline-block; height:50px; line-height: 50px; color: #ddd; font-size: 17px; margin:0 25px;}
+.footerEtc a {display: inline-block; height:50px; line-height: 50px; color: #ddd; font-size: 12px; margin:0 25px;}
 .footerEtc a:hover {color: #fff;}
 .footerEtc > li > span {display: inline-block; height:50px; color: #ddd;}
 
@@ -21,9 +21,9 @@ footer {width:100%; position: relative;}
 .foot_1st {float:left; width:30%; vertical-align: top;}
 .foot_1st > ul > .foot_title {margin:0px 12px 2px; font-weight: bold; color: #333; font-size: 19px;}
 .foot_1st > ul > .foot_num {margin: 0 0 5px 7px; line-height: 60px; font-size: 46px; font-weight: bold; color: #000;}
-.foot_1st > ul > .li_cont {margin:0 0 1px 13px; color:#666; font-size: 13px;}
+.foot_1st > ul > .li_cont {margin:0 0 1px 13px; color:#666; font-size: 12px;}
 .foot_2st {float:left; width:68%; vertical-align:top; border-left: 1px solid #ddd;}
-.foot_2st > .foot_info {margin:0 auto 10px 80px; font-size:13px; float:right; color:#666;}
+.foot_2st > .foot_info {margin:0 auto 0 80px; font-size:12px; float:right; color:#666;}
 .foot_info_list {overflow: hidden; width: 100%;}
 .foot_info_list > dl {float:left;}
 .foot_info_list dt {float:left;}

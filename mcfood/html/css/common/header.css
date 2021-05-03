@@ -12,11 +12,13 @@ header {width:100%; position: relative;}
 .header_top {width:1200px; height:40px; margin:0 auto;}
 .ullayout {float:right;}
 .ullayout > li {font-size: 12px; line-height: 35px; padding:0 7px; float:left;}
-.ullayout > li:hover a {opacity:0.7;}
+.ullayout > li > a {color:#666;}
+/* .ullayout > li:hover a {opacity:0.7;} */
 .community:hover #boardlistTop {display: block;}
 #boardlistTop {display:none; padding:8px 0; background-color: #fff; position:absolute; width:80px; border: 1px solid #eee;}
-#boardlistTop > li {height: 22px; line-height: 22px; padding:3px 0 3px 3px; font-weight: bold;}
-#boardlistTop > li:hover a {color:darkblue;}
+#boardlistTop > li {height: 22px; line-height: 22px; padding:3px 0 3px 3px; }
+#boardlistTop > li > a {color:#666;}
+#boardlistTop > li:hover > a {color:darkblue;}
 .count {background-color: #1e1a34; border-radius: 5px; display: inline-block; position:relative; margin:0 -5px 0 4px; padding:0 6px; color: #fff; font-size: 10px; height: 18px; line-height: 18px;}
 
 
@@ -66,4 +68,4 @@ header {width:100%; position: relative;}
 
 /* 헤더 검색창 */
 .gnb_infoicon {position: relative; width: 250px; height: 58px; float: right;}
-.gnb_infoicon > input {position: absolute; top:12px; border-radius: 15px; padding:8px; border:1px solid #eee; width: 100%;}
+.gnb_infoicon > input {position: absolute; top:12px; border-radius: 15px; padding:8px; border:1px solid #666; width: 100%;}

@@ -117,7 +117,11 @@ span.txt > a:hover {opacity: 0.5;}
 
 /* 이미지 뒤에 글씨 넣기 */
 .mdleft > a > .imgtext {float:left;  width:590px; height:590px; position:absolute; top:0; left:0; background-color:rgba(0,0,0,0); transition: 0.5s;}
-.mdleft > a > .imgtext > span {position: absolute; display: inline-block; text-align: center; width: 100%; color:rgba(255, 255, 255, 0); bottom:240px; }
+.mdleft > a > .imgtext > p {position: absolute; display: inline-block;  width: 100%; color:rgba(255,255,255,0); bottom:230px; }
+.mdleft > a > .imgtext > p > .md_tit {display: inline-block; font-size: 25px; width: 100%; padding-left: 80px; }
+.mdleft > a > .imgtext > p > .md_etc {display: inline-block; width: 100%; padding-left: 80px;}
+
+
 .imgtext {float:left;  width:97%; height:97%; position:absolute; top:0; left:0; background-color:rgba(0,0,0,0); transition: 0.5s;}
 .right_box > a > .imgtext > span {position: absolute; display: inline-block; text-align: center; width: 100%; color:rgba(255, 255, 255, 0); top:130px; }
 .mdImg a:hover > .imgtext {background-color: rgba(0,0,0,0.6);}

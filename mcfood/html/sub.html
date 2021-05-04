@@ -6,10 +6,11 @@
     <link href="css/common/header.css" rel="stylesheet">
     <link href="css/common/footer.css" rel="stylesheet">
     <link href="css/sub.css" rel="stylesheet">
-    <title>몽촌반찬 :: 내 손안에 수제반찬마켓</title>
-    <style>
 
-    </style>
+    <script src="js/sub/Product.js"></script>
+
+    <title>몽촌반찬 :: 내 손안에 수제반찬마켓</title>
+
   </head>
   <body>
     <div id="wrap">
@@ -38,7 +39,7 @@
           </div> <!--end header_top-->
           <div class="header_bottom">
             <div class="headerLogo">
-              <a href="#">
+              <a href="main.html" target="_self">
                 <img src="img/logo.png" alt="logo">
               </a>
             </div> <!--end headerLogo-->
@@ -142,11 +143,11 @@
 
                   <div class="gnb_menu2">
                     <ul>
-                      <li class="menu_tit2"><a href="#">신메뉴</a></li>                    
-                      <li class="menu_tit2"><a href="#">베스트</a></li>                    
-                      <li class="menu_tit2"><a href="#">위클리세트</a></li>                    
-                      <li class="menu_tit2"><a href="#">몽촌가이드</a></li>                    
-                      <li class="menu_tit2"><a href="#">이벤트</a></li>
+                      <li class="menu_tit2"><a href="sub.html" target="_self"><span>신메뉴</span></a></li>                    
+                      <li class="menu_tit2"><a href="sub.html" target="_self">베스트</a></li>                    
+                      <li class="menu_tit2"><a href="sub.html" target="_self">위클리세트</a></li>                    
+                      <li class="menu_tit2"><a href="sub.html" target="_self">몽촌가이드</a></li>                    
+                      <li class="menu_tit2"><a href="sub.html" target="_self">이벤트</a></li>
                     </ul>
                   </div> <!--end gnb_menu2-->
                 </nav>
@@ -182,8 +183,9 @@
                 </ul>
               </div>
               <div class="img_box">
-                <img src="img/goods1.jpg" alt="새콤생오이무침">
+                <img src="img/goods1.jpg" alt="새콤생오이무침" id="bigimg">
               </div>
+
 
               <div class="score_box">
                 <div class="score_left">
@@ -211,24 +213,16 @@
               <div class="other_imgbox">
                 <ul>
                   <li>
-                    <a href="#">
-                      <img src="img/goods1.jpg" alt="other1">
-                    </a>
+                    <img src="img/goods1.jpg" alt="other1" class="smallimg">
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="img/goods1.jpg" alt="other1">
-                    </a>
+                    <img src="img/infoimg1.jpg" alt="other2" class="smallimg">
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="img/goods1.jpg" alt="other1">
-                    </a>
+                    <img src="img/infoimg2.jpg" alt="other3" class="smallimg">
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="img/goods1.jpg" alt="other1">
-                    </a>
+                    <img src="img/infoimg5.jpg" alt="other4" class="smallimg">
                   </li>
                 </ul>
               </div> <!--end other_imgbox-->
@@ -358,12 +352,12 @@
 
         <!-- 상품 정보 -->
         <div id="info">
-          <div class="detail">
+          <div id="detail">
             <ul class="info_ul">
-              <li class="on"><a href="#">상품설명</a></li>
-              <li><a href="#">리뷰 (169)</a></li>
-              <li><a href="#">상품문의 (5)</a></li>
-              <li><a href="#">주문/배송/환불</a></li>
+              <li class="on"><a href="#detail">상품설명</a></li>
+              <li><a href="#review">리뷰 (169)</a></li>
+              <li><a href="#inquiry">상품문의 (5)</a></li>
+              <li><a href="#shipping">주문/배송/환불</a></li>
             </ul>
 
             <h2>새콤생오이무침</h2>
@@ -433,12 +427,12 @@
 
 
 
-          <div class="review">
+          <div id="review">
             <ul class="info_ul">
-              <li><a href="#">상품설명</a></li>
-              <li class="on"><a href="#">리뷰 (169)</a></li>
-              <li><a href="#">상품문의 (5)</a></li>
-              <li><a href="#">주문/배송/환불</a></li>
+              <li><a href="#detail">상품설명</a></li>
+              <li class="on"><a href="#review">리뷰 (169)</a></li>
+              <li><a href="#inquiry">상품문의 (5)</a></li>
+              <li><a href="#shipping">주문/배송/환불</a></li>
             </ul>
             <div class="review_box">
               <button>리뷰등록</button>
@@ -524,12 +518,12 @@
 
 
 
-          <div class="inquiry">
+          <div id="inquiry">
             <ul class="info_ul">
-              <li><a href="#">상품설명</a></li>
-              <li><a href="#">리뷰 (169)</a></li>
-              <li class="on"><a href="#">상품문의 (5)</a></li>
-              <li><a href="#">주문/배송/환불</a></li>
+              <li><a href="#detail">상품설명</a></li>
+              <li><a href="#review">리뷰 (169)</a></li>
+              <li class="on"><a href="#inquiry">상품문의 (5)</a></li>
+              <li><a href="#shipping">주문/배송/환불</a></li>
             </ul>
             <div class="inquiry_box">
               <button>상품문의 등록</button>
@@ -609,12 +603,12 @@
 
 
 
-          <div class="shipping">
+          <div id="shipping">
             <ul class="info_ul">
-              <li><a href="#">상품설명</a></li>
-              <li><a href="#">리뷰 (169)</a></li>
-              <li><a href="#">상품문의 (5)</a></li>
-              <li class="on"><a href="#">주문/배송/환불</a></li>
+              <li><a href="#detail">상품설명</a></li>
+              <li><a href="#review">리뷰 (169)</a></li>
+              <li><a href="#inquiry">상품문의 (5)</a></li>
+              <li class="on"><a href="#shipping">주문/배송/환불</a></li>
             </ul>
 
             <div class="exchange_cont">
@@ -667,7 +661,7 @@
                       <td>
                         <p>월~금요일 출고는 우체국 택배로 오전 9시 이전 주문 및 결제 시 희망배송일날 수령 가능합니다.</p>
                         <p>( 단, 배송업체 물량 폭주로 인해 지연될 수 있습니다. )</p>
-                        <p>도서 / 산간지역, 제주도의 경우 식품의 특성상 배송이 불가능합니다.</p>
+                        <p><span>도서 / 산간지역, 제주도의 경우 식품의 특성상 배송이 불가능합니다.</span></p>
                         <p>※ 일요일은 가공장 휴무로 월요일 수령이 불가합니다.</p>
                       </td>
                     </tr>
@@ -823,5 +817,8 @@
         </div> <!--end foot_wrap-->
       </footer>
     </div> <!--end wrap-->
+
+
+    <!-- <script type="text/javascript" src="js/sub.js"></script> -->
   </body>
 </html>

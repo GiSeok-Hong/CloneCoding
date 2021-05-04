@@ -59,7 +59,7 @@ header {width:100%; position: relative;}
 /* 네비게이션 메뉴 */
 .gnb_menu2 {float:left;}
 .gnb_menu2 > ul > li {float:left; color: #888; line-height: 55px;}
-
+.gnb_menu2 > ul > li > a > span {color: red;}
 
 .menu_tit2 {width:145px; text-align: center;}
 .menu_tit2 a {color: #1e1a34; font-size:15px; font-weight: bold; line-height: 58px;}

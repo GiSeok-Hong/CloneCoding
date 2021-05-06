@@ -107,8 +107,8 @@ div.category > ul > li {float:left; font-size: 14px; color: #666; display: block
 #detail > .detail_table {text-align: left; margin:0 auto; width: 1200px;}
 .detail_table > h4 {margin:20px; font-size: 18px;}
 .detail_table > table {border-collapse: collapse;}
-.detail_table > table> tbody > tr > th {width:300px; padding: 15px 20px; font-size: 14px; background: #eee; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
-.detail_table > table> tbody > tr > td {width:900px; padding: 15px 20px; font-size: 14px; background-color: #fff; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; color: #666;}
+.detail_table > table> tbody > tr > th {width:300px; padding: 15px 20px; font-size: 14px; background: #eee; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; border-left:1px solid #dbdbdb;}
+.detail_table > table> tbody > tr > td {width:900px; padding: 15px 20px; font-size: 14px; background-color: #fff; border: 1px solid #dbdbdb;  color: #666;}
 
 
 

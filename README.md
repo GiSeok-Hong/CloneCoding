@@ -11,7 +11,10 @@
 
 
 
-### 2. 
+### 2. piquant
+
+* [레스토랑 홍보](https://piquant.qodeinteractive.com/) 사이트를 클론코딩 하였습니다.
+* 작업 기간 (2021.05.07 ~ )
 
 
 

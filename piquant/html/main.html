@@ -53,25 +53,51 @@
       .box3 > .imgbox > img {width:100%; height: 100%;}
 
       /* .box4 */
-      .box4 {width:100%; height:700px; margin:0px auto; background-color:#000;}
-
+      .box4 {width:100%; height:700px; margin:0px auto; background-image: url("img/box4-img-back.jpg"); background-size: cover;}
+      .box4 > .textbox {width:1200px; height:200px; margin:0 auto;}
+      .box4 > .container {width:1200px; height:500px; margin:0 auto; display:flex; justify-content: center; align-items: center;}
+      .box4 > .container > .box4-item {width:23%; height: 400px; margin:1%; overflow: hidden;}
+      .box4 > .container > .box4-item > .imgbox {width:100%; height: 60%;}
+      .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%;}
+      .box4 > .container > .box4-item > .textbox {width:100%; height:40%; background-color: #fff;}
+      
       /* .box5 */
       .box5 {width:1200px; height:600px; margin:0px auto; background-color: yellow;}
+      .box5 > .textbox {width:100%; height: 200px;}
+      .box5 > .container {width:100%; height:400px; display: flex; justify-content: center; align-items: center;}
+      .box5 > .container > .box5-item {width: 23%; height: 300px; margin: 1%; overflow: hidden;}
+      .box5 > .container > .box5-item > img {width: 100%; height: 100%;}
 
       /* .box6 */
-      .box6 {width:100%; height:500px; margin:0px auto; background-color:#000;}
+      .box6 {width:100%; height:500px; margin:0px auto; background-image: url("img/box6-img-1.jpg"); background-size: cover;}
+      .box6 > .container {width: 1200px; height: 100%; margin: 0 auto;}
 
       /* .box7 */
       .box7 {width:1200px; height:700px; margin:0px auto; background-color: green;}
+      .box7 > .textbox {width: 100%; height: 100px;}
+      .box7 > .container {width:100%; height: 600px; display: flex; justify-content: center; align-items: center;}
+      .box7 > .container > .box7-item {width: 23%; height: 500px; margin: 1%; }
+      .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden;}
+      .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%;}
 
       /* .box8 */
-      .box8 {width:100%; height:560px; margin:0px auto; background-color: #000;}
+      .box8 {width:100%; height:560px; margin:0px auto; background-image: url("img/box8-img-1.jpg"); background-size: cover;}
+      .box8 > .imgbox {width: 1200px; height: 100%; margin:0 auto; text-align: center;}
 
       /* .box9 */
-      .box9 {width:1200px; height:550px; margin:0px auto; background-color: blue;}
+      .box9 {width:1200px; height:550px; margin:0px auto; background-color: blue; display: flex;}
+      .box9 > .box9-left {width:60%; height: 100%;}
+      .box9 > .box9-left > .container {width:100%; display: flex; flex-wrap: wrap;}
+      .box9 > .box9-left > .container > div {width:50%;}
+      .box9 > .box9-right {width: 40%; height: 100%;}
+
+
 
       /* .box10 */
-      .box10 {width:100%; height:120px; margin:0px auto; background-color: #333;}
+      .box10 {width:100%; height:120px; margin:0px auto; background-color: #666;}
+      .box10 > form {width:1200px; height:120px; margin:0 auto; display: flex; justify-content: space-around; align-items: center; }
+
+
 
       /* footer */
       footer {width:100%; height:450px; margin:0px auto; background-color: #000;}
@@ -125,15 +151,14 @@
 
       </div> <!--end #slider-->
 
-
+`
 
       <!-- 콘텐츠 -->
       <div id="contents">
 
         <!-- 박스1 -->
         <div class="box1">
-          <div class="box1-item
-          ">
+          <div class="box1-item">
             <div class="imgbox">
               <img src="img/box1-img-1.jpg" alt="img1">
             </div>
@@ -144,8 +169,7 @@
               </p>
             </div>
           </div> 
-          <div class="box1-item
-          ">
+          <div class="box1-item">
             <div class="imgbox">
               <img src="img/box1-img-2.jpg" alt="img2">
             </div>
@@ -156,8 +180,7 @@
               </p>
             </div>
           </div>
-          <div class="box1-item
-          ">
+          <div class="box1-item">
             <div class="imgbox">
               <img src="img/box1-img-3.jpg" alt="img3">
             </div>
@@ -168,8 +191,7 @@
               </p>
             </div>
           </div>
-          <div class="box1-item
-          ">
+          <div class="box1-item">
             <div class="imgbox">
               <img src="img/box1-img-1.jpg" alt="img1">
             </div>
@@ -180,7 +202,7 @@
               </p>
             </div>
           </div>
-        </div> <!--end box1-->
+        </div> <!--end .box1-->
 
         <!-- 박스2 -->
         <div class="box2">
@@ -210,7 +232,7 @@
               <img src="img/box2-img-5.jpg" alt="img5">
             </div>
           </div>          
-        </div> <!--end box2-->
+        </div> <!--end .box2-->
 
         <!-- 박스3 -->
         <div class="box3">
@@ -224,7 +246,7 @@
           <div class="imgbox">
             <img src="img/box3-img.jpg" alt="img1">
           </div>
-        </div> <!--end box3-->
+        </div> <!--end .box3-->
 
         <!-- 박스4 -->
         <div class="box4">
@@ -232,51 +254,278 @@
             <h3>RECOMMENDED BY OUR CHEF</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
           </div>
-          <div class="box4-item">
-
-          </div>
-          <div></div>
-          <div></div>
-        </div> <!--end box4-->
+          <div class="container">
+            <div class="box4-item">
+              <div class="imgbox">
+                <img src="img/box4-img-1.jpg" alt="img1">
+              </div>
+              <div class="textbox">
+                <span>$14</span>
+                <h4>MASALA-SPICED CHICKPEAS</h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur occaecat.</p>
+              </div>
+            </div>
+            <div class="box4-item">
+              <div class="imgbox">
+                <img src="img/box4-img-2.jpg" alt="img2">
+              </div>
+              <div class="textbox">
+                <span>$12</span>
+                <h4>KUNG PAO PASTRAMI</h4>
+                <p> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+              </div>
+            </div>
+            <div class="box4-item">
+              <div class="imgbox">
+                <img src="img/box4-img-3.jpg" alt="img3">
+              </div>
+              <div class="textbox">
+                <span>$45</span>
+                <h4>Jalapeno-Mango Salsa</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="box4-item">
+              <div class="imgbox">
+                <img src="img/box4-img-4.jpg" alt="img4">
+              </div>
+              <div class="textbox">
+                <span>$38</span>
+                <h4>Spicy Fried Rice & Bacon</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+              </div>
+            </div>
+          </div> <!--end .container-->
+        </div> <!--end .box4-->
 
         <!-- 박스5 -->
         <div class="box5">
-          <div class="">
-
+          <div class="textbox">
+            <h3>SIMPLE MODIFICATION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> <!--end box5-->
+          <div class="container">
+            <div class="box5-item">
+              <img src="img/box5-img-1.jpg" alt="img1">
+              <p>
+                TASTE OUR<br>
+                EXQUISITE RECIPES
+              </p>
+            </div>
+            <div class="box5-item">
+              <img src="img/box5-img-2.jpg" alt="img2">
+              <p>
+                SAVE 30%<br>
+                ONLY TODAY's OFFER
+              </p>
+            </div>
+            <div class="box5-item">
+              <img src="img/box5-img-3.jpg" alt="img3">
+              <p>
+                DISCOVER<br>
+                AMAZING INTERIOR
+              </p>
+            </div>
+            <div class="box5-item">
+              <img src="img/box5-img-1.jpg" alt="img1">
+              <p>
+                TASTE OUR<br>
+                EXQUISITE RECIPES
+              </p>
+            </div>
+          </div> <!--end .container-->
+        </div> <!--end .box5-->
 
         <!-- 박스6 -->
         <div class="box6">
-          <div></div>
-        </div> <!--end box6-->
+          <div class="container">
+            <div class="tit">
+              <h3>HAPPY CUSTOMERS</h3>
+              <p>-----Delicious Food</p>
+            </div>
+            <div class="textbox">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+              </p>
+            </div>
+          </div>
+        </div> <!--end .box6-->
 
         <!-- 박스7 -->
         <div class="box7">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div><!--end box7-->
+          <div class="textbox">
+            <h3>LATEST NEWS</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+            </p>
+          </div>
+          <div class="container">
+            <div class="box7-item">
+              <div class="imgbox">
+                <img src="img/box7-img-1.jpg" alt="img1">
+              </div>
+              <div class="txetbox">
+                <span>NOV 04, 2020</span>
+                <h3>NOUGAT ICE CREAM</h3>
+                <p>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
+                </p>
+              </div>
+            </div>
+            
+            <div class="box7-item">
+              <div class="imgbox">
+                <img src="img/box7-img-2.jpg" alt="img2">
+              </div>
+              <div class="txetbox">
+                <span>NOV 04, 2020</span>
+                <h3>NOUGAT ICE CREAM</h3>
+                <p>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
+                </p>
+              </div>
+            </div>
+
+            <div class="box7-item">
+              <div class="imgbox">
+                <img src="img/box7-img-3.jpg" alt="img3">
+              </div>
+              <div class="txetbox">
+                <span>NOV 04, 2020</span>
+                <h3>NOUGAT ICE CREAM</h3>
+                <p>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
+                </p>
+              </div>
+            </div>
+
+            <div class="box7-item">
+              <div class="imgbox">
+                <img src="img/box7-img-1.jpg" alt="img1">
+              </div>
+              <div class="txetbox">
+                <span>NOV 04, 2020</span>
+                <h3>NOUGAT ICE CREAM</h3>
+                <p>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
+                </p>
+              </div>
+            </div>
+          </div><!--end .container-->
+        </div><!--end .box7-->
 
         <!-- 박스8 -->
         <div class="box8">
-          
-        </div><!--end box8-->
+          <div class="imgbox">
+            <img src="img/box8-img-2.png" alt="img1">
+          </div>
+        </div><!--end .box8-->
 
         <!-- 박스9 -->
         <div class="box9">
-          <div></div>
-          <div></div>
-        </div><!--end box9-->
+          <div class="box9-left">
+            <h3>AWARD WINNING RESTAURANT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <img src="img/box9-img-1.jpg" alt="img1">
+            <h4>CONTACT INFO</h4>
+            <div class="container">
+              <div>
+                Raymond Boulevard 224, New York
+              </div>
+              <div>
+                info@themebusiness.com
+              </div>
+              <div>
+                1-444-123-4559
+              </div>
+              <div>
+                www.yourwebsite.com
+              </div>
+            </div>
+          </div>
+
+          <div class="box9-right">
+            <div class="textbox">
+              <h3>OPENING HOURS</h3>
+              <div>
+                <span>Monday</span>
+                <span>---</span>
+                <span>09:00 - 22:00</span>
+              </div>
+              <div>
+                <span>Tuesday</span>
+                <span>---</span>
+                <span>CLOSED</span>
+              </div>
+              <div>
+                <span>Wednesday</span>
+                <span>---</span>
+                <span>09:00 - 22:00</span>
+              </div>
+              <div>
+                <span>Thursday</span>
+                <span>---</span>
+                <span>09:00 - 22:00</span>
+              </div>
+              <div>
+                <span>Friday</span>
+                <span>---</span>
+                <span>09:00 - 01:00</span>
+              </div>
+              <div>
+                <span>Saturday</span>
+                <span>---</span>
+                <span>10:00 - 01:00</span>
+              </div>
+              <div>
+                <span>Sunday</span>
+                <span>---</span>
+                <span>10:00 - 22:00</span>
+              </div>
+            </div>
+          </div>
+        </div><!--end .box9-->
 
         <!-- 박스10 -->
         <div class="box10">
-          <div></div>
-        </div><!--end box10-->
+          <form>
+            <div>
+              <select name="person" id="person">
+                <option value="1 Person">1 Person</option>
+                <option value="2 Person">2 Person</option>
+                <option value="3 Person">3 Person</option>
+                <option value="4 Person">4 Person</option>
+                <option value="5 Person">5 Person</option>
+                <option value="6 Person">6 Person</option>
+                <option value="7 Person">7 Person</option>
+                <option value="8 Person">8 Person</option>
+                <option value="9 Person">9 Person</option>
+                <option value="10 Person">10 Person</option>
+              </select>
+            </div>
+            <span>for</span>
+            <div>
+              02/08/2021
+            </div>
+            <span>at</span>
+            <div>
+              <select name="time" id="time">
+                <option value="">09:00</option>
+                <option value="">09:30</option>
+                <option value="">10:00</option>
+                <option value="">10:30</option>
+                <option value="">11:00</option>
+                <option value="">11:30</option>
+                <option value="">12:00</option>
+                <option value="">12:30</option>
+                <option value="">13:00</option>
+                <option value="">13:30</option>
+              </select>
+            </div>
+          </form>
+        </div><!--end .box10-->
         
       </div> <!--end #contents-->
 

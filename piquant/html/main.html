@@ -12,45 +12,89 @@
     <style>
       * {margin:0; padding:0; box-sizing: border-box;}
 
-      #wrap {width:100%; height: auto; background-color: #eee;}
+      #wrap {width:100%; height: auto; position: relative;}
 
       /* header */
-      header {width:100%; height:100px; background-color: #000;}
-      header > .bar {width:1200px; height:100PX; background-color: #666; margin:0 auto; display: flex; justify-content: space-between; align-items: center;}
-      header > .bar > .gnb > ul {display: flex;}
-      header > .bar > .gnb > ul > li {padding:0 15px;}
-      
+      header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
+      header > .bar {width:1200px; height:80PX;  margin:0 auto; display: flex; justify-content: space-between; align-items: center;}
+      .bar > .logo {width:110px; height:40px; overflow: hidden;}
+      .bar > .logo > a > img {width:100%; height:100%;}
+      header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center;}
+      header > .bar > .gnb > ul > li {padding:10px 25px; cursor: pointer; position: relative;}
+      header > .bar > .gnb > ul > li:hover > a {color:gold;}
+      header > .bar > .gnb > ul > li:hover > .submenu {display: block;}
+      header > .bar > .gnb > ul > li > a {color:#fff; font-size: 16px;}
+      header > .bar > .gnb > ul > li > .submenu {display: none; position: absolute; top: 35px; left:13px; width:200px;  background-color: #000;}
+      header > .bar > .gnb > ul > li > .submenu > li {padding:10px;}
+      header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
+      header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
+      .bar > .search {display: flex;}
+      .bar > .search > input {border:none; border-radius: 10px; margin:0 15px;}
+      .bar > .search > div > a {color:#fff;}
+
+
 
       /* #slider*/
-      #slider {width:100%; height:550px; background-image: url("img/slide-background.jpg"); background-size: cover; background-repeat: no-repeat;}
+      #slider {width:100%; height:550px; background-image: url("img/slide-background.jpg"); background-size: cover; background-repeat: no-repeat; position: relative; top:80px;}
+      #slider > .sliderbox {width: 1200px; height: 100%; margin: 0 auto; display: flex;}
+      .sliderbox > .textbox {width: 50%; height: 100%; padding-top: 100px;}
+      .sliderbox > .textbox > .imgbox {width:150px; height:120px; overflow: hidden;}
+      .sliderbox > .textbox > .imgbox > img {width:100%; height:100%;}
+      .sliderbox > .textbox > h3 {font-size: 40px; color: #fff; margin-top: 30px;}
+      .sliderbox > .textbox > p {font-size: 16px; color: #fff; margin-top: 30px; line-height: normal;}
+      .sliderbox > .textbox > button {margin-top: 30px; background-color: gold; padding:10px 20px; font-weight: bold; border: none; cursor: pointer;}
+      .sliderbox > .textbox > button:hover {background-color: #fff; color: #000;}
+      .sliderbox > .imgbox {width:50%; height:100%; text-align: right;}
+      .sliderbox > .imgbox > img{width:90%; height:90%;}
+
 
 
       /* #contents */
-      #contents {width:100%; height: auto;}
+      #contents {width:100%; height: auto; position: relative;}
+
+
 
       /* .box1 */
-      .box1 {width:1200px; height:500px; margin:0px auto; background-color: red; display: flex; justify-content: center; align-items: center;}
+      .box1 {width:1200px; height:400px; margin:0px auto; background-color:#fff; display: flex; justify-content: center; align-items: center; }
       .box1-item {width:23%; height: 90%; margin:1%; background-color: #fff;}
-      .box1-item > .imgbox {width:100%; height:60%; overflow: hidden;}
-      .box1-item > .imgbox > img {width:100%; height:100%;}
-      .box1-item > .textbox {width:100%; height:40%; }
-      .box1-item > .textbox > h4 {padding: 10px 0;}
-      .box1-item > .textbox > p {color:#666;}
+      .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
+      .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
+      .box1-item > .imgbox > img:hover {transform: scale(1.2);}
+      .box1-item > .textbox {width:100%; height:35%; }
+      .box1-item > .textbox > h4 {padding: 10px 0; padding-top: 20px; font-size: 18px;}
+      .box1-item > .textbox > p {color:#666; font-size:13px; line-height: 20px;}
+
+
 
       /* .box2 */
       .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
-      .box2 > .textbox {width:1200px; height:80px; margin: 0 auto; display: flex; }
-      .box2 > .textbox > ul {display: flex;}
-      .box2 > .textbox > ul > li > a {margin:0 10px;}
-      .box2 > .imgboxes {width:100%; height:300px; display: flex; justify-content: center; align-items: center;}
-      .box2 > .imgboxes > .imgbox {width:300px; height:100%; margin:1%; overflow: hidden;}
-      .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%;}
+      .box2 > .textbox {width:1200px; height:80px; margin: 0 auto; display: flex; align-items: center; padding:20px 0;}
+      .box2 > .textbox > .tit > span {font-family: serif; font-size: 36px; color: #fff;}
+      .box2 > .textbox > ul {display: flex; width:700px; justify-content: center;}
+      .box2 > .textbox > ul > li > a {margin:0 25px; font-size: 15px; color:#fff}
+      .box2 > .textbox > ul > li > a:hover {color:gold;}
+      .box2 > .textbox > button {margin-left: 70px; padding:10px 15px; font-size: 12px; font-weight: bold;background-color: #fff; border: none; cursor: pointer;}
+      .box2 > .textbox > button:hover {background-color: gold;}
+      .box2 > .imgboxes {width:100%; height:250px; display: flex; justify-content: center; align-items: center; margin:20px 0;}
+      .box2 > .imgboxes > .imgbox {width:100%; height:100%; margin:1%; overflow: hidden; position: relative; background-color: #000;}
+      .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; }
+      .box2 > .imgboxes > .imgbox > img:hover {opacity: 0.8;}
+      .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,1); position: absolute;  top:0;}
+
+
+
+
+
+
+
 
       /* .box3 */
       .box3 {width:1200px; height:500px; margin:0px auto; background-color: orange; display: flex; align-items: center;}
       .box3 > .textbox {width: 50%; height: 85%;}
       .box3 > .imgbox {width: 50%; height: 85%; overflow: hidden;}
       .box3 > .imgbox > img {width:100%; height: 100%;}
+
+
 
       /* .box4 */
       .box4 {width:100%; height:700px; margin:0px auto; background-image: url("img/box4-img-back.jpg"); background-size: cover;}
@@ -60,6 +104,8 @@
       .box4 > .container > .box4-item > .imgbox {width:100%; height: 60%;}
       .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%;}
       .box4 > .container > .box4-item > .textbox {width:100%; height:40%; background-color: #fff;}
+    
+
       
       /* .box5 */
       .box5 {width:1200px; height:600px; margin:0px auto; background-color: yellow;}
@@ -68,9 +114,13 @@
       .box5 > .container > .box5-item {width: 23%; height: 300px; margin: 1%; overflow: hidden;}
       .box5 > .container > .box5-item > img {width: 100%; height: 100%;}
 
+
+
       /* .box6 */
       .box6 {width:100%; height:500px; margin:0px auto; background-image: url("img/box6-img-1.jpg"); background-size: cover;}
       .box6 > .container {width: 1200px; height: 100%; margin: 0 auto;}
+
+
 
       /* .box7 */
       .box7 {width:1200px; height:700px; margin:0px auto; background-color: green;}
@@ -80,9 +130,13 @@
       .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden;}
       .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%;}
 
+
+
       /* .box8 */
       .box8 {width:100%; height:560px; margin:0px auto; background-image: url("img/box8-img-1.jpg"); background-size: cover;}
       .box8 > .imgbox {width: 1200px; height: 100%; margin:0 auto; text-align: center;}
+
+
 
       /* .box9 */
       .box9 {width:1200px; height:550px; margin:0px auto; background-color: blue; display: flex;}
@@ -100,7 +154,10 @@
 
 
       /* footer */
-      footer {width:100%; height:450px; margin:0px auto; background-color: #000;}
+      footer {width:100%; height:250px; margin:0px auto; background-color: #000;}
+      footer > .container {width:1200px; height: 95%; margin: 0 auto; display: flex;}
+      .footer-item {width:23%; height: 100%; margin: 1%; }
+      .footer-item > span {display: block;}
 
     </style>
 
@@ -111,35 +168,61 @@
       <header>
         <div class="bar">
           <div class="logo">
-            LOGO
+            <a href="#">
+              <img src="img/logo-light.png" alt="logo">
+            </a>
           </div>
           <nav class="gnb">
             <ul>
               <li>
-                Home
+                <a href="#">Home</a>
+                <ul class="submenu">
+                  <li><a href="#"><span>▶</span> Original</a></li>
+                  <li><a href="#"><span>▶</span> Health Food</a></li>
+                  <li><a href="#"><span>▶</span> Bar & Cafe</a></li>
+                  <li><a href="#"><span>▶</span> Restaurant</a></li>
+                  <li><a href="#"><span>▶</span> BBQ Home</a></li>
+                  <li><a href="#"><span>▶</span> Fullscreen</a></li>
+                </ul>
               </li>
               <li>
-                Reservations
+                <a href="#">Reservations</a> 
+                <ul class="submenu">
+                  <li><a href="#"><span>▶</span> Contact Form</a></li>
+                  <li><a href="#"><span>▶</span> Open Table</a></li>
+                </ul>
               </li>
               <li>
-                Menu
+                <a href="#">Menu</a>
+                <ul class="submenu">
+                  <li><a href="#"><span>▶</span> Standard List</a></li>
+                  <li><a href="#"><span>▶</span> Menu Gallery</a></li>
+                  <li><a href="#"><span>▶</span> Gallery & List Combo</a></li>
+                  <li><a href="#"><span>▶</span> List With Image</a></li>
+                  <li><a href="#"><span>▶</span> Single Menu Item</a></li>
+                </ul> 
               </li>
               <li>
-                Pages
+                <a href="#">Pages</a> 
               </li>
               <li>
-                Blog
+                <a href="#">Blog</a> 
               </li>
               <li>
-                Shop
+                <a href="#">Shop</a> 
               </li>
               <li>
-                Elements
+                <a href="#">Elements</a> 
               </li>
             </ul>
           </nav>
-          <div>
+          <div class="search">
             <input type="text">
+            <div>
+              <a href="#">
+                Cart <img src="img/cart_white.png" alt="cart">
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -148,10 +231,25 @@
 
       <!-- 슬라이더 -->
       <div id="slider">
-
+        <div class="sliderbox">
+          <div class="textbox">
+            <div class="imgbox">
+              <img src="img/slide-img-2.png" alt="img">
+            </div>
+            <h3>KNOW YOUR FOOD</h3>
+            <p> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <button>Purchase</button>
+          </div>
+          <div class="imgbox">
+            <img src="img/slide-img-1.png" alt="img">
+          </div>
+        </div>
       </div> <!--end #slider-->
 
-`
+
 
       <!-- 콘텐츠 -->
       <div id="contents">
@@ -214,22 +312,38 @@
               <li><a href="#">Desrts</a></li>
               <li><a href="#">Recipes</a></li>
             </ul>
+            <button>SEE FULL GALLERY</button>
           </div> <!--end .box2-text-->
           <div class="imgboxes">
             <div class="imgbox">
               <img src="img/box2-img-1.jpg" alt="img1">
+              <div class="imgtext">
+                <span>CARNE ASADA TACOS</span>
+              </div>
             </div>
             <div class="imgbox">
               <img src="img/box2-img-2.jpg" alt="img2">
+              <div class="imgtext">
+                <span>MANGO-CHILE CHUTNEY</span>
+              </div>
             </div>
             <div class="imgbox">
               <img src="img/box2-img-3.jpg" alt="img3">
+              <div class="imgtext">
+                <span>A TREAT FOR YOUR TASTE BUDS</span>
+              </div>
             </div>
             <div class="imgbox">
               <img src="img/box2-img-4.jpg" alt="img4">
+              <div class="imgtext">
+                <span>WASABI WEDNESDAY</span>
+              </div>
             </div>
             <div class="imgbox">
               <img src="img/box2-img-5.jpg" alt="img5">
+              <div class="imgtext">
+                <span>AMAZING INTERIOR</span>
+              </div>
             </div>
           </div>          
         </div> <!--end .box2-->
@@ -472,12 +586,12 @@
               <div>
                 <span>Friday</span>
                 <span>---</span>
-                <span>09:00 - 01:00</span>
+                <span>09:00 - 23:00</span>
               </div>
               <div>
                 <span>Saturday</span>
                 <span>---</span>
-                <span>10:00 - 01:00</span>
+                <span>10:00 - 23:00</span>
               </div>
               <div>
                 <span>Sunday</span>
@@ -522,6 +636,23 @@
                 <option value="">12:30</option>
                 <option value="">13:00</option>
                 <option value="">13:30</option>
+                <option value="">14:00</option>
+                <option value="">14:30</option>
+                <option value="">15:00</option>
+                <option value="">15:30</option>
+                <option value="">16:00</option>
+                <option value="">16:30</option>
+                <option value="">17:00</option>
+                <option value="">17:30</option>
+                <option value="">18:00</option>
+                <option value="">18:30</option>
+                <option value="">19:00</option>
+                <option value="">19:30</option>
+                <option value="">20:00</option>
+                <option value="">20:30</option>
+                <option value="">21:00</option>
+                <option value="">21:30</option>
+                <option value="">22:00</option>
               </select>
             </div>
           </form>
@@ -533,9 +664,44 @@
 
       <!-- 푸터 -->
       <footer>
-
+        <div class="container">
+          <div class="footer-item">
+            <img src="img/logo-light.png" alt="logo">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+            <span>
+              info@themebusiness.com
+            </span>
+            <span>
+              1-444-123-4559
+            </span>
+            <span>
+              Raymond Boulevard 224, New York
+            </span>
+          </div>
+          <div class="footer-item">
+            <h4>RECENT POSTS</h4>
+            <span><a href="#">Chicken Tinga Nachos</a></span>
+            <span><a href="#">Sweet and Sour Pork Chops</a></span>
+            <span><a href="#">Green Chile And Chicken Stew</a></span>
+            <span><a href="#">Pecan Pie Macarons</a></span>
+          </div>
+          <div class="footer-item">
+            <h4>Elements</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+          <div class="footer-item">
+            <h4>Follow Us</h4>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Tripadvisor</a></p>
+          </div>
+        </div> <!--end .container-->
       </footer>
-
     </div> <!--end wrap-->
   </body>
 </html>

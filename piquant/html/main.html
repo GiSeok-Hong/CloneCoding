@@ -76,22 +76,20 @@
       .box2 > .textbox > button {margin-left: 70px; padding:10px 15px; font-size: 12px; font-weight: bold;background-color: #fff; border: none; cursor: pointer;}
       .box2 > .textbox > button:hover {background-color: gold;}
       .box2 > .imgboxes {width:100%; height:250px; display: flex; justify-content: center; align-items: center; margin:20px 0;}
-      .box2 > .imgboxes > .imgbox {width:100%; height:100%; margin:1%; overflow: hidden; position: relative; background-color: #000;}
-      .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; }
-      .box2 > .imgboxes > .imgbox > img:hover {opacity: 0.8;}
-      .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,1); position: absolute;  top:0;}
-
-
-
-
-
+      .box2 > .imgboxes > .imgbox {width:100%; height:100%; margin:1%; overflow: hidden; position: relative;}
+      .box2 > .imgboxes > .imgbox:hover > img {opacity: 0.7;}
+      .box2 > .imgboxes > .imgbox:hover > .imgtext {color:#fff;}
+      .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; transition: 0.2s;}
+      .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,0); position: absolute;  bottom:15px; transition: 0.2s; width: 100%; text-align: center;}      
 
 
 
       /* .box3 */
-      .box3 {width:1200px; height:500px; margin:0px auto; background-color: orange; display: flex; align-items: center;}
-      .box3 > .textbox {width: 50%; height: 85%;}
-      .box3 > .imgbox {width: 50%; height: 85%; overflow: hidden;}
+      .box3 {width:1200px; height:450px; margin:0px auto; background-color: orange; display: flex; align-items: center;}
+      .box3 > .textbox {width: 50%; height: 75%;}
+      .box3 > .textbox > h3 {font-size: 30px;}
+      .box3 > .textbox > p {font-size: 16px; line-height: 30px; padding:20px 35px 20px 0;}
+      .box3 > .imgbox {width: 50%; height: 75%; overflow: hidden;}
       .box3 > .imgbox > img {width:100%; height: 100%;}
 
 

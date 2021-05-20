@@ -59,7 +59,7 @@
       .box1-item {width:23%; height: 90%; margin:1%; background-color: #fff;}
       .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
       .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
-      .box1-item > .imgbox > img:hover {transform: scale(1.2);}
+      .box1-item > .imgbox > img:hover {transform: scale(1.1);}
       .box1-item > .textbox {width:100%; height:35%; }
       .box1-item > .textbox > h4 {padding: 10px 0; padding-top: 20px; font-size: 18px;}
       .box1-item > .textbox > p {color:#666; font-size:13px; line-height: 20px;}
@@ -88,7 +88,7 @@
       .box3 {width:1200px; height:450px; margin:0px auto; display: flex; align-items: center; }
       .box3 > .textbox {width: 50%; height: 75%;}
       .box3 > .textbox > h3 {font-size: 30px;}
-      .box3 > .textbox > p {font-size: 16px; line-height: 30px; padding:20px 50px 20px 0;}
+      .box3 > .textbox > p {font-size: 16px; line-height: normal; padding:20px 50px 20px 0;}
       .box3 > .textbox > button {margin-top: 20px; background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
       .box3 > .textbox > button:hover {background-color: #1f1f1f; color: #fff;}
       .box3 > .imgbox {width: 50%; height: 75%; overflow: hidden;}
@@ -103,7 +103,7 @@
       .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
       .box4 > .container {width:1200px; height:400px; margin:0 auto; display:flex; justify-content: space-between; align-items: center;}
       .box4 > .container > .box4-item {width:24%; height: 400px;  overflow: hidden; text-align: center;}
-      .box4 > .container > .box4-item > .imgbox {width:100%; height: 55%; cursor: pointer;}
+      .box4 > .container > .box4-item > .imgbox {width:100%; height: 55%; cursor: pointer; background-color: #000;}
       .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
       .box4 > .container > .box4-item > .imgbox > img:hover {opacity: 0.7;}
       .box4 > .container > .box4-item > .textbox {width:100%; height:45%; background-color: #fff; position: relative;}
@@ -140,45 +140,62 @@
 
 
       /* .box7 */
-      .box7 {width:1200px; height:600px; margin:0px auto; background-color: green;}
-      .box7 > .textbox {width: 100%; height: 150px; text-align: center; line-height: normal;}
+      .box7 {width:1200px; height:650px; margin:0px auto; }
+      .box7 > .textbox {width: 100%; height: 180px; text-align: center; line-height: normal;}
       .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
-      .box7 > .textbox > p {padding:0 200px;}
+      .box7 > .textbox > p {padding:0 180px;}
       .box7 > .container {width:100%; height: 450px; display: flex; justify-content: space-between; align-items: center; }
-      .box7 > .container > .box7-item {width: 24%; height: 400px; border: 1px solid #666;}
-      .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer;}
+      .box7 > .container > .box7-item {width: 24%; height: 400px; }
+      .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
       .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
       .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
-      .box7 > .container > .box7-item > .textbox {padding:15px;}
+      .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid #666;}
+      .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
+      .box7 > .container > .box7-item > .textbox > h4 {font-size: 20px; margin:10px 0;}
+      .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
+      .box7 > .container > .box7-item > .textbox > p {font-size: 15px;}
 
 
 
       /* .box8 */
-      .box8 {width:100%; height:560px; margin:0px auto; background-image: url("img/box8-img-1.jpg"); background-size: cover;}
-      .box8 > .imgbox {width: 1200px; height: 100%; margin:0 auto; text-align: center;}
+      .box8 {width:100%; height:400px; margin:0px auto; background-image: url("img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+      .box8 > .imgbox {width: 1200px; height: 45%; margin:0 auto; text-align: center;}
 
 
 
       /* .box9 */
-      .box9 {width:1200px; height:550px; margin:0px auto; background-color: blue; display: flex;}
-      .box9 > .box9-left {width:60%; height: 100%;}
-      .box9 > .box9-left > .container {width:100%; display: flex; flex-wrap: wrap;}
-      .box9 > .box9-left > .container > div {width:50%;}
-      .box9 > .box9-right {width: 40%; height: 100%;}
+      .box9 {width:1200px; height:500px; margin:0px auto; display: flex; align-items: center;}
+      .box9 > .box9-left {width:60%; height: 80%; line-height: normal;}
+      .box9 > .box9-left > h3 {font-size: 30px;}
+      .box9 > .box9-left > p {margin:35px 0;}
+      .box9 > .box9-left > h4 {font-size: 18px; margin:35px 0 15px 0;}
+      .box9 > .box9-left > .container {width:80%; display: flex; flex-wrap: wrap;}
+      .box9 > .box9-left > .container > div {width:50%; font-size: 13px;}
+      .box9 > .box9-right {width: 40%; height: 80%; background-color: #000; display: flex; align-items: center; justify-content: center;}
+      .box9 > .box9-right > .textbox {width: 90%; height: 90%; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly; text-align: center; border: 1px solid #515151;}
+      .box9 > .box9-right > .textbox > h3 {font-size: 30px;}
+      .box9 > .box9-right > .textbox > h3 > span {color: gold;}
 
 
 
       /* .box10 */
-      .box10 {width:100%; height:120px; margin:0px auto; background-color: #666;}
-      .box10 > form {width:1200px; height:120px; margin:0 auto; display: flex; justify-content: space-around; align-items: center; }
-
+      .box10 {width:100%; height:120px; margin:0px auto; background-color: #f5f5f5;}
+      .box10 > form {width:1200px; height:120px; margin:0 auto; display: flex; justify-content: space-between; align-items: center; }
+      .box10 > form > div > button {background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
+      .box10 > form > div > button:hover {background-color: #1f1f1f; color: #fff;}
 
 
       /* footer */
       footer {width:100%; height:250px; margin:0px auto; background-color: #000;}
-      footer > .container {width:1200px; height: 95%; margin: 0 auto; display: flex;}
-      .footer-item {width:23%; height: 100%; margin: 1%; }
-      .footer-item > span {display: block;}
+      footer > .container {width:1200px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; padding:30px 0; line-height: normal;}
+      .footer-item {width:23%; height: 100%; color: #fff;}
+      .footer-item:nth-of-type(2) > p {border-bottom: 1px solid #515151; height: 20px;}
+      .footer-item:nth-of-type(4) > p {height: 20px;}
+      .footer-item > img {width:35%;}
+      .footer-item > h4 {font-size: 18px;}
+      .footer-item > p {font-size: 12px; color: #fff; margin-top:20px;}
+      .footer-item > p > a {color: #fff;}
+      .footer-item > span {display: block; font-size: 12px; margin-top: 15px;}
 
     </style>
 
@@ -374,8 +391,9 @@
           <div class="textbox">
             <h3>WELCOME TO PIQUANT</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <br><br>
             <button>READ MORE</button>
           </div>
           <div class="imgbox">
@@ -498,6 +516,7 @@
         <div class="box7">
           <div class="textbox">
             <h3>LATEST NEWS</h3>
+            <br>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
             </p>
@@ -509,7 +528,7 @@
               </div>
               <div class="textbox">
                 <span>NOV 04, 2020</span>
-                <h3>NOUGAT ICE CREAM</h3>
+                <h4><a href="#">NOUGAT ICE CREAM</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
                 </p>
@@ -522,7 +541,7 @@
               </div>
               <div class="textbox">
                 <span>NOV 04, 2020</span>
-                <h3>NOUGAT ICE CREAM</h3>
+                <h4><a href="#">BRAZILIAN BURGER</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
                 </p>
@@ -535,7 +554,7 @@
               </div>
               <div class="textbox">
                 <span>NOV 04, 2020</span>
-                <h3>NOUGAT ICE CREAM</h3>
+                <h4><a href="#">GRILLED DUCK BREATS</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
                 </p>
@@ -548,7 +567,7 @@
               </div>
               <div class="textbox">
                 <span>NOV 04, 2020</span>
-                <h3>NOUGAT ICE CREAM</h3>
+                <h4><a href="#">NOUGAT ICE CREAM</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
                 </p>
@@ -591,7 +610,7 @@
 
           <div class="box9-right">
             <div class="textbox">
-              <h3>OPENING HOURS</h3>
+              <h3>OPENING <span>HOURS</span></h3>
               <div>
                 <span>Monday</span>
                 <span>---</span>
@@ -627,8 +646,8 @@
                 <span>---</span>
                 <span>10:00 - 22:00</span>
               </div>
-            </div>
-          </div>
+            </div> <!--end .textbox-->
+          </div> <!--end .box9-right-->
         </div><!--end .box9-->
 
         <!-- 박스10 -->
@@ -647,42 +666,45 @@
                 <option value="9 Person">9 Person</option>
                 <option value="10 Person">10 Person</option>
               </select>
+              <span>for</span>
             </div>
-            <span>for</span>
             <div>
-              02/08/2021
+              <input type="text" placeholder="02/08/2021">
+              <span>at</span>
             </div>
-            <span>at</span>
             <div>
               <select name="time" id="time">
-                <option value="">09:00</option>
-                <option value="">09:30</option>
-                <option value="">10:00</option>
-                <option value="">10:30</option>
-                <option value="">11:00</option>
-                <option value="">11:30</option>
-                <option value="">12:00</option>
-                <option value="">12:30</option>
-                <option value="">13:00</option>
-                <option value="">13:30</option>
-                <option value="">14:00</option>
-                <option value="">14:30</option>
-                <option value="">15:00</option>
-                <option value="">15:30</option>
-                <option value="">16:00</option>
-                <option value="">16:30</option>
-                <option value="">17:00</option>
-                <option value="">17:30</option>
-                <option value="">18:00</option>
-                <option value="">18:30</option>
-                <option value="">19:00</option>
-                <option value="">19:30</option>
-                <option value="">20:00</option>
-                <option value="">20:30</option>
-                <option value="">21:00</option>
-                <option value="">21:30</option>
-                <option value="">22:00</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
               </select>
+            </div>
+            <div>
+              <button>BOOK A TABLE</button>
             </div>
           </form>
         </div><!--end .box10-->
@@ -711,10 +733,10 @@
           </div>
           <div class="footer-item">
             <h4>RECENT POSTS</h4>
-            <span><a href="#">Chicken Tinga Nachos</a></span>
-            <span><a href="#">Sweet and Sour Pork Chops</a></span>
-            <span><a href="#">Green Chile And Chicken Stew</a></span>
-            <span><a href="#">Pecan Pie Macarons</a></span>
+            <p><a href="#">Chicken Tinga Nachos</a></p>
+            <p><a href="#">Sweet and Sour Pork Chops</a></p>
+            <p><a href="#">Green Chile And Chicken Stew</a></p>
+            <p><a href="#">Pecan Pie Macarons</a></p>
           </div>
           <div class="footer-item">
             <h4>Elements</h4>

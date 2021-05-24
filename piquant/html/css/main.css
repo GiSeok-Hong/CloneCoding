@@ -116,15 +116,15 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 50px 50px;}
   .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-  .box7 > .container > .box7-item {width: 80%; margin:5%;}
+  .box7 > .container > .box7-item {width: 80%; margin:5%; box-shadow: 4px 4px 4px #666;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
-  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1); height:50%; }
   .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
   .box7 > .container > .box7-item > .textbox > h4 {font-size: 20px; margin:10px 0;}
   .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
-  .box7 > .container > .box7-item > .textbox > p {font-size: 15px;}
+  .box7 > .container > .box7-item > .textbox > p {font-size: 12px;}
 
 
 
@@ -282,11 +282,11 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 50px 50px;}
   .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-flow: row wrap;}
-  .box7 > .container > .box7-item {width: 40%; margin:5%;}
+  .box7 > .container > .box7-item {width: 40%; margin:5%; box-shadow: 4px 4px 4px #666;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
-  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1); height: 50%;}
   .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
   .box7 > .container > .box7-item > .textbox > h4 {font-size: 17px; margin:10px 0;}
   .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
@@ -451,15 +451,15 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 180px;}
   .box7 > .container {width:100%; height: 450px; display: flex; justify-content: space-between; align-items: center; }
-  .box7 > .container > .box7-item {width: 24%; height: 400px; }
+  .box7 > .container > .box7-item {width: 24%; height: 400px; box-shadow: 4px 4px 4px #666;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
-  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1); height:50%;}
   .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
   .box7 > .container > .box7-item > .textbox > h4 {font-size: 20px; margin:10px 0;}
   .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
-  .box7 > .container > .box7-item > .textbox > p {font-size: 15px;}
+  .box7 > .container > .box7-item > .textbox > p {font-size: 12px;}
 
 
 

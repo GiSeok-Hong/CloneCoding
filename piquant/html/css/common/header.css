@@ -7,7 +7,7 @@ p {color:#707070;}
 @media (max-width:599px) {
   header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
   header > .bar {width:80%; height:80PX;  margin:0 auto; display: flex; justify-content: flex-start; align-items: center; flex-flow: row wrap; position: relative;}
-  .bar > .icon {display: block; width: 40%; color:#fff; cursor: pointer;}
+  .bar > .icon {display: block; width: 40%; color:#fff; cursor: pointer; font-size: 24px;}
   .bar > .logo {width:50%; height:40px; overflow: hidden;}
   .bar > .logo > a > img {width:50%; height:100%;}
   header > .bar > .gnb {position: absolute; top:80px;}
@@ -35,7 +35,7 @@ p {color:#707070;}
   header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
   header > .bar {width:90%; height:80PX;  margin:0 auto; display: flex; justify-content: space-between; align-items: center; flex-flow: row wrap;}
   header > .bar > .gnb {position: absolute; top:80px;}
-  .bar > .icon {display: block; width: 40%; color: #fff; cursor: pointer;}
+  .bar > .icon {display: block; width: 40%; color: #fff; cursor: pointer; font-size: 24px;}
   .bar > .logo {width:30%; height:40px; overflow: hidden;}
   .bar > .logo > a > img {width:110px; height:100%;}
   header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center; flex-direction: column;}

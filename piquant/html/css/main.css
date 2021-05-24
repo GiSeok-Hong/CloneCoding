@@ -1,2 +1,497 @@
 @charset "utf-8";
 
+
+/* 최대 너비 599px 이하 */
+@media (max-width:599px) {
+
+  /* #slider*/
+  #slider {width:100%;  background-image: url("../img/slide-background.jpg"); background-size: cover; background-repeat: no-repeat; position: relative; top:80px;}
+  #slider > .sliderbox {width: 100%;  margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
+  .sliderbox > .textbox {width: 80%;  padding-top: 50px; margin:0 auto;}
+  .sliderbox > .textbox > .imgbox {width:30%; height:120px; overflow: hidden;}
+  .sliderbox > .textbox > .imgbox > img {width:100%; height:100%;}
+  .sliderbox > .textbox > h3 {font-size: 23px; color: #fff; margin-top: 30px;}
+  .sliderbox > .textbox > p {font-size: 13px; color: #fff; margin-top: 30px; line-height: normal;}
+  .sliderbox > .textbox > button {margin-top: 30px; background-color: gold; padding:10px 20px; font-weight: bold; border: none; cursor: pointer;}
+  .sliderbox > .textbox > button:hover {background-color: #fff; color: #000;}
+  .sliderbox > .imgbox {width:80%; margin:0 auto; padding-bottom: 80px;}
+  .sliderbox > .imgbox > img{width:90%; height:90%;}
+
+
+
+  /* #contents */
+  #contents {width:100%; height: auto; position: relative;}
+
+
+
+  /* .box1 */
+  .box1 {width:100%; margin:0px auto; background-color:#fff; display: flex; flex-direction: column;justify-content: center; align-items: center; }
+  .box1-item {width:80%; height: 80%; margin:5%; background-color: #fff;}
+  .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
+  .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
+  .box1-item > .imgbox > img:hover {transform: scale(1.1);}
+  .box1-item > .textbox {width:100%; height:35%; }
+  .box1-item > .textbox > h4 {padding: 10px 0; padding-top: 20px; font-size: 18px;}
+  .box1-item > .textbox > p {color:#666; font-size:13px; line-height: 20px;}
+
+
+
+  /* .box2 */
+  .box2 {width:100%; height:410px; margin:50px auto; background-color: #000;}
+  .box2 > .textbox {width:100%; margin: 0 auto; display: flex; flex-direction: column;justify-content: center; align-items: center; padding:20px 0;}
+  .box2 > .textbox > .tit > span {font-size: 25px; color: #fff;}
+  .box2 > .textbox > ul {display: flex; width:100%; justify-content: center; margin:15px 0;}
+  .box2 > .textbox > ul > li > a {margin:0 25px; font-size: 15px; color:#fff}
+  .box2 > .textbox > ul > li > a:hover {color:gold;}
+  .box2 > .textbox > button {margin-left: 1%; padding:10px 20px; font-size: 12px; font-weight: bold;background-color: #fff; border: none; cursor: pointer;}
+  .box2 > .textbox > button:hover {background-color: gold;}
+  .box2 > .imgboxes {width:100%; display: flex; justify-content: center; align-items: center; margin:20px 0;}
+  .box2 > .imgboxes > .imgbox {width:100%; height:100%; margin:1%; overflow: hidden; position: relative;}
+  .box2 > .imgboxes > .imgbox:hover > img {opacity: 0.7;}
+  .box2 > .imgboxes > .imgbox:hover > .imgtext {color:#fff;}
+  .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; transition: 0.2s;}
+  .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,0); position: absolute;  bottom:15px; transition: 0.2s; width: 100%; text-align: center;}      
+
+
+
+  /* .box3 */
+  .box3 {width:100%; height:700px; margin:100px auto; display: flex; align-items: center; flex-direction: column;}
+  .box3 > .textbox {width: 80%; height: 70%; margin:5%;}
+  .box3 > .textbox > h3 {font-size: 30px;}
+  .box3 > .textbox > p {font-size: 16px; line-height: normal; padding:20px 50px 20px 0;}
+  .box3 > .textbox > button {margin-top: 20px; background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
+  .box3 > .textbox > button:hover {background-color: #1f1f1f; color: #fff;}
+  .box3 > .imgbox {width: 80%; height: 70%; overflow: hidden;}
+  .box3 > .imgbox > img {width:100%; height: 100%;}
+
+
+
+  /* .box4 */
+  .box4 {width:100%;  margin:0 auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 > .textbox {width:80%;  margin:0 auto; text-align: center;}
+  .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
+  .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
+  .box4 > .container {width:100%;  margin:0 auto; display:flex; justify-content: center; align-items: center; flex-direction: column;}
+  .box4 > .container > .box4-item {width:80%; height: 400px;  overflow: hidden; text-align: center; margin:5%;}
+  .box4 > .container > .box4-item > .imgbox {width:100%; height: 55%; cursor: pointer; background-color: #000;}
+  .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box4 > .container > .box4-item > .imgbox > img:hover {opacity: 0.7;}
+  .box4 > .container > .box4-item > .textbox {width:100%; height:45%; background-color: #fff; position: relative;}
+  .box4 > .container > .box4-item > .textbox > span {background-color: gold; padding:10px; border-radius: 50%; position: relative; bottom: 10px; font-weight: bold;}
+  .box4 > .container > .box4-item > .textbox > h4 {font-size: 18px; line-height: normal; margin-top: 10px;}
+  .box4 > .container > .box4-item > .textbox > h4 > a {color: #000;}
+  .box4 > .container > .box4-item > .textbox > p {padding: 10px; line-height: normal;}
+
+
+  
+  /* .box5 */
+  .box5 {width:100%;  margin:0px auto;}
+  .box5 > .textbox {width:80%;  margin:10px auto;}
+  .box5 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box5 > .textbox > p {font-size: 16px; padding-top: 20px; line-height: normal;}
+  .box5 > .container {width:80%;  display: flex; justify-content: center; align-items: center; flex-direction: column; margin:0 auto;}
+  .box5 > .container > .box5-item {width: 100%; height: 250px;  overflow: hidden; position: relative; cursor: pointer; margin:5%;}
+  .box5 > .container > .box5-item > img {width: 100%; height: 100%;}
+  .box5 > .container > .box5-item > p {color: #fff; position: relative; bottom:60px; padding-left:15px; line-height: normal; font-weight: bold;}
+  .box5 > .container > .box5-item > p > span {color:gold;}
+
+
+
+  /* .box6 */
+  .box6 {width:100%; margin:50px auto 0; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 > .container {width: 100%; margin: 0 auto; line-height: normal; }
+  .box6 > .container > .tit {width: 100%;  text-align: center; padding-top: 50px; }
+  .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
+  .box6 > .container > .tit > p {font-size: 20px; color:#fff}
+  .box6 > .container > .textbox {width: 80%;  text-align: center; margin: 40px auto; padding-bottom: 50px;}
+  .box6 > .container > .textbox > p {color: #fff;}
+  .box6 > .container > .textbox > span {color: gold;}
+  .box6 > .container > .textbox > p:nth-of-type(2) {font-weight: bold;}
+
+
+
+  /* .box7 */
+  .box7 {width:100%; margin:0px auto; }
+  .box7 > .textbox {width: 100%;  text-align: center; line-height: normal;}
+  .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box7 > .textbox > p {padding:0 50px 50px;}
+  .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+  .box7 > .container > .box7-item {width: 80%; margin:5%;}
+  .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
+  .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
+  .box7 > .container > .box7-item > .textbox > h4 {font-size: 20px; margin:10px 0;}
+  .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
+  .box7 > .container > .box7-item > .textbox > p {font-size: 15px;}
+
+
+
+  /* .box8 */
+  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 > .imgbox {width: 100%; height: 45%; margin:0 auto; text-align: center;}
+
+
+
+  /* .box9 */
+  .box9 {width:100%; margin:0px auto; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+  .box9 > .box9-left {width:80%; height: 80%; line-height: normal; margin:50px auto;}
+  .box9 > .box9-left > h3 {font-size: 30px;}
+  .box9 > .box9-left > img {width:100%;}
+  .box9 > .box9-left > p {margin:35px 0;}
+  .box9 > .box9-left > h4 {font-size: 18px; margin:35px 0 15px 0;}
+  .box9 > .box9-left > .container {width:80%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  .box9 > .box9-left > .container > div {width:100%; font-size: 13px; margin:1%;}
+  .box9 > .box9-left > .container > div > span {display:inline-block; width:20px;}
+  .box9 > .box9-right {width: 80%; height:440px; background-color: #000; display: flex; align-items: center; justify-content: center; margin-bottom: 50px;}
+  .box9 > .box9-right > .textbox {width: 90%; height: 90%; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly; text-align: center; border: 1px solid #515151;}
+  .box9 > .box9-right > .textbox > h3 {font-size: 30px;}
+  .box9 > .box9-right > .textbox > h3 > span {color: gold;}
+
+
+
+  /* .box10 */
+  .box10 {width:100%; margin:0px auto; background-color: #f5f5f5;}
+  .box10 > form {width:100%;  margin:0 auto; display: flex; justify-content: space-between; align-items: center; flex-direction: column; padding:20px 0;}
+  .box10 > form > div {width:80%; height:45px; margin:10px 0;}
+  .box10 > form > div > select {width:89%; height:45px;}
+  .box10 > form > div > input {width:89%; height:45px;}
+  .box10 > form > div > span {display: inline-block; font-size: 20px; margin-left: 10px;}
+  .box10 > form > button {background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px; margin: 10px 0;}
+  .box10 > form > button:hover {background-color: #1f1f1f; color: #fff;}
+}
+
+
+
+
+
+
+/* 최소 너비 600px 이상 1099px 이하 */
+@media (min-width:600px) and (max-width:1099px) {
+
+  /* #slider*/
+  #slider {width:100%;  background-image: url("../img/slide-background.jpg"); background-size: cover; background-repeat: no-repeat; position: relative; top:80px;}
+  #slider > .sliderbox {width: 90%;  margin: 0 auto; display: flex; justify-content: center; }
+  .sliderbox > .textbox {width: 50%;  padding-bottom: 100px; margin:0 auto;}
+  .sliderbox > .textbox > .imgbox {width:30%; height:120px; overflow: hidden;}
+  .sliderbox > .textbox > .imgbox > img {width:100%;}  
+  .sliderbox > .textbox > h3 {font-size: 23px; color: #fff; margin-top: 30px;}
+  .sliderbox > .textbox > p {font-size: 13px; color: #fff; margin-top: 30px; line-height: normal;}
+  .sliderbox > .textbox > button {margin-top: 30px; background-color: gold; padding:10px 20px; font-weight: bold; border: none; cursor: pointer;}
+  .sliderbox > .textbox > button:hover {background-color: #fff; color: #000;}
+  .sliderbox > .imgbox {width:50%; margin:0 auto;}
+  .sliderbox > .imgbox > img{width:70%; height:70%;}
+
+
+
+  /* #contents */
+  #contents {width:100%; height: auto; position: relative;}
+
+
+
+  /* .box1 */
+  .box1 {width:100%; margin:30px auto; background-color:#fff; display: flex; flex-flow: row wrap; justify-content: center; align-items: center; }
+  .box1-item {width:40%; height: 80%; margin: 5%; background-color: #fff;}
+  .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
+  .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
+  .box1-item > .imgbox > img:hover {transform: scale(1.1);}
+  .box1-item > .textbox {width:100%; height:35%; }
+  .box1-item > .textbox > h4 {padding: 10px 0; padding-top: 20px; font-size: 18px;}
+  .box1-item > .textbox > p {color:#666; font-size:13px; line-height: 20px;}
+
+
+
+  /* .box2 */
+  .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
+  .box2 > .textbox {width:100%; margin: 0 auto; display: flex; flex-direction: column;justify-content: center; align-items: center; padding:20px 0;}
+  .box2 > .textbox > .tit > span {font-size: 25px; color: #fff;}
+  .box2 > .textbox > ul {display: flex; width:100%; justify-content: center; margin:15px 0;}
+  .box2 > .textbox > ul > li > a {margin:0 25px; font-size: 15px; color:#fff}
+  .box2 > .textbox > ul > li > a:hover {color:gold;}
+  .box2 > .textbox > button {margin-left: 1%; padding:10px 20px; font-size: 12px; font-weight: bold;background-color: #fff; border: none; cursor: pointer;}
+  .box2 > .textbox > button:hover {background-color: gold;}
+  .box2 > .imgboxes {width:100%; display: flex; justify-content: center; align-items: center; margin:20px 0;}
+  .box2 > .imgboxes > .imgbox {width:100%; height:100%; margin:1%; overflow: hidden; position: relative;}
+  .box2 > .imgboxes > .imgbox:hover > img {opacity: 0.7;}
+  .box2 > .imgboxes > .imgbox:hover > .imgtext {color:#fff;}
+  .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; transition: 0.2s;}
+  .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,0); position: absolute;  bottom:15px; transition: 0.2s; width: 100%; text-align: center;}      
+
+
+
+  /* .box3 */
+  .box3 {width:100%; height:700px; margin:50px auto; display: flex; align-items: center; flex-direction: column;}
+  .box3 > .textbox {width: 90%; height: 70%; margin:5%;}
+  .box3 > .textbox > h3 {font-size: 30px;}
+  .box3 > .textbox > p {font-size: 16px; line-height: normal; padding:20px 50px 20px 0;}
+  .box3 > .textbox > button {margin-top: 20px; background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
+  .box3 > .textbox > button:hover {background-color: #1f1f1f; color: #fff;}
+  .box3 > .imgbox {width: 90%; height: 100%; overflow: hidden;}
+  .box3 > .imgbox > img {width:100%; height: 100%;}
+
+
+
+  /* .box4 */
+  .box4 {width:100%;  margin:0px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 > .textbox {width:90%;  margin:0 auto; text-align: center;}
+  .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
+  .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
+  .box4 > .container {width:100%;  margin:0 auto; display:flex; justify-content: center; align-items: center; flex-flow: row wrap;}
+  .box4 > .container > .box4-item {width:40%; height: 400px;  overflow: hidden; text-align: center; margin:5%;}
+  .box4 > .container > .box4-item > .imgbox {width:100%; height: 55%; cursor: pointer; background-color: #000;}
+  .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box4 > .container > .box4-item > .imgbox > img:hover {opacity: 0.7;}
+  .box4 > .container > .box4-item > .textbox {width:100%; height:45%; background-color: #fff; position: relative;}
+  .box4 > .container > .box4-item > .textbox > span {background-color: gold; padding:10px; border-radius: 50%; position: relative; bottom: 10px; font-weight: bold;}
+  .box4 > .container > .box4-item > .textbox > h4 {font-size: 18px; line-height: normal; margin-top: 10px;}
+  .box4 > .container > .box4-item > .textbox > h4 > a {color: #000;}
+  .box4 > .container > .box4-item > .textbox > p {padding: 10px; line-height: normal;}
+
+
+
+  /* .box5 */
+  .box5 {width:100%;  margin:0px auto;}
+  .box5 > .textbox {width:90%;  margin:10px auto;}
+  .box5 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box5 > .textbox > p {font-size: 16px; padding-top: 20px; line-height: normal;}
+  .box5 > .container {width:100%;  display: flex; justify-content: center; align-items: center; flex-flow: row wrap; margin:0 auto;}
+  .box5 > .container > .box5-item {width: 40%; height: 250px;  overflow: hidden; position: relative; cursor: pointer; margin:5%;}
+  .box5 > .container > .box5-item > img {width: 100%; height: 100%;}
+  .box5 > .container > .box5-item > p {color: #fff; position: relative; bottom:60px; padding-left:15px; line-height: normal; font-weight: bold;}
+  .box5 > .container > .box5-item > p > span {color:gold;}
+
+
+
+  /* .box6 */
+  .box6 {width:100%; margin:0px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 > .container {width: 100%; margin: 0 auto; line-height: normal; }
+  .box6 > .container > .tit {width: 100%;  text-align: center; padding-top: 50px; }
+  .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
+  .box6 > .container > .tit > p {font-size: 20px; color:#fff}
+  .box6 > .container > .textbox {width: 90%;  text-align: center; margin: 40px auto; padding-bottom: 50px;}
+  .box6 > .container > .textbox > p {color: #fff;}
+  .box6 > .container > .textbox > span {color: gold;}
+  .box6 > .container > .textbox > p:nth-of-type(2) {font-weight: bold;}
+
+
+
+  /* .box7 */
+  .box7 {width:100%; margin:0px auto; }
+  .box7 > .textbox {width: 100%;  text-align: center; line-height: normal;}
+  .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box7 > .textbox > p {padding:0 50px 50px;}
+  .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-flow: row wrap;}
+  .box7 > .container > .box7-item {width: 40%; margin:5%;}
+  .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
+  .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
+  .box7 > .container > .box7-item > .textbox > h4 {font-size: 17px; margin:10px 0;}
+  .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
+  .box7 > .container > .box7-item > .textbox > p {font-size: 12px;}
+
+
+
+  /* .box8 */
+  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 > .imgbox {width: 100%; height: 45%; margin:0 auto; text-align: center;}
+
+
+
+  /* .box9 */
+  .box9 {width:100%; margin:0px auto; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+  .box9 > .box9-left {width:90%; height: 80%; line-height: normal; margin:50px auto;}
+  .box9 > .box9-left > h3 {font-size: 30px;}
+  .box9 > .box9-left > img {width:100%;}
+  .box9 > .box9-left > p {margin:35px 0;}
+  .box9 > .box9-left > h4 {font-size: 18px; margin:35px 0 15px 0;}
+  .box9 > .box9-left > .container {width:100%; display: flex; flex-flow: row wrap; justify-content: center; align-items: center;}
+  .box9 > .box9-left > .container > div {width:40%; font-size: 13px; margin:1% 5%;}
+  .box9 > .box9-left > .container > div > span {display:inline-block; width:20px;}
+  .box9 > .box9-right {width: 90%; height:440px; background-color: #000; display: flex; align-items: center; justify-content: center; margin-bottom: 50px;}
+  .box9 > .box9-right > .textbox {width: 90%; height: 90%; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly; text-align: center; border: 1px solid #515151;}
+  .box9 > .box9-right > .textbox > h3 {font-size: 30px;}
+  .box9 > .box9-right > .textbox > h3 > span {color: gold;}
+
+
+
+  /* .box10 */
+  .box10 {width:100%; margin:0px auto; background-color: #f5f5f5;}
+  .box10 > form {width:100%;  margin:0 auto; display: flex; justify-content: space-between; align-items: center; flex-direction: column; padding:20px 0;}
+  .box10 > form > div {width:90%; height:45px; margin:10px 0;}
+  .box10 > form > div > select {width:89%; height:45px;}
+  .box10 > form > div > input {width:89%; height:45px;}
+  .box10 > form > div > span {display: inline-block; font-size: 20px; margin-left: 10px;}
+  .box10 > form > button {background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px; margin: 10px 0;}
+  .box10 > form > button:hover {background-color: #1f1f1f; color: #fff;}
+}
+
+
+
+
+
+
+
+
+
+/* 최소 너비 1100px 이상 */
+@media (min-width:1100px) {
+
+  /* #slider*/
+  #slider {width:100%; height:550px; background-image: url("../img/slide-background.jpg"); background-size: cover; background-repeat: no-repeat; position: relative; top:80px;}
+  #slider > .sliderbox {width: 1200px; height: 100%; margin: 0 auto; display: flex;}
+  .sliderbox > .textbox {width: 50%; height: 100%; padding-top: 100px;}
+  .sliderbox > .textbox > .imgbox {width:150px; height:120px; overflow: hidden;}
+  .sliderbox > .textbox > .imgbox > img {width:100%; height:100%;}
+  .sliderbox > .textbox > h3 {font-size: 40px; color: #fff; margin-top: 30px;}
+  .sliderbox > .textbox > p {font-size: 16px; color: #fff; margin-top: 30px; line-height: normal;}
+  .sliderbox > .textbox > button {margin-top: 30px; background-color: gold; padding:10px 20px; font-weight: bold; border: none; cursor: pointer;}
+  .sliderbox > .textbox > button:hover {background-color: #fff; color: #000;}
+  .sliderbox > .imgbox {width:50%; height:100%; text-align: right;}
+  .sliderbox > .imgbox > img{width:90%; height:90%;}
+
+
+
+  /* #contents */
+  #contents {width:100%; height: auto; position: relative;}
+
+
+
+  /* .box1 */
+  .box1 {width:1200px; height:500px; margin:0px auto; background-color:#fff; display: flex; justify-content: center; align-items: center; }
+  .box1-item {width:23%; height: 80%; margin:1%; background-color: #fff;}
+  .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
+  .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
+  .box1-item > .imgbox > img:hover {transform: scale(1.1);}
+  .box1-item > .textbox {width:100%; height:35%; }
+  .box1-item > .textbox > h4 {padding: 10px 0; padding-top: 20px; font-size: 18px;}
+  .box1-item > .textbox > p {color:#666; font-size:13px; line-height: 20px;}
+
+
+
+  /* .box2 */
+  .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
+  .box2 > .textbox {width:1200px; height:80px; margin: 0 auto; display: flex; align-items: center; padding:20px 0;}
+  .box2 > .textbox > .tit > span {font-size: 36px; color: #fff;}
+  .box2 > .textbox > ul {display: flex; width:700px; justify-content: center;}
+  .box2 > .textbox > ul > li > a {margin:0 25px; font-size: 15px; color:#fff}
+  .box2 > .textbox > ul > li > a:hover {color:gold;}
+  .box2 > .textbox > button {margin-left: 70px; padding:10px 20px; font-size: 12px; font-weight: bold;background-color: #fff; border: none; cursor: pointer;}
+  .box2 > .textbox > button:hover {background-color: gold;}
+  .box2 > .imgboxes {width:100%; height:250px; display: flex; justify-content: center; align-items: center; margin:20px 0;}
+  .box2 > .imgboxes > .imgbox {width:250px; height:100%; margin:1%; overflow: hidden; position: relative;}
+  .box2 > .imgboxes > .imgbox:hover > img {opacity: 0.7;}
+  .box2 > .imgboxes > .imgbox:hover > .imgtext {color:#fff;}
+  .box2 > .imgboxes > .imgbox > img {width: 100%; height: 100%; cursor: pointer; transition: 0.2s;}
+  .box2 > .imgboxes > .imgbox > .imgtext {color:rgba(255,255,255,0); position: absolute;  bottom:15px; transition: 0.2s; width: 100%; text-align: center;}      
+
+
+
+  /* .box3 */
+  .box3 {width:1200px; height:600px; margin:0px auto; display: flex; align-items: center; }
+  .box3 > .textbox {width: 50%; height: 70%;}
+  .box3 > .textbox > h3 {font-size: 30px;}
+  .box3 > .textbox > p {font-size: 16px; line-height: normal; padding:20px 50px 20px 0;}
+  .box3 > .textbox > button {margin-top: 20px; background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
+  .box3 > .textbox > button:hover {background-color: #1f1f1f; color: #fff;}
+  .box3 > .imgbox {width: 50%; height: 70%; overflow: hidden;}
+  .box3 > .imgbox > img {width:100%; height: 100%;}
+
+
+
+  /* .box4 */
+  .box4 {width:100%; height:700px; margin:0px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 > .textbox {width:1200px; height:200px; margin:0 auto; text-align: center;}
+  .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
+  .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
+  .box4 > .container {width:1200px; height:400px; margin:0 auto; display:flex; justify-content: space-between; align-items: center;}
+  .box4 > .container > .box4-item {width:24%; height: 400px;  overflow: hidden; text-align: center;}
+  .box4 > .container > .box4-item > .imgbox {width:100%; height: 55%; cursor: pointer; background-color: #000;}
+  .box4 > .container > .box4-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box4 > .container > .box4-item > .imgbox > img:hover {opacity: 0.7;}
+  .box4 > .container > .box4-item > .textbox {width:100%; height:45%; background-color: #fff; position: relative;}
+  .box4 > .container > .box4-item > .textbox > span {background-color: gold; padding:10px; border-radius: 50%; position: relative; bottom: 10px; font-weight: bold;}
+  .box4 > .container > .box4-item > .textbox > h4 {font-size: 18px; line-height: normal; margin-top: 10px;}
+  .box4 > .container > .box4-item > .textbox > h4 > a {color: #000;}
+  .box4 > .container > .box4-item > .textbox > p {padding: 10px; line-height: normal;}
+
+
+
+  /* .box5 */
+  .box5 {width:1200px; height:600px; margin:0px auto;}
+  .box5 > .textbox {width:100%; height: 200px;}
+  .box5 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box5 > .textbox > p {font-size: 16px; padding-top: 20px; line-height: normal;}
+  .box5 > .container {width:100%; height:300px; display: flex; justify-content: space-between; align-items: center;}
+  .box5 > .container > .box5-item {width: 23%; height: 250px;  overflow: hidden; position: relative; cursor: pointer;}
+  .box5 > .container > .box5-item > img {width: 100%; height: 100%;}
+  .box5 > .container > .box5-item > p {color: #fff; position: relative; bottom:60px; padding-left:15px; line-height: normal; font-weight: bold;}
+  .box5 > .container > .box5-item > p > span {color:gold;}
+
+
+
+  /* .box6 */
+  .box6 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 > .container {width: 1200px; height: 100%; margin: 0 auto; line-height: normal; }
+  .box6 > .container > .tit {width: 1200px; height:150px; text-align: center; padding-top: 50px; }
+  .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
+  .box6 > .container > .tit > p {font-size: 20px; color:#fff}
+  .box6 > .container > .textbox {width: 1000px; height:150px; text-align: center; margin: 40px auto;}
+  .box6 > .container > .textbox > p {color: #fff;}
+  .box6 > .container > .textbox > span {color: gold;}
+  .box6 > .container > .textbox > p:nth-of-type(2) {font-weight: bold;}
+
+
+
+  /* .box7 */
+  .box7 {width:1200px; height:700px; margin:0px auto; }
+  .box7 > .textbox {width: 100%; height: 180px; text-align: center; line-height: normal;}
+  .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
+  .box7 > .textbox > p {padding:0 180px;}
+  .box7 > .container {width:100%; height: 450px; display: flex; justify-content: space-between; align-items: center; }
+  .box7 > .container > .box7-item {width: 24%; height: 400px; }
+  .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
+  .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
+  .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
+  .box7 > .container > .box7-item > .textbox {padding:15px; line-height: normal; border: 1px solid rgba(0,0,0,0.1);}
+  .box7 > .container > .box7-item > .textbox > span {font-size: 13px;}
+  .box7 > .container > .box7-item > .textbox > h4 {font-size: 20px; margin:10px 0;}
+  .box7 > .container > .box7-item > .textbox > h4 > a {color: #000;}
+  .box7 > .container > .box7-item > .textbox > p {font-size: 15px;}
+
+
+
+  /* .box8 */
+  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 > .imgbox {width: 1200px; height: 45%; margin:0 auto; text-align: center;}
+
+
+
+  /* .box9 */
+  .box9 {width:1200px; height:550px; margin:0px auto; display: flex; align-items: center;}
+  .box9 > .box9-left {width:60%; height: 80%; line-height: normal;}
+  .box9 > .box9-left > h3 {font-size: 30px;}
+  .box9 > .box9-left > p {margin:35px 0;}
+  .box9 > .box9-left > h4 {font-size: 18px; margin:35px 0 15px 0;}
+  .box9 > .box9-left > .container {width:80%; display: flex; flex-wrap: wrap;}
+  .box9 > .box9-left > .container > div {width:50%; font-size: 13px;}
+  .box9 > .box9-left > .container > div > span {display:inline-block; width:20px;}
+  .box9 > .box9-right {width: 40%; height: 80%; background-color: #000; display: flex; align-items: center; justify-content: center;}
+  .box9 > .box9-right > .textbox {width: 90%; height: 90%; color: #fff; display: flex; flex-direction: column; justify-content: space-evenly; text-align: center; border: 1px solid #515151;}
+  .box9 > .box9-right > .textbox > h3 {font-size: 30px;}
+  .box9 > .box9-right > .textbox > h3 > span {color: gold;}
+
+
+
+  /* .box10 */
+  .box10 {width:100%; height:120px; margin:0px auto; background-color: #f5f5f5;}
+  .box10 > form {width:1200px; height:120px; margin:0 auto; display: flex; justify-content: space-between; align-items: center; }
+  .box10 > form > div {width:20%; height:45px; }
+  .box10 > form > div > select {width:80%; height:45px;}
+  .box10 > form > div > input {width:80%; height:45px;}
+  .box10 > form > div > span {display: inline-block; font-size: 20px; margin-left: 10px;}
+  .box10 > form > button {background-color: gold; padding:15px 25px; font-weight: bold; border: none; cursor: pointer; font-size: 13px;}
+  .box10 > form > button:hover {background-color: #1f1f1f; color: #fff;}
+}

@@ -25,17 +25,18 @@
 
         /* header */
         header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
-        header > .bar {width:80%; height:80PX;  margin:0 auto; display: flex; justify-content: flex-start; align-items: center;}
-        .bar > .smlogo {display: block; width: 40%;}
-        .bar > .smlogo > a {color:#fff;}
+        header > .bar {width:80%; height:80PX;  margin:0 auto; display: flex; justify-content: flex-start; align-items: center; flex-flow: row wrap; position: relative;}
+        .bar > .icon {display: block; width: 40%; color:#fff; cursor: pointer;}
         .bar > .logo {width:50%; height:40px; overflow: hidden;}
         .bar > .logo > a > img {width:50%; height:100%;}
-        header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center;}
-        header > .bar > .gnb > ul > li {padding:10px 25px; cursor: pointer; position: relative;}
+        header > .bar > .gnb {position: absolute; top:80px;}
+        header > .bar > .gnb > ul {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+        header > .bar > .gnb > ul > li {padding:10px 25px; cursor: pointer; position: relative; background-color:#000; width:100%;}
+        header > .bar > .gnb > ul > li:hover {background-color: #666;} 
         header > .bar > .gnb > ul > li:hover > a {color:gold;}
         header > .bar > .gnb > ul > li:hover > .submenu {display: block;}
         header > .bar > .gnb > ul > li > a {color:#fff; font-size: 16px;}
-        header > .bar > .gnb > ul > li > .submenu {display: none; position: absolute; top: 35px; left:13px; width:200px;  background-color: #000;}
+        header > .bar > .gnb > ul > li > .submenu {display: none; position: absolute; top: 0px; left:141px; width:200px;  background-color: #000;}
         header > .bar > .gnb > ul > li > .submenu > li {padding:10px;}
         header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
         header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
@@ -80,7 +81,7 @@
 
 
         /* .box2 */
-        .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
+        .box2 {width:100%; height:410px; margin:50px auto; background-color: #000;}
         .box2 > .textbox {width:100%; margin: 0 auto; display: flex; flex-direction: column;justify-content: center; align-items: center; padding:20px 0;}
         .box2 > .textbox > .tit > span {font-size: 25px; color: #fff;}
         .box2 > .textbox > ul {display: flex; width:100%; justify-content: center; margin:15px 0;}
@@ -98,7 +99,7 @@
 
 
         /* .box3 */
-        .box3 {width:100%; height:700px; margin:50px auto; display: flex; align-items: center; flex-direction: column;}
+        .box3 {width:100%; height:700px; margin:100px auto; display: flex; align-items: center; flex-direction: column;}
         .box3 > .textbox {width: 80%; height: 70%; margin:5%;}
         .box3 > .textbox > h3 {font-size: 30px;}
         .box3 > .textbox > p {font-size: 16px; line-height: normal; padding:20px 50px 20px 0;}
@@ -110,7 +111,7 @@
 
 
         /* .box4 */
-        .box4 {width:100%;  margin:0px auto; background-image: url("img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+        .box4 {width:100%;  margin:0 auto; background-image: url("img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
         .box4 > .textbox {width:80%;  margin:0 auto; text-align: center;}
         .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
         .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
@@ -141,7 +142,7 @@
 
 
         /* .box6 */
-        .box6 {width:100%; margin:0px auto; background-image: url("img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+        .box6 {width:100%; margin:50px auto 0; background-image: url("img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
         .box6 > .container {width: 100%; margin: 0 auto; line-height: normal; }
         .box6 > .container > .tit {width: 100%;  text-align: center; padding-top: 50px; }
         .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
@@ -212,10 +213,10 @@
         .footer-item:nth-of-type(4) > p {height: 20px;}
         .footer-item > img {width:35%;}
         .footer-item > h4 {font-size: 18px;}
-        .footer-item > p {font-size: 12px; color: #fff; margin-top:20px;}
+        .footer-item > p {font-size: 12px; color: #fff; margin-top:10px;}
         .footer-item > p > a {color: #fff;}
         .footer-item > p > a > span {display:inline-block; width:20px;}
-        .footer-item > span {display: block; font-size: 12px; margin-top: 15px;}
+        .footer-item > span {display: block; font-size: 12px; margin-top: 10px;}
 
 
       }
@@ -227,23 +228,25 @@
 
         /* header */
         header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
-        header > .bar {width:90%; height:80PX;  margin:0 auto; display: flex; justify-content: flex-start; align-items: center;}
-        .bar > .smlogo {display: block; width: 40%;}
-        .bar > .smlogo > a {color:#fff;}
-        .bar > .logo {width:50%; height:40px; overflow: hidden;}
-        .bar > .logo > a > img {width:50%; height:100%;}
-        header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center;}
-        header > .bar > .gnb > ul > li {padding:10px 25px; cursor: pointer; position: relative;}
+        header > .bar {width:90%; height:80PX;  margin:0 auto; display: flex; justify-content: space-between; align-items: center; flex-flow: row wrap;}
+        header > .bar > .gnb {position: absolute; top:80px;}
+        .bar > .icon {display: block; width: 40%; color: #fff; cursor: pointer;}
+        .bar > .logo {width:30%; height:40px; overflow: hidden;}
+        .bar > .logo > a > img {width:110px; height:100%;}
+        header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center; flex-direction: column;}
+        header > .bar > .gnb > ul > li {padding:10px 25px; cursor: pointer; position: relative; background-color:#000; width:100%;}
+        header > .bar > .gnb > ul > li:hover {background-color: #666;}
         header > .bar > .gnb > ul > li:hover > a {color:gold;}
         header > .bar > .gnb > ul > li:hover > .submenu {display: block;}
         header > .bar > .gnb > ul > li > a {color:#fff; font-size: 16px;}
-        header > .bar > .gnb > ul > li > .submenu {display: none; position: absolute; top: 35px; left:13px; width:200px;  background-color: #000;}
+        header > .bar > .gnb > ul > li > .submenu {display: none; position: absolute; top: 0px; left:141px; width:200px;  background-color: #000;}
         header > .bar > .gnb > ul > li > .submenu > li {padding:10px;}
         header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
         header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
         .bar > .search {display: flex; height:20px;}
-        .bar > .search > input {border:none; border-radius: 10px; margin:0 15px;}
+        .bar > .search > input {border:none; border-radius: 10px; margin:0 10px; width:82px;}
         .bar > .search > div > a {color:#fff;}
+        .bar > .search > div > a > img {width: 20px;}
 
         header > .bar > .gnb {display: none;}
         
@@ -436,7 +439,7 @@
         /* header */
         header {width:100%; height:80px; background-color: #000; position: fixed; top:0; left:0; z-index:1;}
         header > .bar {width:1200px; height:80PX;  margin:0 auto; display: flex; justify-content: space-between; align-items: center;}
-        .bar > .smlogo {width:110px; height:40px; overflow: hidden; display: none;}
+        .bar > .icon {width:110px; height:40px; overflow: hidden; display: none;}
         .bar > .logo {width:110px; height:40px; overflow: hidden;}
         .bar > .logo > a > img {width:100%; height:100%;}
         header > .bar > .gnb > ul {display: flex; justify-content: center; align-items: center;}
@@ -618,7 +621,7 @@
         .footer-item:nth-of-type(4) > p {height: 20px;}
         .footer-item > img {width:35%;}
         .footer-item > h4 {font-size: 18px;}
-        .footer-item > p {font-size: 12px; color: #fff; margin-top:20px;}
+        .footer-item > p {font-size: 12px; color: #fff; margin-top:15px;}
         .footer-item > p > a {color: #fff;}
         .footer-item > p > a > span {display:inline-block; width:20px;}
         .footer-item > span {display: block; font-size: 12px; margin-top: 15px;}
@@ -627,17 +630,33 @@
 
 
     </style>
-    
+
+    <script>
+      $(document).ready(function(){
+        $(".icon").click(function(){
+          $(".gnb").slideToggle();
+        });
+        $(window).resize(function(){
+          if(window.innerWidth >= 1100) {
+          	$(".gnb").show();
+          }
+        });
+        $(window).resize(function(){
+          if(window.innerWidth <= 1099) {
+          	$(".gnb").hide();
+          }
+        });
+      });
+    </script>
+
   </head>
   <body>
     <div id="wrap">
       <!-- 헤더 -->
       <header>
         <div class="bar">
-          <div class="smlogo">
-            <a href="#">
-              <i class="fas fa-bars"></i>
-            </a>
+          <div class="icon">
+            <i class="fas fa-bars"></i>
           </div>
           <div class="logo">
             <a href="#">
@@ -961,7 +980,7 @@
                 <img src="img/box7-img-1.jpg" alt="img1">
               </div>
               <div class="textbox">
-                <span>NOV 04, 2020</span>
+                <span><i class="fas fa-calendar-alt"></i> NOV 04, 2020</span>
                 <h4><a href="#">NOUGAT ICE CREAM</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
@@ -974,7 +993,7 @@
                 <img src="img/box7-img-2.jpg" alt="img2">
               </div>
               <div class="textbox">
-                <span>NOV 04, 2020</span>
+                <span><i class="fas fa-calendar-alt"></i> NOV 04, 2020</span>
                 <h4><a href="#">BRAZILIAN BURGER</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
@@ -987,7 +1006,7 @@
                 <img src="img/box7-img-3.jpg" alt="img3">
               </div>
               <div class="textbox">
-                <span>NOV 04, 2020</span>
+                <span><i class="fas fa-calendar-alt"></i> NOV 04, 2020</span>
                 <h4><a href="#">GRILLED DUCK BREATS</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...
@@ -1000,7 +1019,7 @@
                 <img src="img/box7-img-1.jpg" alt="img1">
               </div>
               <div class="textbox">
-                <span>NOV 04, 2020</span>
+                <span><i class="fas fa-calendar-alt"></i> NOV 04, 2020</span>
                 <h4><a href="#">NOUGAT ICE CREAM</a></h4>
                 <p>
                   Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque at tellus felis. Sed fringilla, tellus non congue porttitor, dui eros fauci...

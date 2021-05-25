@@ -1,52 +1,93 @@
 @charset "utf-8";
 
 /* 서브 슬라이더 */
-#subSlider {width:100%; background-image: url("../img/slide-background.jpg"); background-size: cover; height:400px; }
-.sliderbox {width:1200px; height:100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; position: relative;}
-.sliderbox > .textbox {text-align: center; }
-.sliderbox > .textbox > h2 {font-size: 40px; color: #fff; margin-top: 20px;}
-.sliderbox > .textbox > h4 {font-size: 20px; color: #fff;}
+#subSlider {width:100%; background-image: url("../img/sub-slide-1.jpg"); background-size: cover; height:400px; background-repeat: no-repeat;}
+.overlay {width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5);}
+.overlay > .sliderbox {width:1200px; height:100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; position: relative;}
+.overlay > .sliderbox > .textbox {text-align: center; }
+.overlay > .sliderbox > .textbox > h2 {font-size: 40px; color: #fff; margin: 20px 0;}
+.overlay > .sliderbox > .textbox > h4 {font-size: 18px; font-style: italic; color: rgba(255, 215, 0, 0.8);}
+.overlay > .sliderbox > .textbox > .dot {font-size: 12px; color: rgba(255, 215, 0, 0.8); }
 
 
 
 /* 컨테이너 */
-#containers {width:1200px;  margin:50px auto; background-color: yellowgreen; display: flex; justify-content: space-between;}
+#containers {width:1200px;  margin:50px auto; display: flex; justify-content: space-between;}
 
 
 
 /* 컨테이너1 */
-#container1 {width:65%; height: 95%; background-color: tomato;}
-#container1 > .content {width:100%; height:800px; background-color: cornflowerblue; margin-bottom: 2%;}
+#container1 {width:65%; height: 95%; }
+#container1 > .content {width:100%; height:800px; margin-bottom: 10%;}
 .content > h2 {font-size: 29px;}
-.content > p {font-size: 12px; margin:10px 0;}
-.content > .dot {font-size: 10px; color: gold; margin-bottom: 10px;}
+.content > p {font-size: 12px; margin:15px 0;}
+.content > .dot {font-size: 10px; color: gold; margin-bottom: 15px;}
 .content > .imgbox {width:100%; overflow: hidden;}
 .content > .imgbox > img {width:100%;}
-.content > .textbox {width:100%; background-color: #eee;}
-.content > .textbox > .tagbox {display: flex;}
+.content > .textbox {width:100%; margin-top: 10px;}
+.content > .textbox > .tagbox {display: flex; align-items: center;}
+.content > .textbox > .tagbox > span {margin-right: 15px; font-weight: bold; font-size: 13px;}
+.content > .textbox > .tagbox > ul {display: flex; font-size: 13px; text-align: center;}
+.content > .textbox > .tagbox > ul > li {padding:8px 12px; background-color: #f2f2f2; margin-right: 5px; cursor: pointer;}
+.content > .textbox > .tagbox > ul > li:hover > a {color:gold ;}
+.content > .textbox > .tagbox > ul > li > a {color: #666; font-style: italic; }
+.content > .textbox > p {margin:10px 0; font-size: 13px; line-height: normal;}
+.content > .textbox > .btnbox {display: flex; justify-content: space-between; align-items: center; margin-top: 15px;}
+.content > .textbox > .btnbox > button {background-color: gold; border: none; padding:10px 25px; cursor: pointer; font-weight: bold;}
+.content > .textbox > .btnbox > button:hover {background-color: #1f1f1f; color: #fff;}
+.content > .textbox > .btnbox > ul {display: flex; background-color: #f9f9f9; border: 1px solid #eee;}
+.content > .textbox > .btnbox > ul > li {padding: 10px 20px; font-size: 12px;}
+
+
 
 
 /* 컨테이너2 */
-#container2 {width:30%; height: 85%; background-color: burlywood;}
+#container2 {width:30%; height: 85%; }
 
 /* search */
-#container2 > .search {width:100%; height:100px; background-color: #666; margin-bottom: 5%;}
+#container2 > .search {width:100%; height:80px; background-color: #f9f9f9; margin-bottom: 5%; display: flex; align-items: center; justify-content: center; border: 1px solid #eee;}
+.search > form {width: 90%; height:45px; display: flex;}
+.search > form > input {height:45px; width: 75%; border: 1px solid #eee;}
+.search > form > button {height:45px; width: 25%; background-color: gold; border: none; cursor: pointer; color: #fff;}
+
+
 
 /* aboutUs */
-#container2 > .aboutUs {width:100%; height:500px; background-color:chartreuse; margin-bottom: 5%;}
+#container2 > .aboutUs {width:100%; height:450px; margin-bottom: 5%;}
+.aboutUs > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+.aboutUs > .itembox {width:100%; overflow: hidden;}
+.aboutUs > .itembox > img {width:100%;}
+.aboutUs > .itembox > h4 {font-size: 18px; margin:10px 0;}
+.aboutUs > .itembox > p {font-size: 13px; line-height: normal;}
+
+
 
 /* posts */
 #container2 > .posts {width:100%; height:400px; background-color: brown; margin-bottom: 5%;}
+.posts > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+.posts > .itembox > ul > li {display: flex; align-items: center;}
+.posts > .itembox > ul > li > .imgbox {width: 20%; overflow: hidden; margin-right: 30px;}
+.posts > .itembox > ul > li > .imgbox > a > img {width: 100%;}
+.posts > .itembox > ul > li > .textbox > h4 {font-size: 14px; padding-bottom: 6px;}
+.posts > .itembox > ul > li > .textbox > h4 > a {color:#000;}
+.posts > .itembox > ul > li > .textbox > p > span {font-size: 12px;}
+
+
+
 
 /* tags */
 #container2 > .tags {width:100%; height:300px; background-color:darkgoldenrod ; margin-bottom: 5%;}
+.tags > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+
 
 /* categories */
 #container2 > .categories {width:100%; height:400px; background-color:deeppink; margin-bottom: 5%;}
+.categories > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+
 
 /* social */
 #container2 > .social {width:100%; height:200px; background-color:violet; margin-bottom: 5%;}
-
+.social > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
 
 
 @media (max-width:599px) {

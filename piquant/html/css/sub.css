@@ -3,7 +3,7 @@
 /* 서브 슬라이더 */
 #subSlider {width:100%; background-image: url("../img/sub-slide-1.jpg"); background-size: cover; height:400px; background-repeat: no-repeat;}
 .overlay {width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5);}
-.overlay > .sliderbox {width:1200px; height:100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; position: relative;}
+.overlay > .sliderbox {height:100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; position: relative;}
 .overlay > .sliderbox > .textbox {text-align: center; }
 .overlay > .sliderbox > .textbox > h2 {font-size: 40px; color: #fff; margin: 20px 0;}
 .overlay > .sliderbox > .textbox > h4 {font-size: 18px; font-style: italic; color: rgba(255, 215, 0, 0.8);}
@@ -12,13 +12,13 @@
 
 
 /* 컨테이너 */
-#containers {width:1200px;  margin:50px auto; display: flex; justify-content: space-between;}
+#containers {margin:50px auto; display: flex; justify-content: space-between;}
 
 
 
 /* 컨테이너1 */
-#container1 {width:65%; height: 95%; }
-#container1 > .content {width:100%; height:800px; margin-bottom: 10%;}
+
+#container1 > .content {width:100%; }
 .content > h2 {font-size: 29px;}
 .content > p {font-size: 12px; margin:15px 0;}
 .content > .dot {font-size: 10px; color: gold; margin-bottom: 15px;}
@@ -42,7 +42,7 @@
 
 
 /* 컨테이너2 */
-#container2 {width:30%; height: 85%; }
+
 
 /* search */
 #container2 > .search {width:100%; height:80px; background-color: #f9f9f9; margin-bottom: 5%; display: flex; align-items: center; justify-content: center; border: 1px solid #eee;}
@@ -53,7 +53,7 @@
 
 
 /* aboutUs */
-#container2 > .aboutUs {width:100%; height:450px; margin-bottom: 5%;}
+#container2 > .aboutUs {width:100%;  margin-bottom: 5%;}
 .aboutUs > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
 .aboutUs > .itembox {width:100%; overflow: hidden;}
 .aboutUs > .itembox > img {width:100%;}
@@ -63,44 +63,67 @@
 
 
 /* posts */
-#container2 > .posts {width:100%; height:400px; background-color: brown; margin-bottom: 5%;}
+#container2 > .posts {width:100%; margin-bottom: 5%;}
 .posts > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
-.posts > .itembox > ul > li {display: flex; align-items: center;}
+.posts > .itembox > ul > li {display: flex; align-items: center; margin-bottom: 30px;}
 .posts > .itembox > ul > li > .imgbox {width: 20%; overflow: hidden; margin-right: 30px;}
 .posts > .itembox > ul > li > .imgbox > a > img {width: 100%;}
 .posts > .itembox > ul > li > .textbox > h4 {font-size: 14px; padding-bottom: 6px;}
 .posts > .itembox > ul > li > .textbox > h4 > a {color:#000;}
-.posts > .itembox > ul > li > .textbox > p > span {font-size: 12px;}
+.posts > .itembox > ul > li > .textbox > p > span {font-size: 11px; font-style: italic;}
+.posts > .itembox > ul > li > .textbox > p > a {font-size: 12px; color: #000; font-weight: bold;}
 
 
 
 
 /* tags */
-#container2 > .tags {width:100%; height:300px; background-color:darkgoldenrod ; margin-bottom: 5%;}
+#container2 > .tags {width:100%; height:180px; margin-bottom: 5%;}
 .tags > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+.tags > .tagbox {display: flex; width:100%;}
+.tags > .tagbox > ul {width:100%; display: flex; flex-flow: row wrap; }
+.tags > .tagbox > ul > li {display: flex; }
+.tags > .tagbox > ul > li > a {padding:12px 15px; font-size: 11px; margin:0 4px 4px 0; background-color: gold; color: #000; font-style: italic;}
+.tags > .tagbox > ul > li > a:hover {background-color: #1f1f1f; color: #fff;}
+
 
 
 /* categories */
-#container2 > .categories {width:100%; height:400px; background-color:deeppink; margin-bottom: 5%;}
-.categories > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+#container2 > .categories {width:100%; height:300px; margin-bottom: 5%;}
+.categories > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 5px;}
+.categories > .catebox > ul > li {font-size: 14px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;}
+.categories > .catebox > ul > li > a {color:#000; width:95%;}
+.categories > .catebox > ul > li > a::after {content: " ------------------------------------------------- "; color: #eee;}
+.categories > .catebox > ul > li > a:hover {color:gold; }
+.categories > .catebox > ul > li > span {font-size: 10px; padding:5px 7px; background-color: gold; border-radius: 50%; width:20px; height:20px;}
 
 
 /* social */
-#container2 > .social {width:100%; height:200px; background-color:violet; margin-bottom: 5%;}
+#container2 > .social {width:100%; height:100px; margin-bottom: 5%;}
 .social > h3 {font-size: 18px; font-weight: bold; background-color: #f9f9f9; border:1px solid #eee; padding: 15px 10px; text-align: center; margin-bottom: 15px;}
+.social > .socialbox > ul {display: flex; }
+.social > .socialbox > ul > li {display: flex; margin-right: 15px; align-items: center;}
+.social > .socialbox > ul > li > a {width:24px; height:24px; background-color: #1f1f1f; color: #eee; text-align: center; line-height: 24px; font-size: 12px;}
+.social > .socialbox > ul > li > a:hover {color: gold; }
 
 
-@media (max-width:599px) {
-  #containers {flex-direction: column;}
 
+@media (max-width:1099px) {
+  .overlay > .sliderbox {width:100%;}
+  #containers {flex-direction: column; width:100%; height: 5000px;}
+  #container1 {width:90%; margin:0 auto; height:auto;}
+  #container1 > .content {margin-bottom: 50px;}
+  #container2 {width:90%; margin:0 auto; }
+  #container2 > .aboutUs {height:700px; }
+  #container2 > .posts {height:500px;}
 }
 
-@media (min-width:600px) and (max-width:1099px) {
-  #containers {flex-direction: column;}
-
-}
 
 @media (min-width:1100px) {
-  #containers {flex-direction: row;}
-
+  .overlay > .sliderbox {width:1200px;}
+  #containers {flex-direction: row; width:1200px; height: 3500px;}
+  #container1 {width:65%; height: 95%; height:800px;}
+  #container1 > .content {margin-bottom: 10%;}
+  #container2 {width:30%; height: 85%; }
+  #container2 > .aboutUs {height:460px; }
+  #container2 > .posts {height:340px;}
 }

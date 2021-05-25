@@ -25,7 +25,7 @@
 
 
   /* .box1 */
-  .box1 {width:100%; margin:0px auto; background-color:#fff; display: flex; flex-direction: column;justify-content: center; align-items: center; }
+  .box1 {width:100%; margin:0px auto; background-color:#fff; display: flex; flex-direction: column;justify-content: center; align-items: center;}
   .box1-item {width:80%; height: 80%; margin:5%; background-color: #fff;}
   .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
   .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
@@ -67,7 +67,7 @@
 
 
   /* .box4 */
-  .box4 {width:100%;  margin:0 auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 {width:100%;  margin:50px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box4 > .textbox {width:80%;  margin:0 auto; text-align: center;}
   .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
   .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
@@ -98,7 +98,7 @@
 
 
   /* .box6 */
-  .box6 {width:100%; margin:50px auto 0; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 {width:100%; margin:50px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box6 > .container {width: 100%; margin: 0 auto; line-height: normal; }
   .box6 > .container > .tit {width: 100%;  text-align: center; padding-top: 50px; }
   .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
@@ -116,7 +116,7 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 50px 50px;}
   .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-  .box7 > .container > .box7-item {width: 80%; margin:5%; box-shadow: 4px 4px 4px #666;}
+  .box7 > .container > .box7-item {width: 80%; margin:5%; box-shadow: 4px 4px 4px #eee;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
@@ -129,7 +129,7 @@
 
 
   /* .box8 */
-  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 {width:100%; height:400px; margin:50px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
   .box8 > .imgbox {width: 100%; height: 45%; margin:0 auto; text-align: center;}
 
 
@@ -203,7 +203,7 @@
 
 
   /* .box2 */
-  .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
+  .box2 {width:100%; height:410px; margin:50px auto; background-color: #000;}
   .box2 > .textbox {width:100%; margin: 0 auto; display: flex; flex-direction: column;justify-content: center; align-items: center; padding:20px 0;}
   .box2 > .textbox > .tit > span {font-size: 25px; color: #fff;}
   .box2 > .textbox > ul {display: flex; width:100%; justify-content: center; margin:15px 0;}
@@ -233,7 +233,7 @@
 
 
   /* .box4 */
-  .box4 {width:100%;  margin:0px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 {width:100%;  margin:50px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box4 > .textbox {width:90%;  margin:0 auto; text-align: center;}
   .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
   .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
@@ -264,7 +264,7 @@
 
 
   /* .box6 */
-  .box6 {width:100%; margin:0px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 {width:100%; margin:50px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box6 > .container {width: 100%; margin: 0 auto; line-height: normal; }
   .box6 > .container > .tit {width: 100%;  text-align: center; padding-top: 50px; }
   .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
@@ -282,7 +282,7 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 50px 50px;}
   .box7 > .container {width:100%; display: flex; justify-content: center; align-items: center; flex-flow: row wrap;}
-  .box7 > .container > .box7-item {width: 40%; margin:5%; box-shadow: 4px 4px 4px #666;}
+  .box7 > .container > .box7-item {width: 40%; margin:5%; box-shadow: 4px 4px 4px #eee;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
@@ -295,7 +295,7 @@
 
 
   /* .box8 */
-  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 {width:100%; height:400px; margin:50px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
   .box8 > .imgbox {width: 100%; height: 45%; margin:0 auto; text-align: center;}
 
 
@@ -360,7 +360,7 @@
 
 
   /* .box1 */
-  .box1 {width:1200px; height:500px; margin:0px auto; background-color:#fff; display: flex; justify-content: center; align-items: center; }
+  .box1 {width:1200px; height:500px; margin:0px auto; background-color:#fff; display: flex; justify-content: center; align-items: center; border-radius: 15px;}
   .box1-item {width:23%; height: 80%; margin:1%; background-color: #fff;}
   .box1-item > .imgbox {width:100%; height:65%; overflow: hidden;}
   .box1-item > .imgbox > img {width:100%; height:100%; transition: 0.3s; cursor: pointer;}
@@ -372,7 +372,7 @@
 
 
   /* .box2 */
-  .box2 {width:100%; height:410px; margin:0px auto; background-color: #000;}
+  .box2 {width:100%; height:410px; margin:50px auto; background-color: #000;}
   .box2 > .textbox {width:1200px; height:80px; margin: 0 auto; display: flex; align-items: center; padding:20px 0;}
   .box2 > .textbox > .tit > span {font-size: 36px; color: #fff;}
   .box2 > .textbox > ul {display: flex; width:700px; justify-content: center;}
@@ -402,7 +402,7 @@
 
 
   /* .box4 */
-  .box4 {width:100%; height:700px; margin:0px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box4 {width:100%; height:700px; margin:50px auto; background-image: url("../img/box4-img-back.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box4 > .textbox {width:1200px; height:200px; margin:0 auto; text-align: center;}
   .box4 > .textbox > h3 {color: #fff; font-size: 30px; padding-top: 50px;}
   .box4 > .textbox > p {color: #fff; font-size: 15px; padding: 30px 50px 50px; line-height: normal;}
@@ -433,7 +433,7 @@
 
 
   /* .box6 */
-  .box6 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
+  .box6 {width:100%; height:400px; margin:50px auto; background-image: url("../img/box6-img-1.jpg"); background-attachment: fixed; background-position: 50%; background-size: cover;}
   .box6 > .container {width: 1200px; height: 100%; margin: 0 auto; line-height: normal; }
   .box6 > .container > .tit {width: 1200px; height:150px; text-align: center; padding-top: 50px; }
   .box6 > .container > .tit > h3 {font-size: 30px; color: #fff;}
@@ -451,7 +451,7 @@
   .box7 > .textbox > h3 {font-size: 30px; padding-top: 50px;}
   .box7 > .textbox > p {padding:0 180px;}
   .box7 > .container {width:100%; height: 450px; display: flex; justify-content: space-between; align-items: center; }
-  .box7 > .container > .box7-item {width: 24%; height: 400px; box-shadow: 4px 4px 4px #666;}
+  .box7 > .container > .box7-item {width: 24%; height: 400px; box-shadow: 4px 4px 4px #eee;}
   .box7 > .container > .box7-item > .imgbox {width: 100%; height: 50%; overflow: hidden; cursor: pointer; background-color: #000;}
   .box7 > .container > .box7-item > .imgbox > img {width: 100%; height: 100%; transition: 0.3s;}
   .box7 > .container > .box7-item > .imgbox > img:hover {opacity: 0.8;}
@@ -464,7 +464,7 @@
 
 
   /* .box8 */
-  .box8 {width:100%; height:400px; margin:0px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
+  .box8 {width:100%; height:400px; margin:50px auto; background-image: url("../img/box8-img-1.jpg"); background-size: cover; background-attachment: fixed; background-position: 50%; display: flex; align-items: center;}
   .box8 > .imgbox {width: 1200px; height: 45%; margin:0 auto; text-align: center;}
 
 

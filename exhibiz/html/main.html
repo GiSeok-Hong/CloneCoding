@@ -17,29 +17,66 @@
       #wrap {width: 100%;}
 
       /* 헤더 */
-      #headerwrap {width:100%; background-color: yellowgreen;}
-      header {width:1200px; height: 100px; background-color: red; margin: 0 auto;}
-
+      #headerwrap {width:100%; background-color: #000; position: fixed; top:0; left: 0; z-index: 10;}
+      header {width:1200px; height: 80px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; z-index: 1;}
+      header > nav > ul {display: flex;}
+      header > nav > ul > li {padding:15px 20px;}
+      header > nav > ul > li > a {color:#fff; font-size: 15px;}
+      header > nav > ul > li > a:hover {color:#ec167f;}
+      header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer;}
 
       /* 슬라이더 */
-      #slider {width:100%; height: 700px; background-color: orange;}
+      #slider {width:100%; height: 700px; background-image: url("img/slider-img-2.jpg"); background-size: cover; display: flex; justify-content: center; align-items: center;}
+      #slider > .container {width:1200px; margin:0 auto; line-height: normal; text-align: center;}
+      #slider > .container > span {font-size: 28px; color: #883ff9; font-weight: bold;}
+      #slider > .container > h3 {font-size: 84px; color: #fff; line-height: 1;}
+      #slider > .container > .smalltext {margin: 40px 0; display: flex; justify-content: center; align-items: center; color: #ec167f;}
+      #slider > .container > .smalltext > span {font-size: 18px; color: #fff; margin: 0 20px 0 5px;}
+      #slider > .container > button {font-size: 15px; color: #fff; background-color: #ec167f; padding:10px 20px; border: none; cursor: pointer;}
+      #slider > .container > button:hover {color: #ec167f; background-color: #fff;}
+
 
       /* 컨텐츠 */
-      #content {width:100%;}
+      #content {width:100%; background-color: #101010;}
 
       /* section-countdown */
-      #section-countdown {width:100%;}
-      #section-countdown > div {width:1200px; height: 190px; background-color: yellow; margin: 0 auto;}
+      #section-countdown {width:100%; background:linear-gradient(to right, #ec167f, #883ff9);}
+      #section-countdown > .container {width:1200px; height: 190px; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+      #section-countdown > .container > .itembox {width: 31%; text-align: center; display: flex; flex-direction: column;}
+      #section-countdown > .container > .itembox > span:nth-of-type(1) {font-size: 72px; margin-bottom: 10px; color: #fff; }
+      #section-countdown > .container > .itembox > span:nth-of-type(2) {font-size: 15px; color:#eee;}
 
 
       /* section-about */
-      #section-about {width:100%;}
-      #section-about > div {width:1200px; height: 600px; background-color: green; margin: 0 auto;}
+      #section-about {width:100%; background-image: url("img/box2-back-1.png"); background-size: cover; background-attachment: fixed;}
+      #section-about > .container {width:1200px; height: 600px; margin: 0 auto; display: flex; align-items: center;}
+      #section-about > .container > .left-box {line-height: normal; width: 50%;}
+      #section-about > .container > .left-box > h2 {color:#fff; font-size: 32px;}
+      #section-about > .container > .left-box > p {color:#AAA; font-size: 15px; margin:30px 0 20px; padding-right: 50px;}
+      #section-about > .container > .left-box > button {font-size: 15px; color: #fff; background-color: #ec167f; padding: 10px 20px; border: none; cursor: pointer;}
+      #section-about > .container > .left-box > button:hover {color: #ec167f; background-color: #fff;}
+      #section-about > .container > .right-box {width:50%; position: relative; }
+      #section-about > .container > .right-box > img:nth-of-type(1) {position: absolute; width: 50%; height: 50%; top: 75%; left:-35%; z-index: 1;}
+      #section-about > .container > .right-box > img:nth-of-type(2) {position: absolute; width: 40%; height: 40%; right: -10%; bottom: -10%; z-index:3;}
+      #section-about > .container > .right-box > img:nth-of-type(3) {width:100%; z-index: 2; position: relative;}
+
+
+
 
 
       /* section-features */
       #section-features {width:100%;}
-      #section-features > div {width:1200px; height: 700px; background-color: blue; margin: 0 auto;}
+      #section-features > .container {width:1200px; height: 700px; background-color: blue; margin: 0 auto; line-height: normal; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-features > .container > h2 {color: #fff; font-size: 32px; margin-top: 50px;}
+      #section-features > .container > .itembox {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
+      #section-features > .container > .itembox > .item {background-color: yellow; width: 31%; margin: 1% 0;}
+
+
+
+
+
+
+
 
       /* section-speakers */
       #section-speakers {width:100%;}
@@ -89,30 +126,136 @@
       <!-- 헤더 -->
       <div id="headerwrap">
         <header>
-
+          <div class="logo">
+            <a href="main.html" target="_self">
+              <img src="img/logo.png" alt="logo">
+            </a>
+          </div> <!-- end .logo-->
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SPEAKERS</a></li>
+              <li><a href="#">SCHEDULE</a></li>
+              <li><a href="#">TICKET</a></li>
+              <li><a href="#">SPONSORS</a></li>
+              <li><a href="#">REGISTER</a></li>
+              <li><a href="#">NEWS</a></li>
+            </ul>
+          </nav>
+          <div class="menuicon">
+            <i class="fas fa-bars"></i>
+          </div>
         </header>
       </div> <!-- end #headerwrap -->
 
       <!-- 슬라이더 -->
       <div id="slider">
-
+        <div class="container">
+          <span>March 20, 2021</span>
+          <h3>
+            Creative Design <br>
+            Expo 2021
+          </h3>
+          <div class="smalltext">
+            <i class="far fa-calendar-check"></i>
+            <span>March 20th to 25th</span>
+            <i class="fas fa-user-alt"></i>
+            <span>12 Speakers</span>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Palo Alto, California</span>
+          </div>
+          <button>GET TICKET</button>
+        </div>
       </div> <!-- end #slider -->
 
       <!-- 컨텐츠 -->
       <div id="content">
 
-
+        <!-- 카운트다운 -->
         <div id="section-countdown">
-          <div></div>
-        </div>
+          <div class="container">
+            <div class="itembox">
+              <span>10</span>
+              <span>HOURS</span>
+            </div>
+            <div class="itembox">
+              <span>50</span>
+              <span>MINUTES</span>
+            </div>
+            <div class="itembox">
+              <span>0</span>
+              <span>SECONDS</span>
+            </div>
+          </div>
+        </div> <!-- end #section-countdown -->
 
+        <!-- 웰컴 -->
         <div id="section-about">
-          <div></div>
-        </div>
+          <div class="container">
+            <div class="left-box">
+              <h2>
+                Welcome to the Biggest <br>
+                Creative Design Conference
+              </h2>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              </p>
+              <button>THE SPEAKERS</button>
+            </div>
+            <div class="right-box">
+              <img src="img/box2-img-2.jpg" alt="img2">
+              <img src="img/box2-img-3.jpg" alt="img3">
+              <img src="img/box2-img-1.jpg" alt="img1">
+            </div>
+          </div>
+        </div> <!-- end #section-about -->
+
+
 
         <div id="section-features">
-          <div></div>
-        </div>
+          <div class="container">
+            <h2>Why you should Join Event</h2>
+            <div class="itembox">
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+              <div class="item">
+                <h4>World Class Speakers</h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end section-features -->
 
         <div id="section-speakers">
           <div></div>

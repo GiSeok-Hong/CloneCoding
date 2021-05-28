@@ -148,7 +148,8 @@
       #section-ticket > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
       #section-ticket > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
       #section-ticket > .container > .itembox {width: 100%; display: flex; justify-content: space-between;}
-      #section-ticket > .container > .itembox > .item {width: 32%; background-color: #000;}
+      #section-ticket > .container > .itembox > .item {width: 32%; background-color: #000; position: relative; overflow: hidden;}
+      #section-ticket > .container > .itembox > .item > .ribbon {position: absolute; top:22px; left:-55px; background-color: #883ff9; color: #fff; font-size: 15px; width: 200px; padding:10px; transform: rotate(-45deg); font-weight: bold;}
       #section-ticket > .container > .itembox > .item > .item-top {padding:40px;}
       #section-ticket > .container > .itembox > .item > .item-top > h3 {color:#fff; font-size: 24px; margin-bottom: 20px;}
       #section-ticket > .container > .itembox > .item > .item-top > p {color:#fff; font-size: 48px;}
@@ -166,25 +167,39 @@
 
 
       /* section-sponsors */
-      #section-sponsors {width:100%; line-height: normal;}
-      #section-sponsors > .container {width:1200px; height: 675px; background-color:bisque; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-sponsors {width:100%; background-image: url("img/box7-back-1.png"); background-size: cover; background-attachment: fixed; line-height: normal;}
+      #section-sponsors > .container {width:1200px; height: 600px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
       #section-sponsors > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
       #section-sponsors > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+      #section-sponsors > .container > .itembox {width:100%;}
+      #section-sponsors > .container > .itembox > h3 {width:100%; font-size: 18px; color:#fff; margin-bottom:30px;}
+      #section-sponsors > .container > .itembox > .logobox {width:100%; display: flex; justify-content: space-evenly; margin-bottom: 70px;}
+      
 
 
 
 
       /* section-testimonials */
-      #section-testimonials {width:100%;}
-      #section-testimonials > .container {width:1200px; height: 600px; background-color:brown; margin: 0 auto;}
-
+      #section-testimonials {width:100%; line-height: normal;}
+      #section-testimonials > .container {width:1200px; height: 550px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-testimonials > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-testimonials > .container > .dot {color: #ec167f; font-size: 30px; margin-bottom:30px;}
+      #section-testimonials > .container > .itembox {color: #ec167f; font-size: 30px; margin-bottom:30px;}
+      #section-testimonials > .container > .itembox > h4 {color: #fff; font-size: 22px; margin-bottom:30px;}
+      #section-testimonials > .container > .itembox > p {color: #fff; font-size: 18px; padding:0 250px 30px;}
+      #section-testimonials > .container > .itembox > span {color: #fff; font-size: 14px; padding-bottom:30px;}
 
 
 
       
       /* section-portfolio */
       #section-portfolio {width:100%;}
-      #section-portfolio > .container {width:1200px; height: 220px; background-color:violet; margin: 0 auto;}
+      #section-portfolio > .container {width:100%; margin: 0 auto; display: flex;}
+      #section-portfolio > .container > .imgbox {width:25%; position: relative; overflow: hidden; z-index: 1; transition: 0.3s; cursor: pointer;}
+      #section-portfolio > .container > .imgbox:hover > .textbox {opacity: 1;}
+      #section-portfolio > .container > .imgbox:hover > img {opacity: 0.4; transform: scale(1.1);}
+      #section-portfolio > .container > .imgbox > img {width:100%; transition: 0.3s;}
+      #section-portfolio > .container > .imgbox > .textbox {width:100%; color: #ec167f; position: absolute; top:50%; text-align: center; opacity: 0; transition: 0.3s; font-size: 18px; font-weight: bold;}
 
 
 
@@ -662,6 +677,9 @@
               </div> <!-- end .item -->
 
               <div class="item">
+                <div class="ribbon">
+                  Recommend
+                </div>
                 <div class="item-top">
                   <h3>Full Pass</h3>
                   <p>
@@ -712,6 +730,54 @@
             <div class="dot">
               <span><i class="fas fa-square"></i></span>
             </div>
+            <div class="itembox">
+              <h3>Gold Sponsors</h3>
+              <div class="logobox">
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-1.png" alt="logo1">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-2.png" alt="logo2">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-3.png" alt="logo3">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-4.png" alt="logo4">
+                  </a>
+                </div>
+              </div>
+              <h3>Sliver Sponsors</h3>
+              <div class="logobox">
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-5.png" alt="logo5">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-6.png" alt="logo6">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-7.png" alt="logo7">
+                  </a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="img/box7-logo-8.png" alt="logo8">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div> <!-- end .container -->
         </div> <!-- end #section-sponsors-->
 
@@ -721,7 +787,20 @@
         <!-- 추천글 -->
         <div id="section-testimonials">
           <div class="container">
-  
+            <h2>Testimonials</h2>
+            <div class="dot">
+              <span><i class="fas fa-quote-left"></i></span>
+            </div>
+            <div class="itembox">
+              <h4>Better than I think!</h4>
+              <p>
+                I'm always impressed with the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              </p>
+              <span>Michael, Customer</span>
+            </div>
+            <div class="dot">
+              <span><i class="fas fa-quote-right"></i></span>
+            </div>
           </div> <!-- end .container -->
         </div> <!--end #section-testimonials-->
 
@@ -731,7 +810,38 @@
         <!-- 포트폴리오 -->
         <div id="section-portfolio">
           <div class="container">
-
+            <div class="imgbox">
+              <img src="img/box9-img-1.jpg" alt="img1">
+              <div class="textbox">
+                <p>
+                  VIEW  IMAGE
+                </p>
+              </div>
+            </div>
+            <div class="imgbox">
+              <img src="img/box9-img-2.jpg" alt="img2">
+              <div class="textbox">
+                <p>
+                  VIEW  IMAGE
+                </p>
+              </div>
+            </div>
+            <div class="imgbox">
+              <img src="img/box9-img-3.jpg" alt="img3">
+              <div class="textbox">
+                <p>
+                  VIEW  IMAGE
+                </p>
+              </div>
+            </div>
+            <div class="imgbox">
+              <img src="img/box9-img-4.jpg" alt="img4">
+              <div class="textbox">
+                <p>
+                  V I E W  I M A G E
+                </p>
+              </div>
+            </div>
           </div> <!-- end .container -->
         </div> <!-- end #section-porfolio-->
 

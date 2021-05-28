@@ -104,9 +104,39 @@
 
       /* section-schedule */
       #section-schedule {width:100%; background-image: url("img/box5-back-1.png"); background-size: cover; background-attachment: fixed; line-height: normal;}
-      #section-schedule > .container {width:1200px; height: 1160px; background-color: purple; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-schedule > .container {width:1200px; height: 850px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
       #section-schedule > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
       #section-schedule > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+      #section-schedule > .container > .itembox {width:100%;}
+      #section-schedule > .container > .itembox > ul {display: flex; justify-content: center;}
+      #section-schedule > .container > .itembox > ul > li {padding:15px 30px; background-color: #202020; cursor: pointer; border: 1px solid #101010;}
+      #section-schedule > .container > .itembox > ul > li:nth-of-type(1) {border-radius: 5px 0 0 5px;}
+      #section-schedule > .container > .itembox > ul > li:nth-of-type(5) {border-radius: 0 5px 5px 0;}
+      #section-schedule > .container > .itembox > ul > li:hover {background-color: #ec167f; color: #fff;}
+      #section-schedule > .container > .itembox > ul > li:hover > h3 > span {color: #fff;}
+      #section-schedule > .container > .itembox > ul > li:hover > h4 {color: #fff;}
+      #section-schedule > .container > .itembox > ul > li > h3 {font-size: 22px; color:#fff;}
+      #section-schedule > .container > .itembox > ul > li > h3 > span {color:#ec167f;}
+      #section-schedule > .container > .itembox > ul > li > h4 {font-size: 12px; color:#aaa;}
+      #section-schedule > .container > .itembox > .tabs {width:100%; margin-top: 50px;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 {width:100%;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item {display: flex; overflow: hidden; padding: 15px 0;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item:nth-of-type(2n) {background-color: rgba(102,102,102,0.1);} 
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item:hover > .sc-img > img {border: 5px solid #ec167f;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-time {width:160px; font-size: 14px; color: #aaa; line-height: 90px;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-img {width:140px; overflow: hidden;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-img > img {width:90px; height: 90px; border-radius: 50%; border: 5px solid rgba(0,0,0,0);}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-name {width:160px; text-align: left;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-name > h4 {color: #fff; font-size: 14px; line-height: 35px;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-name > p {color: #ec167f; font-size: 12px; }
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-info {width: 60%; text-align: left;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-info > h3 {color: #fff; font-size: 18px; margin-bottom: 10px;}
+      #section-schedule > .container > .itembox > .tabs > .tab1 > .item > .sc-info > p {color: #aaa; font-size: 12px;}
+
+
+
+
+
 
 
 
@@ -114,9 +144,22 @@
 
       /* section-ticket */
       #section-ticket {width:100%; background-image: url("img/box6-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
-      #section-ticket > .container {width:1200px; height: 1000px; background-color:aqua; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-ticket > .container {width:1200px; height: 900px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
       #section-ticket > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
       #section-ticket > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+      #section-ticket > .container > .itembox {width: 100%; display: flex; justify-content: space-between;}
+      #section-ticket > .container > .itembox > .item {width: 32%; background-color: #000;}
+      #section-ticket > .container > .itembox > .item > .item-top {padding:40px;}
+      #section-ticket > .container > .itembox > .item > .item-top > h3 {color:#fff; font-size: 24px; margin-bottom: 20px;}
+      #section-ticket > .container > .itembox > .item > .item-top > p {color:#fff; font-size: 48px;}
+      #section-ticket > .container > .itembox > .item > .item-top > p > span {color:#ec167f;}
+      #section-ticket > .container > .itembox > .item > .item-bot > ul {text-align: left;}
+      #section-ticket > .container > .itembox > .item > .item-bot > ul > li {color:#fff; font-size: 15px; padding: 20px 30px;}
+      #section-ticket > .container > .itembox > .item > .item-bot > ul > li:nth-of-type(odd) {background-color: #202020;}
+      #section-ticket > .container > .itembox > .item > .item-bot > ul > li > span {color:#ec167f;}
+      #section-ticket > .container > .itembox > .item > button {background-color:#ec167f; color: #fff; padding: 10px 20px; border-radius: 5px; border:none; cursor: pointer; margin: 40px;} 
+      #section-ticket > .container > .itembox > .item > button:hover {background-color:#fff; color: #ec167f;} 
+
 
 
 
@@ -157,9 +200,9 @@
 
 
 
-      /* section-call */
-      #section-call {width:100%;}
-      #section-call > .container {width:1200px; height: 160px; background-color:steelblue ; margin: 0 auto;}
+      /* section-call-to-action */
+      #section-call-to-action {width:100%;}
+      #section-call-to-action > .container {width:1200px; height: 160px; background-color:steelblue ; margin: 0 auto;}
 
 
 
@@ -461,7 +504,129 @@
             <div class="dot">
               <span><i class="fas fa-square"></i></span>
             </div>
+            <div class="itembox">
+              <ul>
+                <li>
+                  <h3>Day <span>01</span></h3>
+                  <h4>March 20, 2021</h4>
+                </li>
+                <li>
+                  <h3>Day <span>02</span></h3>
+                  <h4>March 21, 2021</h4>
+                </li>
+                <li>
+                  <h3>Day <span>03</span></h3>
+                  <h4>March 22, 2021</h4>
+                </li>
+                <li>
+                  <h3>Day <span>04</span></h3>
+                  <h4>March 23, 2021</h4>
+                </li>
+                <li>
+                  <h3>Day <span>05</span></h3>
+                  <h4>March 24, 2021</h4>
+                </li>
+              </ul>
+              <div class="tabs">
+                <div class="tab1">
+                  <div class="item">
+                    <div class="sc-time">
+                      08:00 - 10:00 AM
+                    </div>
+                    <div class="sc-img">
+                      <img src="img/box4-img-1.jpg" alt="1">
+                    </div>
+                    <div class="sc-name">
+                      <h4>John Smith</h4>
+                      <p>
+                        Founder & CEO
+                      </p>
+                    </div>
+                    <div class="sc-info">
+                      <h3>Introduction Creative Design</h3>
+                      <p>
+                        In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.
+                      </p>
+                    </div>
+                  </div>
 
+                  <div class="item">
+                    <div class="sc-time">
+                      12:00 - 14:00 PM
+                    </div>
+                    <div class="sc-img">
+                      <img src="img/box4-img-2.jpg" alt="2">
+                    </div>
+                    <div class="sc-name">
+                      <h4>Michael Dennis</h4>
+                      <p>
+                        Founder & CEO
+                      </p>
+                    </div>
+                    <div class="sc-info">
+                      <h3>Getting Started With Creative Design</h3>
+                      <p>
+                        In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="sc-time">
+                      16:00 - 18:00 PM
+                    </div>
+                    <div class="sc-img">
+                      <img src="img/box4-img-3.jpg" alt="3">
+                    </div>
+                    <div class="sc-name">
+                      <h4>Sarah Michelle</h4>
+                      <p>
+                        Founder & CEO
+                      </p>
+                    </div>
+                    <div class="sc-info">
+                      <h3>Prepare Your Design Concept</h3>
+                      <p>
+                        In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="sc-time">
+                      20:00 - 22:00 PM
+                    </div>
+                    <div class="sc-img">
+                      <img src="img/box4-img-4.jpg" alt="4">
+                    </div>
+                    <div class="sc-name">
+                      <h4>Katty Wilson</h4>
+                      <p>
+                        Founder & CEO
+                      </p>
+                    </div>
+                    <div class="sc-info">
+                      <h3>Creative Design Implementation Basic</h3>
+                      <p>
+                        In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.
+                      </p>
+                    </div>
+                  </div>
+                </div> <!-- .end tab1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+              </div> <!-- end .tabs-->
+            </div> <!-- .itembox -->
           </div> <!-- end .container-->
         </div> <!-- end #section-schedule-->
 
@@ -476,6 +641,64 @@
             <div class="dot">
               <span><i class="fas fa-square"></i></span>
             </div>
+            <div class="itembox">
+              <div class="item">
+                <div class="item-top">
+                  <h3>Day Pass</h3>
+                  <p>
+                    <span>$</span><b>49.99</b>
+                  </p>
+                </div>
+                <div class="item-bot">
+                  <ul>
+                    <li><span><i class="far fa-check-circle"></i></span> Conference Tickets</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Free Lunch Nad Coffee</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Certificates</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Private Access</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Experts Contacts</li>
+                  </ul>
+                </div>
+                <button>BUY TICKET</button>
+              </div> <!-- end .item -->
+
+              <div class="item">
+                <div class="item-top">
+                  <h3>Full Pass</h3>
+                  <p>
+                    <span>$</span><b>79.99</b>
+                  </p>
+                </div>
+                <div class="item-bot">
+                  <ul>
+                    <li><span><i class="far fa-check-circle"></i></span> Conference Tickets</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Free Lunch Nad Coffee</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Certificates</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Private Access</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Experts Contacts</li>
+                  </ul>
+                </div>
+                <button>BUY TICKET</button>
+              </div> <!-- end .item -->
+
+              <div class="item">
+                <div class="item-top">
+                  <h3>Grouop Pass</h3>
+                  <p>
+                    <span>$</span><b>139.99</b>
+                  </p>
+                </div>
+                <div class="item-bot">
+                  <ul>
+                    <li><span><i class="far fa-check-circle"></i></span> Conference Tickets</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Free Lunch Nad Coffee</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Certificates</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Private Access</li>
+                    <li><span><i class="far fa-check-circle"></i></span> Experts Contacts</li>
+                  </ul>
+                </div>
+                <button>BUY TICKET</button>
+              </div> <!-- end .item -->
+            </div> <!-- end .itembox -->
           </div> <!-- end .container -->
         </div> <!-- end #section-ticket-->
 
@@ -495,7 +718,7 @@
 
 
 
-        <!-- 문구 -->
+        <!-- 추천글 -->
         <div id="section-testimonials">
           <div class="container">
   
@@ -528,16 +751,16 @@
 
 
 
-        <!-- 예약 -->
-        <div id="section-call">
+        <!-- 배너 -->
+        <div id="section-call-to-action">
           <div class="container">
 
           </div> <!-- end .container -->
-        </div> <!-- end #section-call -->
+        </div> <!-- end #section-call-to-action -->
 
 
 
-        <!-- 이력 -->
+        <!-- 재밌는 사실 -->
         <div id="section-fun-facts">
           <div class="container">
 

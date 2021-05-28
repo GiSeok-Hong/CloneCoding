@@ -66,57 +66,120 @@
 
       /* section-features */
       #section-features {width:100%;}
-      #section-features > .container {width:1200px; height: 700px; background-color: blue; margin: 0 auto; line-height: normal; text-align: center; display: flex; flex-direction: column; align-items: center;}
-      #section-features > .container > h2 {color: #fff; font-size: 32px; margin-top: 50px;}
-      #section-features > .container > .itembox {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center;}
-      #section-features > .container > .itembox > .item {background-color: yellow; width: 31%; margin: 1% 0;}
-
-
-
+      #section-features > .container {width:1200px; height: 600px; margin: 0 auto; line-height: normal; text-align: center; display: flex; flex-direction: column; align-items: center; }
+      #section-features > .container > h2 {color: #fff; font-size: 32px; margin:130px 0 30px;}
+      #section-features > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+      #section-features > .container > .itembox {width:100%; display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+      #section-features > .container > .itembox > .item {width: 32%; margin: 2% 0; position: relative;}
+      #section-features > .container > .itembox > .item:hover > .iconbox {background-color: #883ff9;}
+      #section-features > .container > .itembox > .item > .iconbox {width:80px; height: 80px;background-color: #ec167f; color:#fff; font-size: 35px; position: absolute; top: 0; left: 0; line-height: 75px; transition: 0.3s; border-radius: 5px;}
+      #section-features > .container > .itembox > .item > .textbox {margin-left: 100px; text-align: left;}
+      #section-features > .container > .itembox > .item > .textbox > h4 {color: #fff; font-size: 18px; margin-bottom: 10px;}
+      #section-features > .container > .itembox > .item > .textbox > p {color: #aaa; font-size: 12px;}
 
 
 
 
 
       /* section-speakers */
-      #section-speakers {width:100%;}
-      #section-speakers > div {width:1200px; height: 650px; background-color: indigo; margin: 0 auto;}
+      #section-speakers {width:100%; background-image: url("img/box4-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
+      #section-speakers > .container {width:1200px; height: 600px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; }
+      #section-speakers > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-speakers > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+      #section-speakers > .container > .itembox {width:100%; display: flex; justify-content: space-between;}
+      #section-speakers > .container > .itembox > .item {width:24%; overflow: hidden; }
+      #section-speakers > .container > .itembox > .item > .imgbox {width:100%; height:100%; position: relative; overflow: hidden; z-index: 2; cursor: pointer; transition: 0.3s;}
+      #section-speakers > .container > .itembox > .item > .imgbox:hover > img {z-index: 0;} 
+      #section-speakers > .container > .itembox > .item > .imgbox > img {width:100%; position: relative; z-index: 1; transition: 0.3s;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox {width: 100%; background-color: #111; text-align: left; padding:40px; position: absolute; top: 0; left: 0;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > h4 {color: #fff; font-size: 20px;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > span {color: #ec167f; font-size: 15px;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > .separate {border-top: 1px solid #aaa; width:20%; margin-top: 20px;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > p {color: #aaa; font-size: 15px; margin: 20px 0;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > .sns > a {color: #fff; font-size: 15px; padding-right: 10px;}
+      #section-speakers > .container > .itembox > .item > .imgbox > .textbox > .sns > a:hover {color: #ec167f;}
+
+
+
 
       /* section-schedule */
-      #section-schedule {width:100%;}
-      #section-schedule > div {width:1200px; height: 1160px; background-color: purple; margin: 0 auto;}
+      #section-schedule {width:100%; background-image: url("img/box5-back-1.png"); background-size: cover; background-attachment: fixed; line-height: normal;}
+      #section-schedule > .container {width:1200px; height: 1160px; background-color: purple; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-schedule > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-schedule > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+
+
+
+
 
       /* section-ticket */
-      #section-ticket {width:100%;}
-      #section-ticket > div {width:1200px; height: 1000px; background-color:aqua; margin: 0 auto;}
+      #section-ticket {width:100%; background-image: url("img/box6-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
+      #section-ticket > .container {width:1200px; height: 1000px; background-color:aqua; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-ticket > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-ticket > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+
+
+
+
 
       /* section-sponsors */
-      #section-sponsors {width:100%;}
-      #section-sponsors > div {width:1200px; height: 675px; background-color:bisque; margin: 0 auto;}
+      #section-sponsors {width:100%; line-height: normal;}
+      #section-sponsors > .container {width:1200px; height: 675px; background-color:bisque; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-sponsors > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-sponsors > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+
+
+
 
       /* section-testimonials */
       #section-testimonials {width:100%;}
-      #section-testimonials > div {width:1200px; height: 600px; background-color:brown; margin: 0 auto;}
+      #section-testimonials > .container {width:1200px; height: 600px; background-color:brown; margin: 0 auto;}
+
+
+
+
       
       /* section-portfolio */
       #section-portfolio {width:100%;}
-      #section-portfolio > div {width:1200px; height: 220px; background-color:violet; margin: 0 auto;}
+      #section-portfolio > .container {width:1200px; height: 220px; background-color:violet; margin: 0 auto;}
+
+
+
+
 
       /* section-register */
       #section-register {width:100%;}
-      #section-register > div {width:1200px; height: 620px; background-color:tomato; margin: 0 auto;}
+      #section-register > .container {width:1200px; height: 620px; background-color:tomato; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-register > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
+      #section-register > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
+
+
+
+
 
       /* section-call */
       #section-call {width:100%;}
-      #section-call > div {width:1200px; height: 160px; background-color:steelblue ; margin: 0 auto;}
+      #section-call > .container {width:1200px; height: 160px; background-color:steelblue ; margin: 0 auto;}
+
+
+
+
 
       /* section-fun-facts */
       #section-fun-facts {width:100%;}
-      #section-fun-facts > div {width:1200px; height: 400px; background-color:steelblue; margin: 0 auto;}
+      #section-fun-facts > .container {width:1200px; height: 400px; background-color:steelblue; margin: 0 auto;}
+
+
+
+
 
       /* 푸터 */
       #footerwrap {width:100%; background-color: black;}
       footer {width:1200px; height: 200px; background-color: gray; margin: 0 auto;}
+
+
+
+
     </style>
 
 
@@ -212,86 +275,274 @@
         </div> <!-- end #section-about -->
 
 
-
+        <!-- 기능 -->
         <div id="section-features">
           <div class="container">
             <h2>Why you should Join Event</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
+            <div class="itembox">
+
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-microphone"></i>
+                </div>
+                <div class="textbox">
+                  <h4>World Class Speakers</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="textbox">
+                  <h4>Best Experience</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="textbox">
+                  <h4>Networking</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="textbox">
+                  <h4>Modern Venue</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="textbox">
+                  <h4>New People</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="iconbox">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="textbox">
+                  <h4>Certificates</h4>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                  </p>
+                </div>
+              </div>
+            </div> <!--end .itembox -->
+          </div> <!-- end .container -->
+        </div> <!-- end #section-features -->
+
+
+
+        <!-- 스피커 -->
+        <div id="section-speakers">
+          <div class="container">
+            <h2>The Speakers</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
             <div class="itembox">
               <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
+                <div class="imgbox">
+                  <img src="img/box4-img-1.jpg" alt="speaker1">
+                  <div class="textbox">
+                    <h4>John Smith</h4>
+                    <span>Expert Designer</span>
+                    <div class="separate"></div>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                    </p>
+                    <div class="sns">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#"><i class="fab fa-skype"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
-              </div>
-              <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
-              </div>
-              <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
-              </div>
-              <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
-              </div>
-              <div class="item">
-                <h4>World Class Speakers</h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- end section-features -->
 
-        <div id="section-speakers">
-          <div></div>
-        </div>
+              <div class="item">
+                <div class="imgbox">
+                  <img src="img/box4-img-2.jpg" alt="speaker2">
+                  <div class="textbox">
+                    <h4>Michael Dennis</h4>
+                    <span>Expert Designer</span>
+                    <div class="separate"></div>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                    </p>
+                    <div class="sns">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#"><i class="fab fa-skype"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="item">
+                <div class="imgbox">
+                  <img src="img/box4-img-3.jpg" alt="speaker3">
+                  <div class="textbox">
+                    <h4>Sarah Michelle</h4>
+                    <span>Expert Designer</span>
+                    <div class="separate"></div>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                    </p>
+                    <div class="sns">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#"><i class="fab fa-skype"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="imgbox">
+                  <img src="img/box4-img-4.jpg" alt="speaker4">
+                  <div class="textbox">
+                    <h4>Katty Wilson</h4>
+                    <span>Expert Designer</span>
+                    <div class="separate"></div>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                    </p>
+                    <div class="sns">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      <a href="#"><i class="fab fa-skype"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- end .itembox -->
+          </div> <!-- end .container -->
+        </div> <!-- end #section-speakers-->
+
+
+        <!-- 스케쥴 -->
         <div id="section-schedule">
-          <div></div>
-        </div>
+          <div class="container"> 
+            <h2>Event Schedule</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
 
+          </div> <!-- end .container-->
+        </div> <!-- end #section-schedule-->
+
+
+
+
+
+        <!-- 티켓 -->
         <div id="section-ticket">
-          <div></div>
-        </div>
+          <div class="container">
+            <h2>Choose a Ticket</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
+          </div> <!-- end .container -->
+        </div> <!-- end #section-ticket-->
 
+
+
+
+        <!-- 스폰서 -->
         <div id="section-sponsors">
-          <div></div>
-        </div>
+          <div class="container">
+            <h2>Official Sponsors</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
+          </div> <!-- end .container -->
+        </div> <!-- end #section-sponsors-->
 
+
+
+
+        <!-- 문구 -->
         <div id="section-testimonials">
-          <div></div>
-        </div>
+          <div class="container">
+  
+          </div> <!-- end .container -->
+        </div> <!--end #section-testimonials-->
 
+
+
+
+        <!-- 포트폴리오 -->
         <div id="section-portfolio">
-          <div></div>
-        </div>
+          <div class="container">
 
+          </div> <!-- end .container -->
+        </div> <!-- end #section-porfolio-->
+
+
+
+
+
+        <!-- 등록 -->
         <div id="section-register">
-          <div></div>
-        </div>
+          <div class="container">
+            <h2>Register Now</h2>
+            <div class="dot">
+              <span><i class="fas fa-square"></i></span>
+            </div>
+          </div> <!-- end .container -->
+        </div> <!-- end #section-register-->
 
+
+
+        <!-- 예약 -->
         <div id="section-call">
-          <div></div>
-        </div>
+          <div class="container">
 
+          </div> <!-- end .container -->
+        </div> <!-- end #section-call -->
+
+
+
+        <!-- 이력 -->
         <div id="section-fun-facts">
-          <div></div>
-        </div>
+          <div class="container">
+
+          </div> <!-- end .container -->
+        </div> <!-- end #section-fun-facts -->
 
 
       </div> <!-- #content -->

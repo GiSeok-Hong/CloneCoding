@@ -23,7 +23,8 @@
       header > nav > ul > li {padding:15px 20px;}
       header > nav > ul > li > a {color:#fff; font-size: 15px;}
       header > nav > ul > li > a:hover {color:#ec167f;}
-      header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer;}
+      header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer; display: none;}
+
 
       /* 슬라이더 */
       #slider {width:100%; height: 700px; background-image: url("img/slider-img-2.jpg"); background-size: cover; display: flex; justify-content: center; align-items: center;}
@@ -206,24 +207,35 @@
 
       /* section-register */
       #section-register {width:100%;}
-      #section-register > .container {width:1200px; height: 620px; background-color:tomato; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+      #section-register > .container {width:1200px; height: 550px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
       #section-register > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
       #section-register > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
-
+      #section-register > .container > form {width:100%; margin:0 auto;}
+      #section-register > .container > form > fieldset {display: flex; margin:0 auto; width: 100%; justify-content: center;}
+      #section-register > .container > form > fieldset > .form-left {display: flex; flex-direction: column; width:30%; justify-content: space-between; margin:1%;}
+      #section-register > .container > form > fieldset > .form-left > input {height:46px; border: 1px solid rgba(0,0,0,0.3); padding:10px; color:#eee; background-color: rgba(0,0,0,0.2);}
+      #section-register > .container > form > fieldset > .form-right {width:30%; margin:1%;}
+      #section-register > .container > form > fieldset > .form-right > textarea {width:100%; height: 178px; border: 1px solid rgba(0,0,0,0.3); padding:10px; color:#eee; background-color: rgba(0,0,0,0.2);}
+      #section-register > .container > form > input {width:12%; padding:10px 20px; margin-top: 30px; background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer;}
+      #section-register > .container > form > input:hover {background-color:#fff; color: #ec167f;}
+      
 
 
 
 
       /* section-call-to-action */
-      #section-call-to-action {width:100%;}
-      #section-call-to-action > .container {width:1200px; height: 160px; background-color:steelblue ; margin: 0 auto;}
+      #section-call-to-action {width:100%; background: linear-gradient(to right, #ec167f, #883ff9);}
+      #section-call-to-action > .container {width:1200px; height: 160px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+      #section-call-to-action > .container > .left-box > h3 {color:#fff; font-size: 24px;}
+      #section-call-to-action > .container > .right-box > button {background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer; padding:10px 20px;}
+      #section-call-to-action > .container > .right-box > button:hover {background-color:#fff; color: #ec167f;}
 
 
 
 
 
       /* section-fun-facts */
-      #section-fun-facts {width:100%;}
+      #section-fun-facts {width:100%; background-image: url("img/box12-back-1.jpg"); background-size: cover; background-attachment: fixed;}
       #section-fun-facts > .container {width:1200px; height: 400px; background-color:steelblue; margin: 0 auto;}
 
 
@@ -237,7 +249,7 @@
 
 
       
-
+      
     </style>
 
     <script>
@@ -1260,9 +1272,19 @@
             <div class="dot">
               <span><i class="fas fa-square"></i></span>
             </div>
-            <div>
-              
-            </div>
+            <form>
+              <fieldset>
+                <div class="form-left">
+                  <input type="text" placeholder="Your Name">
+                  <input type="text" placeholder="Your Email">
+                  <input type="text" placeholder="Your Phone">
+                </div>
+                <div class="form-right">
+                  <textarea name="message" id="message" cols="40" rows="10" placeholder="Additional Message"></textarea>
+                </div>
+              </fieldset>
+              <input type="submit" value="REGISTER NOW">
+            </form>
           </div> <!-- end .container -->
         </div> <!-- end #section-register-->
 
@@ -1271,7 +1293,12 @@
         <!-- 배너 -->
         <div id="section-call-to-action">
           <div class="container">
-
+            <div class="left-box">
+              <h3>Get your seat before the price goes up</h3>
+            </div>
+            <div class="right-box">
+              <button>GET TICKET</button>
+            </div>
           </div> <!-- end .container -->
         </div> <!-- end #section-call-to-action -->
 

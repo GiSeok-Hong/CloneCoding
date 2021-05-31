@@ -235,8 +235,14 @@
 
 
       /* section-fun-facts */
-      #section-fun-facts {width:100%; background-image: url("img/box12-back-1.jpg"); background-size: cover; background-attachment: fixed;}
-      #section-fun-facts > .container {width:1200px; height: 400px; background-color:steelblue; margin: 0 auto;}
+      #section-fun-facts {width:100%; background-image: url("img/box12-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
+      #section-fun-facts > .container {width:1200px; height: 400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+      #section-fun-facts > .container > .itembox {width:25%; text-align: center;}
+      #section-fun-facts > .container > .itembox > div {color: #883ff9; font-size: 65px;}
+      #section-fun-facts > .container > .itembox > h3 {color:#fff; font-size: 40px; margin:15px;}
+      #section-fun-facts > .container > .itembox > p {color:#fff; font-size: 15px;}
+
+
 
 
 
@@ -1307,7 +1313,37 @@
         <!-- 재밌는 사실 -->
         <div id="section-fun-facts">
           <div class="container">
+            <div class="itembox">
+              <div class="iconbox">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>8800</h3>
+              <p>PARTICIPANTS</p>
+            </div>
 
+            <div class="itembox">
+              <div class="iconbox">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <h3>300</h3>
+              <p>TOPICS</p>
+            </div>
+
+            <div class="itembox">
+              <div class="iconbox">
+                <i class="fas fa-headphones"></i>
+              </div>
+              <h3>50</h3>
+              <p>SPEAKERS</p>
+            </div>
+
+            <div class="itembox">
+              <div class="iconbox">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3>20</h3>
+              <p>AWARDS</p>
+            </div>
           </div> <!-- end .container -->
         </div> <!-- end #section-fun-facts -->
 

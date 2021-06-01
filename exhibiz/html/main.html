@@ -250,7 +250,12 @@
 
       /* 푸터 */
       #footerwrap {width:100%; background-color: black;}
-      footer {width:1200px; height: 200px; background-color: gray; margin: 0 auto;}
+      footer {width:1200px; height: 200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+      footer > .copyright {color:#ccc;}
+      footer > .copyright > span {color:#ec167f;}
+      footer > .sns > ul {display: flex;}
+      footer > .sns > ul > li > a {color:#ccc; padding:5px 9px;}
+      footer > .sns > ul > li > a:hover {background-color:#ec167f; color: #000; border-radius: 2px;}
 
 
 
@@ -1347,7 +1352,6 @@
           </div> <!-- end .container -->
         </div> <!-- end #section-fun-facts -->
 
-
       </div> <!-- #content -->
 
 
@@ -1358,7 +1362,24 @@
       <!-- 푸터 -->
       <div id="footerwrap">
         <footer>
-
+          <div class="logo">
+            <a href="main.html" target="_self">
+              <img src="img/logo.png" alt="logo">
+            </a>
+          </div> <!-- logo -->
+          <div class="copyright">
+            © Copyright 2021 - Exhibiz - Event Conference Website Template by <span>Designesia</span>
+          </div>
+          <div class="sns">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fas fa-rss"></i></a></li>
+              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="#"><i class="fab fa-skype"></i></a></li>
+              <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            </ul>
+          </div>
         </footer>
       </div> <!-- end #footerwrap -->
 

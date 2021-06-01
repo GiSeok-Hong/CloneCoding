@@ -5,10 +5,10 @@
 
 /* 헤더 */
 #headerwrap {width:100%; background-color: #000; position: fixed; top:0; left: 0; z-index: 10;}
-header {height: 80px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; z-index: 1;}
+header {height: 80px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; z-index: 1; position: relative;}
 header > nav > ul {display: flex;}
 header > nav > ul > li {padding:15px 20px;}
-header > nav > ul > li > a {color:#fff; font-size: 15px;}
+header > nav > ul > li > a {color:#fff; font-size: 15px; padding:0 10px;}
 header > nav > ul > li > a:hover {color:#ec167f;}
 header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer; display: none;}
 
@@ -18,6 +18,13 @@ header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer; display: no
   header {width:90%; }
   header > nav {display: none;}
   header > .menuicon {display: block;}
+  header > nav {position: absolute; top:80px; left:-10px;}
+  header > nav > ul {flex-direction: column; text-align: center;}
+  header > nav > ul > li { width: 90vw; background-color: #000;}
+  header > nav > ul > li:hover {background-color: #883ff9;}
+  header > nav > ul > li > a {padding:5% 40%;}
+  
+
 }
 
 @media (min-width:600px) and (max-width:1099px) {

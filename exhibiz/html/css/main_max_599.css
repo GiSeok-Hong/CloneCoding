@@ -23,7 +23,7 @@
 
 
 /* section-about */
-#section-about {width:100%; background-image: url("../img/box2-back-1.png"); background-size: cover; background-attachment: fixed;}
+#section-about {width:100%; background-image: url("../img/box2-back-1.png"); background-size: cover; background-attachment: fixed; overflow: hidden; padding-bottom: 50px;}
 #section-about > .container {width:90%;  margin: 0 auto; display: flex; flex-direction: column;}
 #section-about > .container > .left-box {line-height: normal; width: 100%; margin:10% 0;}
 #section-about > .container > .left-box > h2 {color:#fff; font-size: 32px;}
@@ -78,12 +78,12 @@
 
 
 /* section-schedule */
-#section-schedule {width:100%; background-image: url("../img/box5-back-1.png"); background-size: cover; background-attachment: fixed; line-height: normal;}
+#section-schedule {width:100%; background-image: url("../img/box5-back-1.png"); background-size: cover; background-attachment: fixed; line-height: normal; padding-bottom: 50px;}
 #section-schedule > .container {width:90%; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
 #section-schedule > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
 #section-schedule > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
 #section-schedule > .container > .itembox {width:100%;}
-#section-schedule > .container > .itembox > ul {display: flex; justify-content: center;}
+#section-schedule > .container > .itembox > ul {display: flex; flex-direction: column;}
 #section-schedule > .container > .itembox > ul > li {padding:15px 30px; background-color: #202020; cursor: pointer; border: 1px solid #101010;}
 #section-schedule > .container > .itembox > ul > li:nth-of-type(1) {border-radius: 5px 0 0 5px;}
 #section-schedule > .container > .itembox > ul > li:nth-of-type(5) {border-radius: 0 5px 5px 0;}
@@ -95,16 +95,16 @@
 #section-schedule > .container > .itembox > ul > li > h4 {font-size: 12px; color:#aaa;}
 #section-schedule > .container > .itembox > .tabs {width:100%; margin-top: 50px;}
 #section-schedule > .container > .itembox > .tabs > .tab {width:100%;}
-#section-schedule > .container > .itembox > .tabs > .tab > .item {display: flex; overflow: hidden; padding: 15px 0;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item {display: flex; overflow: hidden; padding: 15px 0; flex-wrap: wrap;}
 #section-schedule > .container > .itembox > .tabs > .tab > .item:nth-of-type(2n) {background-color: rgba(102,102,102,0.1);} 
 #section-schedule > .container > .itembox > .tabs > .tab > .item:hover > .sc-img > img {border: 5px solid #ec167f;}
-#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-time {width:160px; font-size: 14px; color: #aaa; line-height: 90px;}
-#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-img {width:140px; overflow: hidden;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-time {width:100%; font-size: 14px; color: #aaa; line-height: 90px; text-align: left;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-img {width:120px; overflow: hidden; text-align: left;}
 #section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-img > img {width:90px; height: 90px; border-radius: 50%; border: 5px solid rgba(0,0,0,0);}
-#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-name {width:160px; text-align: left;}
-#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-name > h4 {color: #fff; font-size: 14px; line-height: 35px;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-name {text-align: left;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-name > h4 {color: #fff; font-size: 14px; line-height: 50px;}
 #section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-name > p {color: #ec167f; font-size: 12px; }
-#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-info {width: 60%; text-align: left;}
+#section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-info {width: 100%; text-align: left; margin-top: 3%;}
 #section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-info > h3 {color: #fff; font-size: 18px; margin-bottom: 10px;}
 #section-schedule > .container > .itembox > .tabs > .tab > .item > .sc-info > p {color: #aaa; font-size: 12px;}
 
@@ -117,12 +117,12 @@
 
 
 /* section-ticket */
-#section-ticket {width:100%; background-image: url("../img/box6-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
+#section-ticket {width:100%; background-image: url("../img/box6-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal; padding-bottom: 50px;}
 #section-ticket > .container {width:90%; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
 #section-ticket > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
 #section-ticket > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
-#section-ticket > .container > .itembox {width: 100%; display: flex; justify-content: space-between;}
-#section-ticket > .container > .itembox > .item {width: 32%; background-color: #000; position: relative; overflow: hidden;}
+#section-ticket > .container > .itembox {width: 100%; display: flex; flex-direction: column;}
+#section-ticket > .container > .itembox > .item {width: 100%; background-color: #000; position: relative; overflow: hidden; margin-bottom: 10%;}
 #section-ticket > .container > .itembox > .item > .ribbon {position: absolute; top:22px; left:-55px; background-color: #883ff9; color: #fff; font-size: 15px; width: 200px; padding:10px; transform: rotate(-45deg); font-weight: bold;}
 #section-ticket > .container > .itembox > .item > .item-top {padding:40px;}
 #section-ticket > .container > .itembox > .item > .item-top > h3 {color:#fff; font-size: 24px; margin-bottom: 20px;}
@@ -147,20 +147,20 @@
 #section-sponsors > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
 #section-sponsors > .container > .itembox {width:100%;}
 #section-sponsors > .container > .itembox > h3 {width:100%; font-size: 18px; color:#fff; margin-bottom:30px;}
-#section-sponsors > .container > .itembox > .logobox {width:100%; display: flex; justify-content: space-evenly; margin-bottom: 70px;}
+#section-sponsors > .container > .itembox > .logobox {width:100%; display: flex; flex-wrap: wrap; margin-bottom: 70px;}
 
 
 
 
 
 /* section-testimonials */
-#section-testimonials {width:100%; line-height: normal;}
+#section-testimonials {width:100%; line-height: normal; padding-bottom: 50px;}
 #section-testimonials > .container {width:90%; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
 #section-testimonials > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
 #section-testimonials > .container > .dot {color: #ec167f; font-size: 30px; margin-bottom:30px;}
 #section-testimonials > .container > .itembox {color: #ec167f; font-size: 30px; margin-bottom:30px;}
 #section-testimonials > .container > .itembox > h4 {color: #fff; font-size: 22px; margin-bottom:30px;}
-#section-testimonials > .container > .itembox > p {color: #fff; font-size: 18px; padding:0 250px 30px;}
+#section-testimonials > .container > .itembox > p {color: #fff; font-size: 18px; padding:0 0px 30px;}
 #section-testimonials > .container > .itembox > span {color: #fff; font-size: 14px; padding-bottom:30px;}
 
 
@@ -168,8 +168,8 @@
 
 /* section-portfolio */
 #section-portfolio {width:100%;}
-#section-portfolio > .container {width:100%; margin: 0 auto; display: flex;}
-#section-portfolio > .container > .imgbox {width:25%; position: relative; overflow: hidden; z-index: 1; transition: 0.3s; cursor: pointer;}
+#section-portfolio > .container {width:100%; margin: 0 auto; display: flex; flex-wrap: wrap;}
+#section-portfolio > .container > .imgbox {width:50%; position: relative; overflow: hidden; z-index: 1; transition: 0.3s; cursor: pointer;}
 #section-portfolio > .container > .imgbox:hover > .textbox {opacity: 1;}
 #section-portfolio > .container > .imgbox:hover > img {opacity: 0.4; transform: scale(1.1);}
 #section-portfolio > .container > .imgbox > img {width:100%; transition: 0.3s;}
@@ -180,17 +180,17 @@
 
 
 /* section-register */
-#section-register {width:100%;}
+#section-register {width:100%; padding-bottom: 100px;}
 #section-register > .container {width:90%; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
 #section-register > .container > h2 {color: #fff; font-size: 32px; margin:60px 0 30px;}
 #section-register > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
-#section-register > .container > form {width:100%; margin:0 auto;}
-#section-register > .container > form > fieldset {display: flex; margin:0 auto; width: 100%; justify-content: center;}
-#section-register > .container > form > fieldset > .form-left {display: flex; flex-direction: column; width:30%; justify-content: space-between; margin:1%;}
-#section-register > .container > form > fieldset > .form-left > input {height:46px; border: 1px solid rgba(0,0,0,0.3); padding:10px; color:#eee; background-color: rgba(0,0,0,0.2);}
-#section-register > .container > form > fieldset > .form-right {width:30%; margin:1%;}
+#section-register > .container > form {width:90%; margin:0 auto;}
+#section-register > .container > form > fieldset {display: flex; margin:0 auto; width: 100%; flex-direction: column;}
+#section-register > .container > form > fieldset > .form-left {display: flex; flex-direction: column; width:100%; justify-content: space-between; margin:1%;}
+#section-register > .container > form > fieldset > .form-left > input {height:46px; border: 1px solid rgba(0,0,0,0.3); padding:10px; color:#eee; background-color: rgba(0,0,0,0.2); margin-bottom: 5%;}
+#section-register > .container > form > fieldset > .form-right {width:100%; margin:1%;}
 #section-register > .container > form > fieldset > .form-right > textarea {width:100%; height: 178px; border: 1px solid rgba(0,0,0,0.3); padding:10px; color:#eee; background-color: rgba(0,0,0,0.2);}
-#section-register > .container > form > input {width:12%; padding:10px 20px; margin-top: 30px; background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer;}
+#section-register > .container > form > input {width:45%; padding:10px 20px; margin-top: 30px; background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer;}
 #section-register > .container > form > input:hover {background-color:#fff; color: #ec167f;}
 
 
@@ -199,9 +199,9 @@
 
 /* section-call-to-action */
 #section-call-to-action {width:100%; background: linear-gradient(to right, #ec167f, #883ff9);}
-#section-call-to-action > .container {width:90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
-#section-call-to-action > .container > .left-box > h3 {color:#fff; font-size: 24px;}
-#section-call-to-action > .container > .right-box > button {background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer; padding:10px 20px;}
+#section-call-to-action > .container {width:90%; margin: 0 auto; display: flex; flex-direction: column; text-align: center;}
+#section-call-to-action > .container > .left-box > h3 {color:#fff; font-size: 24px; margin: 10% 0;}
+#section-call-to-action > .container > .right-box > button {background-color:#ec167f; color: #fff; border-radius: 5px; border:none; cursor: pointer; padding:10px 20px; margin-bottom: 10%;}
 #section-call-to-action > .container > .right-box > button:hover {background-color:#fff; color: #ec167f;}
 
 
@@ -209,9 +209,9 @@
 
 
 /* section-fun-facts */
-#section-fun-facts {width:100%; background-image: url("../img/box12-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal;}
-#section-fun-facts > .container {width:90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
-#section-fun-facts > .container > .itembox {width:25%; text-align: center;}
+#section-fun-facts {width:100%; background-image: url("../img/box12-back-1.jpg"); background-size: cover; background-attachment: fixed; line-height: normal; padding: 50px 0;}
+#section-fun-facts > .container {width:90%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;}
+#section-fun-facts > .container > .itembox {width:25%; text-align: center; margin-bottom: 10%;}
 #section-fun-facts > .container > .itembox > div {color: #883ff9; font-size: 65px;}
 #section-fun-facts > .container > .itembox > h3 {color:#fff; font-size: 40px; margin:15px;}
 #section-fun-facts > .container > .itembox > p {color:#fff; font-size: 15px;}

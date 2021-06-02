@@ -4,7 +4,7 @@
 #slider {width:100%; height: 400px; background-image: url("../img/slider-img-2.jpg"); background-size: cover; display: flex; justify-content: center; align-items: center; }
 #slider > .container {width:100%; margin:0 auto; line-height: normal; text-align: center;}
 #slider > .container > span {font-size: 3vw; color: #883ff9; font-weight: bold;}
-#slider > .container > h3 {font-size: 10vw; color: #fff; line-height: 1;}
+#slider > .container > h3 {font-size: 7vw; color: #fff; line-height: 1;}
 #slider > .container > .smalltext {margin: 40px 0; display: none; justify-content: center; align-items: center; color: #ec167f;}
 #slider > .container > .smalltext > span {font-size: 18px; color: #fff; margin: 0 20px 0 5px;}
 #slider > .container > button {font-size: 15px; color: #fff; background-color: #ec167f; padding:10px 20px; border: none; cursor: pointer; margin-top:5%;}
@@ -25,7 +25,7 @@
 /* section-about */
 #section-about {width:100%; background-image: url("../img/box2-back-1.png"); background-size: cover; background-attachment: fixed; overflow: hidden; padding-bottom: 50px;}
 #section-about > .container {width:90%;  margin: 0 auto; display: flex; flex-direction: column;}
-#section-about > .container > .left-box {line-height: normal; width: 100%; margin:10% 0;}
+#section-about > .container > .left-box {line-height: normal; width: 100%; margin:15% 0;}
 #section-about > .container > .left-box > h2 {color:#fff; font-size: 32px;}
 #section-about > .container > .left-box > p {color:#AAA; font-size: 15px; margin:30px 0 20px; padding-right: 50px;}
 #section-about > .container > .left-box > button {font-size: 15px; color: #fff; background-color: #ec167f; padding: 10px 20px; border: none; cursor: pointer;}
@@ -147,7 +147,7 @@
 #section-sponsors > .container > .dot {color: #ec167f; font-size: 8px; margin-bottom:30px;}
 #section-sponsors > .container > .itembox {width:100%;}
 #section-sponsors > .container > .itembox > h3 {width:100%; font-size: 18px; color:#fff; margin-bottom:30px;}
-#section-sponsors > .container > .itembox > .logobox {width:100%; display: flex; flex-wrap: wrap; margin-bottom: 70px;}
+#section-sponsors > .container > .itembox > .logobox {width:100%; display: flex; flex-wrap: wrap; margin-bottom: 70px; justify-content: center;}
 
 
 
@@ -215,7 +215,4 @@
 #section-fun-facts > .container > .itembox > div {color: #883ff9; font-size: 65px;}
 #section-fun-facts > .container > .itembox > h3 {color:#fff; font-size: 40px; margin:15px;}
 #section-fun-facts > .container > .itembox > p {color:#fff; font-size: 15px;}
-
-
-
 

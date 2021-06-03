@@ -15,19 +15,41 @@
 
     <style>
       /* 서브 슬라이더 */
-      #slider {width:100%; height:500px; background-color: aqua; margin:0 auto;}
+      #slider {width:100%; height:400px; background-image: url("img/sub-slider-1.jpg"); background-size: cover; background-attachment: fixed; margin:0 auto;}
 
+      /* 서브 랩*/
+      #subwrap {width:100%; background-image: url("img/sub-containers-back.png"); background-size: cover; background-attachment: fixed; background-color: black;}
 
       /* 통합컨테이너 */
-      #containers {width:1200px; height:3000px; background-color: burlywood; margin:0 auto; display: flex; justify-content: space-between;}
+      #containers {width:1200px; margin:0 auto; display: flex; justify-content: space-between; line-height: normal;}
 
-      
       /* 컨테이너1 왼쪽 */
-      #container1 {width:65%; height:95%; background-color: brown;}
+      #container1 {width:65%; margin-top: 100px;}
+      #container1 > .content {width:100%; margin-bottom: 100px;}
+      #container1 > .content > h2 {font-size: 30px; color: #fff;}
+      #container1 > .content > p {font-size: 12px; margin:15px 0; color: #707070;}
+      #container1 > .content > p > span:nth-child(2){color: #ec167f;}
+      #container1 > .content > .dot {font-size: 10px; color:#ec167f;}
+      #container1 > .content > .imgbox {width:100%; overflow: hidden; margin:20px 0;}
+      #container1 > .content > .imgbox > img {width:100%; }
+      #container1 > .content > .textbox {width:100%;}
+      #container1 > .content > .textbox > .tagbox {display: flex; align-items: center;}
+      #container1 > .content > .textbox > .tagbox > span {color: #fff; font-size: 13px; font-weight: bold; display: inline-block; margin-right: 10px;}
+      #container1 > .content > .textbox > .tagbox > ul {display: flex;}
+      #container1 > .content > .textbox > .tagbox > ul > li {margin-right: 5px; display: flex; }
+      #container1 > .content > .textbox > .tagbox > ul > li > a {padding:8px 12px; background-color: #883ff9; color: #fff; font-size: 13px; font-style: italic;}
+      #container1 > .content > .textbox > .tagbox > ul > li > a:hover {background-color: #fff; color:#883ff9;}
+      #container1 > .content > .textbox > p {font-size: 13px; color: #eee; margin:15px 0;}
+      #container1 > .content > .textbox > .btnbox {display: flex; align-items: center; justify-content: space-between;}
+      #container1 > .content > .textbox > .btnbox > button {border: 1px solid #ec167f; background-color: #ec167f; color: #fff; padding: 10px 25px; cursor: pointer;}
+      #container1 > .content > .textbox > .btnbox > button:hover {background-color: #fff; color: #ec167f; border: 1px solid #fff;}
+      #container1 > .content > .textbox > .btnbox > .counter {display: flex; background-color: #333;}
+      #container1 > .content > .textbox > .btnbox > .counter > li {padding:10px 20px; color: #fff; font-size: 12px;}
+      #container1 > .content > .textbox > .btnbox > .counter > li > span {color: #ec167f;}
 
 
       /* 컨테이너2 오른쪽 */
-      #container2 {width:30%; height:85%; background-color: yellow;} 
+      #container2 {width:30%; background-color: yellow; margin-top: 100px;} 
 
 
     </style>
@@ -71,16 +93,181 @@
 
 
       <!-- 서브 컨테이너 -->
-      <div id="containers">
-        <div id="container1">
+      <div id="subwrap">
+        <div id="containers">
+          <div id="container1">
 
-        </div> <!-- end #container1 -->
+            <!-- 첫번째 -->
+            <div class="content">
+              <h2>How to Sell Digital Product</h2>
+              <p>
+                <span>May 31, 2021</span> - <span>Oscar Helman</span>
+              </p>
+              <div class="dot">
+                ● ● ●
+              </div>
+              <div class="imgbox">
+                <img src="img/sub-container1-1.jpg" alt="img1">
+              </div>
+              <div class="textbox">
+                <div class="tagbox">
+                  <span>TAGS : </span>
+                  <ul>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Programming</a></li>
+                  </ul>
+                </div> <!-- end .tagbox-->
+                <p>
+                  Fugiat adipisicing aliquip in sed voluptate dolore velit cupidatat aliqua dolor cupidatat minim consequat aute aliquip ad pariatur voluptate irure sunt aute in dolore occaecat esse dolor eu minim consequat cillum eu in pariatur eiusmod ad esse commodo velit aliquip veniam in nostrud velit anim adipisicing eiusmod reprehenderit sit anim ut elit commodo sed sunt quis excepteur in adipisicing sunt duis voluptate quis officia ut sed laborum irure nulla voluptate labore et est minim est aliqua sunt nulla officia aliqua culpa elit proident irure cupidatat id do sed eu in quis anim esse nulla laborum commodo ut incididunt voluptate laboris ut elit eu amet voluptate ad aliquip ex excepteur tempor reprehenderit laboris esse qui incididunt quis amet aute ad eiusmod elit cupidatat excepteur duis tempor ut cillum voluptate in eu sint velit sunt ad culpa labore qui in excepteur proident sunt laboris.
+                </p>
+                <div class="btnbox">
+                  <button>Read More</button>
+                  <ul class="counter">
+                    <li><span><i class="far fa-eye"></i></span> 865</li>
+                    <li><span><i class="far fa-comment"></i></span> 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- end .content -->
 
-        <div id="container2">
+            <!-- 두번째 -->
+            <div class="content">
+              <h2>Better User Interface</h2>
+              <p>
+                <span>May 30, 2021</span> - <span>Sarah Michelle</span>
+              </p>
+              <div class="dot">
+                ● ● ●
+              </div>
+              <div class="imgbox">
+                <img src="img/sub-container1-2.jpg" alt="img1">
+              </div>
+              <div class="textbox">
+                <div class="tagbox">
+                  <span>TAGS : </span>
+                  <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Art</a></li>
+                  </ul>
+                </div> <!-- end .tagbox-->
+                <p>
+                  Fugiat adipisicing aliquip in sed voluptate dolore velit cupidatat aliqua dolor cupidatat minim consequat aute aliquip ad pariatur voluptate irure sunt aute in dolore occaecat esse dolor eu minim consequat cillum eu in pariatur eiusmod ad esse commodo velit aliquip veniam in nostrud velit anim adipisicing eiusmod reprehenderit sit anim ut elit commodo sed sunt quis excepteur in adipisicing sunt duis voluptate quis officia ut sed laborum irure nulla voluptate labore et est minim est aliqua sunt nulla officia aliqua culpa elit proident irure cupidatat id do sed eu in quis anim esse nulla laborum commodo ut incididunt voluptate laboris ut elit eu amet voluptate ad aliquip ex excepteur tempor reprehenderit laboris esse qui incididunt quis amet aute ad eiusmod elit cupidatat excepteur duis tempor ut cillum voluptate in eu sint velit sunt ad culpa labore qui in excepteur proident sunt laboris.
+                </p>
+                <div class="btnbox">
+                  <button>Read More</button>
+                  <ul class="counter">
+                    <li><span><i class="far fa-eye"></i></span> 865</li>
+                    <li><span><i class="far fa-comment"></i></span> 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- end .content -->
 
-        </div> <!-- end #container2 -->
-      </div> <!-- end #containers -->
+            <!-- 세번째 -->
+            <div class="content">
+              <h2>Experts Web Design Tips</h2>
+              <p>
+                <span>May 29, 2021</span> - <span>Katty Wilson</span>
+              </p>
+              <div class="dot">
+                ● ● ●
+              </div>
+              <div class="imgbox">
+                <img src="img/sub-container1-3.jpg" alt="img1">
+              </div>
+              <div class="textbox">
+                <div class="tagbox">
+                  <span>TAGS : </span>
+                  <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Website</a></li>
+                  </ul>
+                </div> <!-- end .tagbox-->
+                <p>
+                  Fugiat adipisicing aliquip in sed voluptate dolore velit cupidatat aliqua dolor cupidatat minim consequat aute aliquip ad pariatur voluptate irure sunt aute in dolore occaecat esse dolor eu minim consequat cillum eu in pariatur eiusmod ad esse commodo velit aliquip veniam in nostrud velit anim adipisicing eiusmod reprehenderit sit anim ut elit commodo sed sunt quis excepteur in adipisicing sunt duis voluptate quis officia ut sed laborum irure nulla voluptate labore et est minim est aliqua sunt nulla officia aliqua culpa elit proident irure cupidatat id do sed eu in quis anim esse nulla laborum commodo ut incididunt voluptate laboris ut elit eu amet voluptate ad aliquip ex excepteur tempor reprehenderit laboris esse qui incididunt quis amet aute ad eiusmod elit cupidatat excepteur duis tempor ut cillum voluptate in eu sint velit sunt ad culpa labore qui in excepteur proident sunt laboris.
+                </p>
+                <div class="btnbox">
+                  <button>Read More</button>
+                  <ul class="counter">
+                    <li><span><i class="far fa-eye"></i></span> 865</li>
+                    <li><span><i class="far fa-comment"></i></span> 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- end .content -->
 
+            <!-- 네번째 -->
+            <div class="content">
+              <h2>Avoid These Erros In UI Design</h2>
+              <p>
+                <span>May 28, 2021</span> - <span>John Smith</span>
+              </p>
+              <div class="dot">
+                ● ● ●
+              </div>
+              <div class="imgbox">
+                <img src="img/sub-container1-4.jpg" alt="img1">
+              </div>
+              <div class="textbox">
+                <div class="tagbox">
+                  <span>TAGS : </span>
+                  <ul>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Design</a></li>
+                  </ul>
+                </div> <!-- end .tagbox-->
+                <p>
+                  Fugiat adipisicing aliquip in sed voluptate dolore velit cupidatat aliqua dolor cupidatat minim consequat aute aliquip ad pariatur voluptate irure sunt aute in dolore occaecat esse dolor eu minim consequat cillum eu in pariatur eiusmod ad esse commodo velit aliquip veniam in nostrud velit anim adipisicing eiusmod reprehenderit sit anim ut elit commodo sed sunt quis excepteur in adipisicing sunt duis voluptate quis officia ut sed laborum irure nulla voluptate labore et est minim est aliqua sunt nulla officia aliqua culpa elit proident irure cupidatat id do sed eu in quis anim esse nulla laborum commodo ut incididunt voluptate laboris ut elit eu amet voluptate ad aliquip ex excepteur tempor reprehenderit laboris esse qui incididunt quis amet aute ad eiusmod elit cupidatat excepteur duis tempor ut cillum voluptate in eu sint velit sunt ad culpa labore qui in excepteur proident sunt laboris.
+                </p>
+                <div class="btnbox">
+                  <button>Read More</button>
+                  <ul class="counter">
+                    <li><span><i class="far fa-eye"></i></span> 865</li>
+                    <li><span><i class="far fa-comment"></i></span> 2</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- end .content -->
+
+
+          </div> <!-- end #container1 -->
+
+      
+          <div id="container2">
+            <!-- search -->
+            <div class="search">
+
+            </div>
+
+            <!-- about us -->
+            <div class="aboutUs">
+              <h3>About Us</h3>
+
+            </div>
+
+            <!-- recent news -->
+            <div class="news">
+              <h3>Recent News</h3>
+            </div>
+
+            <!-- tags -->
+            <div class="tags">
+              <h3>Tags</h3>
+            </div>
+
+            <!-- categories -->
+            <div>
+              <h3>Categories</h3>
+            </div>
+
+            <!-- social widget -->
+            <div class="social">
+              <h3>Social Widget</h3>
+            </div>
+
+          </div> <!-- end #container2 -->
+        </div> <!-- end #containers -->
+      </div>
 
 
 

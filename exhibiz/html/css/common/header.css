@@ -22,6 +22,7 @@ header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer; display: no
   header > nav > ul {flex-direction: column; text-align: center;}
   header > nav > ul > li { width: 90vw; background-color: #000;}
   header > nav > ul > li:hover {background-color: #883ff9;}
+  header > nav > ul > li > a:hover {color:#fff;}
   header > nav > ul > li > a {padding:5% 40%;}
   
 
@@ -35,6 +36,7 @@ header > .menuicon {font-size: 25px; color:#ec167f; cursor: pointer; display: no
   header > nav > ul {flex-direction: column; text-align: center;}
   header > nav > ul > li { width: 90vw; background-color: #000;}
   header > nav > ul > li:hover {background-color: #883ff9;}
+  header > nav > ul > li > a:hover {color:#fff;}
   header > nav > ul > li > a {padding:5% 40%;}
 }
 

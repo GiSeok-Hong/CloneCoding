@@ -16,9 +16,14 @@
     <style>
       /* 서브 슬라이더 */
       #slider {width:100%; height:400px; background-image: url("img/sub-slider-1.jpg"); background-size: cover; background-attachment: fixed; margin:0 auto;}
+      #slider > .container {width:1200px; height:100%; margin: 0 auto; display: flex; align-items: center;}
+      #slider > .container > .textbox {width:100%; text-align: center; line-height: normal;}
+      #slider > .container > .textbox > h4 {font-size: 18px; color:#ec167f; font-style: italic;}
+      #slider > .container > .textbox > h2 {font-size: 40px; color: #fff; margin: 20px 0;}
+      #slider > .container > .textbox > .dot {font-size: 12px; color:#ec167f;}
 
       /* 서브 랩*/
-      #subwrap {width:100%; background-image: url("img/sub-containers-back.png"); background-size: cover; background-attachment: fixed; background-color: black;}
+      #subwrap {width:100%;background-color: #101010;}
 
       /* 통합컨테이너 */
       #containers {width:1200px; margin:0 auto; display: flex; justify-content: space-between; line-height: normal;}
@@ -49,8 +54,66 @@
 
 
       /* 컨테이너2 오른쪽 */
-      #container2 {width:30%; background-color: yellow; margin-top: 100px;} 
+      #container2 {width:30%; margin-top: 100px; overflow: hidden;} 
 
+      /* search */
+      #search {width:100%; height: 50px; display:flex; margin-bottom: 35px;}
+      #search > input {width:85%; height: 100%; outline: none; padding:4%; font-size: 14px; border: 1px solid #333; background-color: #333; color: #eee;}
+      #search > button {width:15%; height: 100%; outline: none; border: 1px solid #333; background-color: #333; cursor: pointer; font-size: 18px; color: #eee;}
+      #search > button:hover {color: #ec167f;}
+
+      /* aboutUs */
+      #aboutUs {width:100%; margin-bottom: 50px; }
+      #aboutUs > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+      #aboutUs > .imgbox {width: 100%; overflow: hidden; margin-bottom: 10px;}
+      #aboutUs > .imgbox > img {width: 100%;}
+      #aboutUs > h4 {font-size: 15px; color: #fff;}
+      #aboutUs > p {font-size: 13px; color: #eee;}
+
+      /* follow */
+      #follow {width:100%; margin-bottom: 50px; }
+      #follow > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+      #follow > ul {display: flex; width: 100%; justify-content: space-between;}
+      #follow > ul > li { width:15%;}
+      #follow > ul > li > a {color: #fff; width: 80%;height: 46px; display: flex; justify-content: center; align-items: center;}
+      #follow > ul > li:nth-of-type(1) > a {background-color: #385998;}
+      #follow > ul > li:nth-of-type(2) > a {background-color: #08a0e9;}
+      #follow > ul > li:nth-of-type(3) > a {background-color: #385998;}
+      #follow > ul > li:nth-of-type(4) > a {background-color: red;}
+      #follow > ul > li:nth-of-type(5) > a {background-color: skyblue;}
+      #follow > ul > li:nth-of-type(6) > a {background-color: hotpink;}
+
+      /* categories */
+      #categories {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #categories > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+
+      /* testimonials */
+      #testimonials {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+
+      /* popular */
+      #popular {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #popular > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+      #popular > ul {width:100%;}
+      #popular > ul > li {width:100%; margin-bottom: 3%; display: flex; }
+      #popular > ul > li > .imgbox {width: 25%;}
+      #popular > ul > li > .imgbox > a > img {width: 100%;}
+      #popular > ul > li > .textbox {width: 75%; padding-left: 10px;}
+      #popular > ul > li > .textbox > h4 > a {font-size: 16px; color: #fff;}
+      #popular > ul > li > .textbox > span {font-size: 12px; color: #333;}
+
+
+      /* tags */
+      #tags {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #tags > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+
+
+      /* letter */
+      #letter {width:100%; margin-bottom: 50px; }
+      #letter > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+      #letter > .email {width:100%; height:50px; display: flex;}
+      #letter > .email > input {width:85%; height: 100%; outline: none; padding:4%; font-size: 14px; border: 1px solid #333; background-color: #333; color: #eee;}
+      #letter > .email > button {width:15%; height: 100%; outline: none; border: 1px solid #333; background-color: #333; cursor: pointer; font-size: 18px; color: #eee;}
+      #letter > .email > button:hover {color: #ec167f;}
 
     </style>
 
@@ -87,7 +150,13 @@
       <!-- 서브 슬라이더 -->
       <div id="slider">
         <div class="container">
-
+          <div class="textbox">
+            <h4>Our last News and Journal</h4>
+            <h2>Exhibiz News</h2>
+            <div class="dot">
+              ● ● ● ● ● ● ●
+            </div>
+          </div>
         </div> <!-- end .container -->
       </div> <!-- end #slider -->
 
@@ -101,7 +170,7 @@
             <div class="content">
               <h2>How to Sell Digital Product</h2>
               <p>
-                <span>May 31, 2021</span> - <span>Oscar Helman</span>
+                <span>May 31, 2021</span> - <span>John Smith</span>
               </p>
               <div class="dot">
                 ● ● ●
@@ -134,7 +203,7 @@
             <div class="content">
               <h2>Better User Interface</h2>
               <p>
-                <span>May 30, 2021</span> - <span>Sarah Michelle</span>
+                <span>May 30, 2021</span> - <span>Michael Dennis</span>
               </p>
               <div class="dot">
                 ● ● ●
@@ -167,7 +236,7 @@
             <div class="content">
               <h2>Experts Web Design Tips</h2>
               <p>
-                <span>May 29, 2021</span> - <span>Katty Wilson</span>
+                <span>May 29, 2021</span> - <span>Sarah Michelle</span>
               </p>
               <div class="dot">
                 ● ● ●
@@ -200,7 +269,7 @@
             <div class="content">
               <h2>Avoid These Erros In UI Design</h2>
               <p>
-                <span>May 28, 2021</span> - <span>John Smith</span>
+                <span>May 28, 2021</span> - <span>Katty Wilson</span>
               </p>
               <div class="dot">
                 ● ● ●
@@ -235,34 +304,132 @@
       
           <div id="container2">
             <!-- search -->
-            <div class="search">
-
+            <div id="search">
+              <input type="search" placeholder="Enter Your Keywords...">
+              <button><i class="fas fa-search"></i></button>
             </div>
 
             <!-- about us -->
-            <div class="aboutUs">
-              <h3>About Us</h3>
-
+            <div id="aboutUs">
+              <h3>ABOUT US</h3>
+              <div class="imgbox">
+                <img src="img/box9-img-4.jpg" alt="img">
+              </div>
+              <h4>Exhibiz - Event Conference</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard.
+              </p>
             </div>
 
-            <!-- recent news -->
-            <div class="news">
-              <h3>Recent News</h3>
-            </div>
-
-            <!-- tags -->
-            <div class="tags">
-              <h3>Tags</h3>
+            <!-- follow us -->
+            <div id="follow">
+              <h3>FOLLOW US</h3>
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+              </ul>
             </div>
 
             <!-- categories -->
-            <div>
-              <h3>Categories</h3>
+            <div id="categories">
+              <h3>CATEGORIES</h3>
             </div>
 
-            <!-- social widget -->
-            <div class="social">
-              <h3>Social Widget</h3>
+            <!-- testimonials -->
+            <div id="testimonials">
+              <span><i class="fas fa-quote-left"></i></span>
+              <p>
+                I've got lot experiences!
+                I'm always impressed with the event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                John, Customer
+              </p>
+              <span><i class="fas fa-quote-right"></i></span>
+            </div>
+
+            <!-- popular -->
+            <div id="popular">
+              <h3>POPULAR</h3>
+              <ul>
+                <li>
+                  <div class="imgbox">
+                    <a href="#">
+                      <img src="img/box4-img-1.jpg" alt="img1">
+                    </a>
+                  </div>
+                  <div class="textbox">
+                    <h4><a href="#">How to Sell Digital Product</a></h4>
+                    <span>John Smith</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="imgbox">
+                    <a href="#">
+                      <img src="img/box4-img-2.jpg" alt="img2">
+                    </a>
+                  </div>
+                  <div class="textbox">
+                    <h4><a href="#">Better User Interface</a></h4>
+                    <span>Michael Dennis</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="imgbox">
+                    <a href="#">
+                      <img src="img/box4-img-3.jpg" alt="img3">
+                    </a>
+                  </div>
+                  <div class="textbox">
+                    <h4><a href="#">Experts Web Design Tips</a></h4>
+                    <span>Sarah Michelle</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="imgbox">
+                    <a href="#">
+                      <img src="img/box4-img-4.jpg" alt="img4">
+                    </a>
+                  </div>
+                  <div class="textbox">
+                    <h4><a href="#">Avoid These Erros In UI Design</a></h4>
+                    <span>Katty Wilson</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- tags -->
+            <div id="tags">
+              <h3>TAGS</h3>
+              <ul>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Internet</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Multipurpose</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Print</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Responsive</a></li>
+                <li><a href="#">Website</a></li>
+              </ul>
+            </div>
+
+            <!-- letter -->
+            <div id="letter">
+              <h3>LETTER</h3>
+              <div class="email">
+                <input type="email" placeholder="Enter Your Email...">
+                <button><i class="far fa-envelope"></i></button>
+              </div>
             </div>
 
           </div> <!-- end #container2 -->

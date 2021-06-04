@@ -75,7 +75,8 @@
       #follow > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
       #follow > ul {display: flex; width: 100%; justify-content: space-between;}
       #follow > ul > li { width:15%;}
-      #follow > ul > li > a {color: #fff; width: 80%;height: 46px; display: flex; justify-content: center; align-items: center;}
+      #follow > ul > li > a {color: #fff; width: 80%;height: 46px; display: flex; justify-content: center; align-items: center; transition: 0.3s;}
+      #follow > ul > li > a:hover {border-radius: 20px;}
       #follow > ul > li:nth-of-type(1) > a {background-color: #385998;}
       #follow > ul > li:nth-of-type(2) > a {background-color: #08a0e9;}
       #follow > ul > li:nth-of-type(3) > a {background-color: #385998;}
@@ -88,10 +89,13 @@
       #categories > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
 
       /* testimonials */
-      #testimonials {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #testimonials {width:100%; margin-bottom: 50px; }
+      #testimonials > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
+      #testimonials > span {width: 100%; display: inline-block; text-align: center; margin:10px 0; color: #fff;}
+      #testimonials > p {width: 100%; font-size: 13px; color: #eee;}
 
       /* popular */
-      #popular {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #popular {width:100%; margin-bottom: 50px;}
       #popular > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
       #popular > ul {width:100%;}
       #popular > ul > li {width:100%; margin-bottom: 3%; display: flex; }
@@ -99,7 +103,10 @@
       #popular > ul > li > .imgbox > a > img {width: 100%;}
       #popular > ul > li > .textbox {width: 75%; padding-left: 10px;}
       #popular > ul > li > .textbox > h4 > a {font-size: 16px; color: #fff;}
-      #popular > ul > li > .textbox > span {font-size: 12px; color: #333;}
+      #popular > ul > li > .textbox > span {font-size: 13px; color: #eee;}
+      #popular > ul > li > .textbox > span:nth-of-type(1) {color: #ec167f; font-size: 14px;}
+      #popular > ul > li > .textbox > span:nth-of-type(2) {font-style: italic; font-size: 12px;}
+      
 
 
       /* tags */
@@ -114,6 +121,10 @@
       #letter > .email > input {width:85%; height: 100%; outline: none; padding:4%; font-size: 14px; border: 1px solid #333; background-color: #333; color: #eee;}
       #letter > .email > button {width:15%; height: 100%; outline: none; border: 1px solid #333; background-color: #333; cursor: pointer; font-size: 18px; color: #eee;}
       #letter > .email > button:hover {color: #ec167f;}
+
+      /* insta */
+      #insta {width:100%; margin-bottom: 50px; background-color: yellowgreen;}
+      #insta > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
 
     </style>
 
@@ -341,6 +352,7 @@
 
             <!-- testimonials -->
             <div id="testimonials">
+              <h3>TESTIMONIALS</h3>
               <span><i class="fas fa-quote-left"></i></span>
               <p>
                 I've got lot experiences!
@@ -362,7 +374,9 @@
                   </div>
                   <div class="textbox">
                     <h4><a href="#">How to Sell Digital Product</a></h4>
-                    <span>John Smith</span>
+                    <span>John Smith</span> <br>
+                    <span>May 31, 2021 -</span>
+                    <span>2 Comments</span>
                   </div>
                 </li>
 
@@ -374,7 +388,9 @@
                   </div>
                   <div class="textbox">
                     <h4><a href="#">Better User Interface</a></h4>
-                    <span>Michael Dennis</span>
+                    <span>Michael Dennis</span> <br>
+                    <span>May 30, 2021 -</span>
+                    <span>2 Comments</span>
                   </div>
                 </li>
 
@@ -386,7 +402,9 @@
                   </div>
                   <div class="textbox">
                     <h4><a href="#">Experts Web Design Tips</a></h4>
-                    <span>Sarah Michelle</span>
+                    <span>Sarah Michelle</span> <br>
+                    <span>May 29, 2021 -</span>
+                    <span>2 Comments</span>
                   </div>
                 </li>
 
@@ -398,7 +416,9 @@
                   </div>
                   <div class="textbox">
                     <h4><a href="#">Avoid These Erros In UI Design</a></h4>
-                    <span>Katty Wilson</span>
+                    <span>Katty Wilson</span> <br>
+                    <span>May 28, 2021 -</span>
+                    <span>2 Comments</span>
                   </div>
                 </li>
               </ul>
@@ -432,6 +452,13 @@
               </div>
             </div>
 
+            <!-- insta -->
+            <div id="insta">
+              <h3>INSTAGRAM</h3>
+              <div class="imgbox">
+
+              </div>
+            </div>
           </div> <!-- end #container2 -->
         </div> <!-- end #containers -->
       </div>

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common/header.css">
     <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="css/sub.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
@@ -13,136 +14,6 @@
 
     <title>Exhibiz - Event Conference</title>
 
-    <style>
-      /* 서브 슬라이더 */
-      #slider {width:100%; height:400px; background-image: url("img/sub-slider-1.jpg"); background-size: cover; background-attachment: fixed; margin:0 auto;}
-      #slider > .container {width:1200px; height:100%; margin: 0 auto; display: flex; align-items: center;}
-      #slider > .container > .textbox {width:100%; text-align: center; line-height: normal;}
-      #slider > .container > .textbox > h4 {font-size: 18px; color:#ec167f; font-style: italic;}
-      #slider > .container > .textbox > h2 {font-size: 40px; color: #fff; margin: 20px 0;}
-      #slider > .container > .textbox > .dot {font-size: 12px; color:#ec167f;}
-
-      /* 서브 랩*/
-      #subwrap {width:100%;background-color: #101010;}
-
-      /* 통합컨테이너 */
-      #containers {width:1200px; margin:0 auto; display: flex; justify-content: space-between; line-height: normal;}
-
-      /* 컨테이너1 왼쪽 */
-      #container1 {width:65%; margin-top: 100px;}
-      #container1 > .content {width:100%; margin-bottom: 100px;}
-      #container1 > .content > h2 {font-size: 30px; color: #fff;}
-      #container1 > .content > p {font-size: 12px; margin:15px 0; color: #707070;}
-      #container1 > .content > p > span:nth-child(2){color: #ec167f;}
-      #container1 > .content > .dot {font-size: 10px; color:#ec167f;}
-      #container1 > .content > .imgbox {width:100%; overflow: hidden; margin:20px 0;}
-      #container1 > .content > .imgbox > img {width:100%; }
-      #container1 > .content > .textbox {width:100%;}
-      #container1 > .content > .textbox > .tagbox {display: flex; align-items: center;}
-      #container1 > .content > .textbox > .tagbox > span {color: #fff; font-size: 13px; font-weight: bold; display: inline-block; margin-right: 10px;}
-      #container1 > .content > .textbox > .tagbox > ul {display: flex;}
-      #container1 > .content > .textbox > .tagbox > ul > li {margin-right: 5px; display: flex; }
-      #container1 > .content > .textbox > .tagbox > ul > li > a {padding:8px 12px; background-color: #883ff9; color: #fff; font-size: 13px; font-style: italic;}
-      #container1 > .content > .textbox > .tagbox > ul > li > a:hover {background-color: #fff; color:#883ff9;}
-      #container1 > .content > .textbox > p {font-size: 13px; color: #eee; margin:15px 0;}
-      #container1 > .content > .textbox > .btnbox {display: flex; align-items: center; justify-content: space-between;}
-      #container1 > .content > .textbox > .btnbox > button {border: 1px solid #ec167f; background-color: #ec167f; color: #fff; padding: 10px 25px; cursor: pointer;}
-      #container1 > .content > .textbox > .btnbox > button:hover {background-color: #fff; color: #ec167f; border: 1px solid #fff;}
-      #container1 > .content > .textbox > .btnbox > .counter {display: flex; background-color: #333;}
-      #container1 > .content > .textbox > .btnbox > .counter > li {padding:10px 20px; color: #fff; font-size: 12px;}
-      #container1 > .content > .textbox > .btnbox > .counter > li > span {color: #ec167f;}
-
-
-      /* 컨테이너2 오른쪽 */
-      #container2 {width:30%; margin-top: 100px; overflow: hidden;} 
-
-      /* search */
-      #search {width:100%; height: 50px; display:flex; margin-bottom: 35px;}
-      #search > input {width:85%; height: 100%; outline: none; padding:4%; font-size: 14px; border: 1px solid #333; background-color: #333; color: #eee;}
-      #search > button {width:15%; height: 100%; outline: none; border: 1px solid #333; background-color: #333; cursor: pointer; font-size: 18px; color: #eee;}
-      #search > button:hover {color: #ec167f;}
-
-      /* aboutUs */
-      #aboutUs {width:100%; margin-bottom: 50px;}
-      #aboutUs > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #aboutUs > .imgbox {width: 100%; overflow: hidden; margin-bottom: 10px;}
-      #aboutUs > .imgbox > img {width: 100%;}
-      #aboutUs > h4 {font-size: 15px; color: #fff;}
-      #aboutUs > p {font-size: 13px; color: #eee;}
-
-      /* follow */
-      #follow {width:100%; margin-bottom: 50px; }
-      #follow > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #follow > ul {display: flex; width: 100%; justify-content: space-between;}
-      #follow > ul > li { width:15%;}
-      #follow > ul > li > a {color: #fff; width: 80%;height: 46px; display: flex; justify-content: center; align-items: center; transition: 0.3s;}
-      #follow > ul > li > a:hover {border-radius: 20px;}
-      #follow > ul > li:nth-of-type(1) > a {background-color: #385998;}
-      #follow > ul > li:nth-of-type(2) > a {background-color: #08a0e9;}
-      #follow > ul > li:nth-of-type(3) > a {background-color: #385998;}
-      #follow > ul > li:nth-of-type(4) > a {background-color: red;}
-      #follow > ul > li:nth-of-type(5) > a {background-color: skyblue;}
-      #follow > ul > li:nth-of-type(6) > a {background-color: hotpink;}
-
-      /* categories */
-      #categories {width:100%; margin-bottom: 50px;}
-      #categories > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #categories > ul {width: 100%; font-size: 16px;}
-      #categories > ul > li {width: 100%; height: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #666;}
-      #categories > ul > li > a {color:#eee; padding:10px 30px 10px 0;}
-      #categories > ul > li > a:hover {color:#ec167f;}
-      #categories > ul > li > span {color:#eee; display: inline-block;}
-
-      /* testimonials */
-      #testimonials {width:100%; margin-bottom: 50px; }
-      #testimonials > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #testimonials > span {width: 100%; display: inline-block; text-align: center; margin:10px 0; color: #ec167f;}
-      #testimonials > p {width: 100%; font-size: 13px; color: #eee;}
-
-      /* popular */
-      #popular {width:100%; margin-bottom: 50px;}
-      #popular > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #popular > ul {width:100%;}
-      #popular > ul > li {width:100%; margin-bottom: 3%; display: flex; }
-      #popular > ul > li > .imgbox {width: 25%;}
-      #popular > ul > li > .imgbox > a > img {width: 100%;}
-      #popular > ul > li > .textbox {width: 75%; padding-left: 10px;}
-      #popular > ul > li > .textbox > h4 > a {font-size: 16px; color: #fff;}
-      #popular > ul > li > .textbox > span {font-size: 13px; color: #eee;}
-      #popular > ul > li > .textbox > span:nth-of-type(1) {color: #ec167f; font-size: 14px;}
-      #popular > ul > li > .textbox > span:nth-of-type(2) {font-style: italic; font-size: 12px;}
-      
-
-
-      /* tags */
-      #tags {width:100%; margin-bottom: 50px;}
-      #tags > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #tags > ul {display: flex; width:100%; flex-wrap: wrap; justify-content: space-between;}
-      #tags > ul > li {display: flex; margin-bottom: 3%;}
-      #tags > ul > li > a {color:#fff; background-color: #883ff9; padding:8px 12px; font-style: italic; font-size: 13px;}
-      #tags > ul > li > a:hover {color:#883ff9; background-color: #fff;}
-
-
-      /* letter */
-      #letter {width:100%; margin-bottom: 50px; }
-      #letter > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #letter > .email {width:100%; height:50px; display: flex;}
-      #letter > .email > input {width:85%; height: 100%; outline: none; padding:4%; font-size: 14px; border: 1px solid #333; background-color: #333; color: #eee;}
-      #letter > .email > button {width:15%; height: 100%; outline: none; border: 1px solid #333; background-color: #333; cursor: pointer; font-size: 18px; color: #eee;}
-      #letter > .email > button:hover {color: #ec167f;}
-
-      /* insta */
-      #insta {width:100%; margin-bottom: 50px; }
-      #insta > h3 {font-size: 18px; color: #fff; margin-bottom: 10px;}
-      #insta > .imgbox {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; overflow: hidden;}
-      #insta > .imgbox > a {width: 32%; overflow: hidden; margin-bottom: 2%; position: relative;}
-      #insta > .imgbox > a > img {width: 100%; transition: 0.3s;}
-      #insta > .imgbox > a > .icon {width: 100%; height: 100%; position: absolute; top: 0;  display: flex; justify-content: center; align-items: center; color: #fff; opacity: 0; transition: 0.3s;}  
-      #insta > .imgbox > a:hover > .icon {opacity: 1;}
-      #insta > .imgbox > a:hover > img {opacity: 0.5;}
-
-
-    </style>
 
   </head>
   <body>

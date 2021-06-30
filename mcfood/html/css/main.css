@@ -73,7 +73,7 @@ span.txt > a:hover {opacity: 0.5;}
 .goods_tab {margin:10px auto 30px; text-align: center;}
 .goods_tab > ul {width:100%; display:inline-block;}
 .goods_tab li {display: inline-block; margin:2px 4px 6px;}
-.goods_tab li > a {color:#1e1a34; border:1px solid #ccc; border-radius: 20px; display: block; line-height: 38px; padding:0 15px; font-size: 15px; transition: 0.1;}
+.goods_tab li > a {color:#1e1a34; border:1px solid #ccc; border-radius: 20px; display: block; line-height: 38px; padding:0 15px; font-size: 15px; transition: 0.1s;}
 .goods_tab li > a:hover {background-color: #1e1a34; color:#fff; border:1px solid darkslateblue;}
 
 /* 베스트 아이콘 */
@@ -81,9 +81,9 @@ span.txt > a:hover {opacity: 0.5;}
 
 /* 베스트 장바구니 */
 .item_img > .item_link {position: absolute; bottom: 20px; right: -3px; width:30%; height: 40px; text-align: center; line-height: 1;}
-.item_link > .icon_btn {display: inline-block; width: 45px;; height: 45px; background: rgba(256, 256, 256, 0.7); border-radius: 50%; transition: 0.3s; border: none;}
+.item_link > .icon_btn {display: inline-block; width: 45px;; height: 45px; background: rgba(255, 255, 255, 0.7); border-radius: 50%; transition: 0.3s; border: none;}
 .icon_btn > img {width:24px; vertical-align: middle;}
-.icon_btn:hover {background: rgba(256, 256, 256, 1);}
+.icon_btn:hover {background: rgba(255, 255, 255, 1);}
 
 /* 베스트 더보기 버튼 */
 .bestmore {text-align: center;}

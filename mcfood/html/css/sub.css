@@ -30,7 +30,7 @@ div.category > ul > li {float:left; font-size: 14px; color: #666; display: block
 .score_right {width: 150px; height: 60px; float: right; padding:20px 0; text-align: right;}
 .score_right > .snsshare {border: 1px solid #666; background-color: #fff; padding:2px 7px;}
 .snsshare > a {color:#666; font-size: 14px;}
-.snsshare:hover {background-color: #1e1a34; border: 1px solid #1e1a34;}
+.snsshare:hover {background-color: #1e1a34; }
 .snsshare:hover > a {color:#fff;}
 
 /* 다른 이미지 */
@@ -70,7 +70,7 @@ div.category > ul > li {float:left; font-size: 14px; color: #666; display: block
 .purchase_box > .btn_box > .btn_1:hover {opacity: 0.8;}
 .purchase_box > .btn_box > .btn_2 {width: 220px; height: 50px; cursor: pointer;}
 .purchase_box > .btn_box > .btn_2:hover {opacity: 0.8;}
-.purchase_box > .btn_box > .btn_3 {width: 220px; height: 50px; background-color: #1e1a34; border: 1px solid #1e1a34; color: #fff; cursor: pointer;}
+.purchase_box > .btn_box > .btn_3 {width: 220px; height: 50px; background-color: #1e1a34;  color: #fff; cursor: pointer;}
 .purchase_box > .btn_box > .btn_3:hover {opacity: 0.8;}
 
 /* 아래 구역 */

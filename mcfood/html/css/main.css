@@ -136,7 +136,7 @@ span.txt > a:hover {opacity: 0.5;}
 .instaTit a > span {font-size: 22px; color:#808080; padding:0 0 0 20px;}
 .instaTit a:hover > span {color:#333;}
 .insta_widget {width:100%; height:200px;}
-.insta_item {width:160px; height:160px; background-color: red; float: left; margin:0 5px; overflow: hidden;}
+.insta_item {width:160px; height:160px; float: left; margin:0 5px; overflow: hidden;}
 .insta_item img {width:100%; height: 100%;}
 
 

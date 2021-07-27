@@ -66,9 +66,9 @@ div.tit h4 {font-size: 18px; margin:0 0 10px 5px; color:#1e1a34; line-height: 20
 .item_img > a > img:hover{transform: scale(1.1);}
 .item_info {margin:5px 0 0 0;}
 .item_info strong {display: inline-block; font-size: 16px;}
-.item_explain {font-size: 12px; color: #666; display: block;}
+.item_explain {font-size: 12px; color: #666; display: block; margin:4px 0;}
 .price {font-size: 14px; display: inline-block;}
-.t {font-size: 12px; color:#666; display: block;}
+.t {font-size: 12px; color:#666; display: block; margin:4px 0;}
 
 /* 신제품 더보기 버튼 */
 .newmore {text-align: center;}

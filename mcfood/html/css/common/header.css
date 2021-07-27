@@ -68,4 +68,4 @@ header {width:100%; position: relative;}
 
 /* 헤더 검색창 */
 .gnb_infoicon {position: relative; width: 250px; height: 58px; float: right;}
-.gnb_infoicon > input {position: absolute; top:12px; border-radius: 15px; padding:8px; border:1px solid rgba(102, 102, 102, 0.7); width: 100%;}
+.gnb_infoicon > input {position: absolute; top:12px; border-radius: 15px; padding:8px; border:1px solid rgba(102, 102, 102, 0.7); width: 100%; outline: none;}

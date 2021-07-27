@@ -18,8 +18,8 @@
 
 
 
-### 3. exhibiz
+### 3. [exhibiz](https://github.com/GiSeok-Hong/CloneCoding/tree/master/exhibiz/html)
 
-* 
-* 작업 기간 (2021.05.27 ~ 2021.)
+* [디자인 전시회 홍보](https://www.designesia.com/themes/exhibiz/index-event-slide-background-dark.html) 사이트를 클론코딩 하였습니다.
+* 작업 기간 (2021.05.27 ~ 2021.06.06)
 

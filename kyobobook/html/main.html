@@ -12,97 +12,6 @@
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
-  <style>
-    #wrap {width:100%;}
-    /* 헤더 */
-    header {width:100%; height:255px; background-color: red; margin:0 auto;}
-    .header_banner {width: 100%; height:65px; background-color: yellow;}
-    .header_util {width: 1100px; height:30px; background-color: blue; margin:0 auto;}
-    .header_search {width: 1100px; height:110px; background-color: green; margin:0 auto;}
-    nav {width: 1100px; height:50px; background-color: purple; margin:0 auto;}
-
-    /* 슬라이드 */
-    #slider {width:100%; height: 430px;}
-    .slider_box {width:1100px; height: 430px; background-color: yellow; margin: 0 auto;}
-    .slider_left {width:700px; height: 370px; background-color: green; float: left;}
-    .slider_right {width:400px; height: 370px; background-color: blue; float: left;}
-   
-    /* 컨테이너 */
-    #container {width:100%; height:5000px; background-color: #ccc;}
-
-    /* box1 */
-    .box1 {width: 100%; height: 130px;}
-    .box1 > .item {width: 1100px; height: 130px; background-color: red; margin:0 auto; display: flex; justify-content: space-between;}
-    .box1 > .item > .imgbox {width: 33%; height: 130px; background-color: blue; }
-    
-    /* box2 */
-    .box2 {width: 100%; height: 55px;}
-    .box2 > .item {width: 1100px; height: 55px; background-color: blue; margin:0 auto; display: flex; justify-content: space-between;}
-    .box2 > .item > .imgbox {width: 33%; height: 55px; background-color: red; }
-
-    /* box3 */
-    .box3 {width:100%; height:355px;}
-    .box3 > .item {width:1100px; height:355px; background-color: yellowgreen; margin:0 auto; position: relative;}
-    .box3 > .item > .left {width:634px; height:355px; background-color: pink; float: left;}
-    .box3 > .item > .right {width:466px; height:355px; background-color: white; float: left;}
-
-    .box3 > .item > .adv {width:85px; height:704px; background-color:cadetblue; position: absolute; top:0; left:-100px;}
-    
-    /* box4 */
-    .box4 {width:100%; height:350px;}
-    .box4 > .item {width: 1100px; height:350px; background-color: bisque; margin:0 auto;}
-    .box4 > .item > .itembox {width: 1100px; height:310px; background-color: violet; display: flex; justify-content: space-between;}
-    .box4 > .item > .itembox > .imgbox {width: 24%; height:310px; background-color: red; }
-
-    /* box5 */
-    .box5 {width:100%; height:400px;}
-    .box5 > .item {width:1100px; height:400px; margin: 0 auto; background-color: brown;}
-    .box5 > .item > .itembox {width: 1100px; height: 310px; display: flex; justify-content: space-between;}
-    .box5 > .item > .itembox > .imgbox {width:24%; height:310px; background-color: yellow;}
-    .box5 > .item > .keyword_pick {width:1100px; height:50px; background-color: green;}
-
-    /* box6 */
-    .box6 {width:100%; height:110px;}
-    .box6 > .item {width: 1100px; height: 110px; background-color: pink; margin: 0 auto;}
-
-    /* box7 */
-    .box7 {width:100%; height:300px;}
-    .box7 > .item {width:1100px; height:300px; margin:0 auto; background-color: yellowgreen;}
- 
-    /* box8 */
-    .box8 {width:100%; height:360px;}
-    .box8 > .item {width:1100px; height:360px; margin:0 auto; background-color: tomato;}
-    .box8 > .item > .itembox {width:1100px; height:325px; background-color: tomato; display: flex; justify-content: space-between;}
-    .box8 > .item > .itembox > .imgbox {width:24%; height:325px; background-color: yellow;}
-
-
-    /* box9 */
-    .box9 {width:100%; height:875px;}
-    .box9 > .item {width:1100px; height:875px; margin:0 auto; background-color: teal;}
-    .box9 > .item > ul {display: flex; flex-flow: row wrap;}
-    .box9 > .item > ul > li {width: 25%; height: 280px; border: 1px solid black;}
-    
-    
-    /* box10 */
-    .box10 {width: 100%; height: 650px;}
-    .box10 > .item {width:1100px; height:650px; background-color:blanchedalmond; margin: 0 auto;}
-    .box10 > .item > .itembox > .left {width:750px; height: 510px; background-color: aqua; float: left;}
-    .box10 > .item > .itembox > .right {width:350px; height: 510px; background-color: blueviolet; float: right;}
-
-
-    /* box11 */
-    .box11 {width:100%; height:310px;}
-    .box11 > .item {width:1100px; height:310px; background-color: red; margin: 0 auto;}
-    .box11 > .item > .itembox {width:100%; height:270px; display: flex; justify-content: space-between;}
-    .box11 > .item > .itembox > .imgbox {width: 16%; height: 270px;background-color: yellow;}
-
-
-
-
-    /* 푸터 */
-    footer {width:100%; height: 260px; background-color: rgba(0, 0, 0, 0.7);}
-
-  </style>
 </head>
 <body>
 
@@ -110,17 +19,144 @@
 
     <!-- 헤더 -->
     <header>
+
+      <!-- 상단 배너 -->
       <div class="header_banner">
-        header_banner
-      </div>
-      <div class="header_util">
-        login
-      </div>
+        <div class="imgbox">
+          <a href="#">
+            <img src="img/banner_top.jpg" alt="banner">
+          </a>
+          <button>X</button>
+        </div>
+      </div> <!-- end .header_banner-->
+
+
+      <!-- 유저 관련 메뉴 -->
+      <div class="header_userMenu">
+        <ul class="barocon">
+          <li>
+            <a href="#">
+              바로콘
+              <img src="img/barocon_off.gif" alt="off">
+            </a>
+          </li>
+        </ul> <!-- end .barocon-->
+
+        <ul class="guide">
+          <li>
+            <a href="#">매장 안내 <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">회원혜택 <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Prestige Lounge</a>
+          </li>
+        </ul> <!-- end .guide-->
+
+        <ul class="login">
+          <li class="login_btn">
+            <a href="#">로그인</a>
+          </li>
+          <li>
+            <a href="#">회원가입</a>
+          </li>
+          <li>
+            <a href="#">출석체크</a>
+          </li>
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+          <li>
+            <a href="#">주문배송</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul> <!-- end .login-->
+      </div> <!-- end .header_userMenu-->
+
+
+      <!-- 검색창 부분 -->
       <div class="header_search">
-        search
-      </div>
+        <!-- 로고 이미지 -->
+        <div class="logo">
+          <a href="#"><img src="img/logo_kyobo.png" alt="logo"></a>
+        </div>
+
+        <!-- 검색창 -->
+        <div class="search">
+          <div class="top_searched">
+            <ul>
+              <li><a href="#">고구려세트</a></li>
+              <li><a href="#">취준생 합격노트</a></li>
+              <li><a href="#">그림 개념 수학</a></li>
+              <li><a href="#">공포미스터리 특집</a></li>
+            </ul>
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+          </div>
+          <div class="search_bar">
+            <input type="text">
+            <span>
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- 광고 -->
+        <div class="search_ad">
+          <ul>
+            <li><a href="#"><img src="img/search_ad1.jpg" alt="ad1"></a></li>
+          </ul>
+          <span class="prev">&lt;</span>
+          <span class="next">&gt;</span>
+        </div>
+      </div> <!-- end .header_search-->
+
+
+      <!-- 네비게이션 -->
       <nav>
-        nav
+        <div class="nav_bar">
+          <ul class="nav_main">
+            <li>
+              <a href="#">국내도서</a>
+            </li>
+            <li>
+              <a href="#">외국도서</a>
+            </li>
+            <li>
+              <a href="#">eBook <span><i class="fas fa-chevron-down"></i></span></a>
+            </li>
+            <li>
+              <a href="#">웹소설</a>
+            </li>
+            <li>
+              <a href="#">기프트 <span><i class="fas fa-chevron-down"></i></span></a>
+            </li>
+            <li>
+              <a href="#">음반 <span><i class="fas fa-chevron-down"></i></span></a>
+            </li>
+            <li>
+              <a href="#">중고장터</a>
+            </li>
+            <li>
+              <a href="#">MORE</a>
+            </li>
+          </ul>
+
+          <ul class="nav_sub">
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">신상품</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">사은품</a></li>
+            <li><a href="#">Picks</a></li>
+          </ul>
+
+          <div class="nav_more">
+            <span><i class="fas fa-bars"></i></span>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -290,15 +326,42 @@
             <div class="imgbox">6</div>
           </div>
         </div>
-
       </div> <!-- end .box11 -->
 
 
+      <!-- 박스12 -->
+      <div class="box12">
+        <div class="item">
+          <h2>Klover 평점 좋은책</h2>
+          <div class="itembox">
+            <div class="left">
+
+            </div>
+            <div class="right">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end .box12 -->
 
 
-
-
-
+      <!-- 박스13 -->
+      <div class="box13">
+        <div class="item">
+          <h2>감성메이커</h2>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
+      </div> <!-- box13 -->
 
 
 

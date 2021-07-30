@@ -14,11 +14,11 @@ $(document).ready(function () {
   });
 
 
-  // 회원혜택
-  $(".benefits").mouseover(function(){
-    $(this).children(".benefits_none").stop().show();
+  // 매장 안내 및 회원혜택
+  $(".guide > li").mouseover(function(){
+    $(this).children("ul").stop().show();
   }).mouseout(function(){
-    $(".benefits_none").stop().hide();
+    $(this).children("ul").stop().hide();
   });
 
 

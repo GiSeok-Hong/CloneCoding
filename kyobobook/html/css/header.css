@@ -30,10 +30,14 @@ header {width:100%; margin:0 auto;}
 .guide > li:hover > a {color:blue;}
 
 .guide > .store {position: relative;}
-.guide > .store > ul {position: absolute; width: 150px; top:30px; background-color: #fff; display: none;}
-.guide > .store > .seoul {left:0;}
-.guide > .store > .gyeonggi {left:150px;}
-.guide > .store > .other {left:300px;}
+.guide > .store > ul {position: absolute; width: 150px; height: 376px; top:30px; background-color: #fff; z-index: 1; border: 1px solid #000; display: none;}
+.guide > .store > ul:not(:last-of-type) {border-right: 1px solid #ccc;}
+.guide > .store > ul > li:first-of-type {font-size: 12px; font-weight: bold; text-align: center; padding: 5px; background-color: #ddd;}
+.guide > .store > ul > li:hover > a {background-color: #eee;}
+.guide > .store > ul > li > a {display: block; padding:5px;}
+.guide > .store > .seoul {left:0; border-right: none;}
+.guide > .store > .gyeonggi {left:150px; border-right:none; border-left: none;}
+.guide > .store > .other {left:300px; border-left: none;}
 
 .guide > .benefits {position: relative;}
 .guide > .benefits > .benefits_none {position:absolute; width:125px; top:30px; left:0; background-color: #fff; border: 1px solid #000; z-index: 1; display: none;}
@@ -78,9 +82,9 @@ header {width:100%; margin:0 auto;}
 .search_ad > ul > li {width:220px; height:100%; float:left;}
 .search_ad > ul > li > img {width:100%; height:100%;}
 
-.search_ad > span {position:absolute; bottom: 0; border: 1px solid #ccc; padding:0 2px;}
-.search_ad > span:not(:first-of-type):hover {border:1px solid #000;}
-.search_ad > .count {border:none; right:36px; font-size: 13px; bottom:2px;}
+.search_ad > span {position:absolute; bottom: 0; border: 1px solid #ccc; padding:0 2px; background-color: #fff;}
+.search_ad > span:hover {border:1px solid #000;}
+
 .search_ad > .prev {right: 18px; cursor: pointer;}
 .search_ad > .next {right:0px; cursor: pointer;}
 

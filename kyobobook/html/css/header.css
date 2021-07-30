@@ -4,7 +4,7 @@
 a {color:#000; font-size: 12px;}
 
 /* 헤더 */
-header {width:100%; height:255px; margin:0 auto;}
+header {width:100%; margin:0 auto;}
 
 /* 최상단 배너 */
 .header_banner {width: 100%; height:65px; background: linear-gradient(to right, rgb(202, 244, 231),rgb(255, 227, 209));}
@@ -17,12 +17,29 @@ header {width:100%; height:255px; margin:0 auto;}
 .header_userMenu {width: 1100px; height:30px; margin:0 auto; display: flex; position: relative;}
 
 /* 바로콘 */
-.barocon > li {padding:10px 0 0 0;}
+.barocon > li {padding:10px 0 0 0; position: relative;}
 .barocon > li > a > img {margin-top: 2px;}
+.barocon > li > .barocon_none {border: 1px solid #000; position: absolute; top:30px; left:0; width:220px; padding:10px; background-color: #fff; display: none;}
+.barocon_none > p {font-size: 12px; color: red; font-weight: bold;}
+.barocon_none > a:hover {color:blue;}
+
 
 /* 안내 */
 .guide {margin:0 0 0 20px;}
-.guide > li {float:left; padding:10px 20px 0 0;}
+.guide > li {float:left; padding:10px 20px 10px 0;}
+.guide > li:hover > a {color:blue;}
+
+.guide > .store {position: relative;}
+.guide > .store > ul {position: absolute; width: 150px; top:30px; background-color: #fff; display: none;}
+.guide > .store > .seoul {left:0;}
+.guide > .store > .gyeonggi {left:150px;}
+.guide > .store > .other {left:300px;}
+
+.guide > .benefits {position: relative;}
+.guide > .benefits > .benefits_none {position:absolute; width:125px; top:30px; left:0; background-color: #fff; border: 1px solid #000; z-index: 1; display: none;}
+.guide > .benefits > ul > li > a {display: block; padding:10px;}
+.guide > .benefits > ul > li > a:hover {background-color: #eee;}
+
 
 /* 로그인 */
 .login {position:absolute; top:0; right: 2px;}
@@ -33,29 +50,39 @@ header {width:100%; height:255px; margin:0 auto;}
 
 
 /* 검색창 부분 */
-.header_search {width: 1100px; height:110px; margin:0 auto; display: flex; justify-content: space-between;}
+.header_search {width: 1100px; height:120px; margin:0 auto; display: flex; justify-content: space-between;}
 .logo {width:175px; height:49px; padding-top: 40px;}
 
+.search {position: relative;}
 .top_searched {display: flex; width:500px; justify-content: center; padding:20px 0 10px 0;}
 .top_searched > ul {display: flex;}
 .top_searched > ul > li {padding:0 12px 0;}
 .top_searched > ul > li:not(:last-of-type) { border-right: 1px solid #ccc;}
 .top_searched > ul > li > a:hover {color:blue;}
 
-.top_searched > span {border: 1px solid #ccc; padding:0 2px; line-height: 10px; cursor: pointer;}
-.top_searched > span:hover {border: 1px solid #000;}
 
+
+.search > span {border: 1px solid #ccc; padding:0 2px; line-height: 10px; cursor: pointer; position: absolute; top:22px; display: block; padding: 1px 3px 2px; font-size: 14px;}
+.search > span:hover {border: 1px solid #000;}
+.search > .prev {right:19px;}
+.search > .next {right:0;}
 
 
 .search_bar {width:500px; height: 44px; border: 3px solid skyblue; border-radius: 15px; position: relative; background-color: #fff;}
 .search_bar > input {width:440px; height:38px; outline: none; border:none; margin-left: 20px;}
 .search_bar > span {color: skyblue; font-size: 22px; cursor: pointer; position: absolute; top:6px; right: 5px;}
 
-.search_ad {width:220px; height:64px; margin-top: 27px; position: relative;}
-.search_ad > span {position:absolute; bottom: 0; cursor: pointer; border: 1px solid #ccc; padding:0 2px;}
-.search_ad > span:hover {border:1px solid #000;}
-.search_ad > .prev {right: 18px; }
-.search_ad > .next {right:0px;}
+
+.search_ad {width:220px; height:64px; margin-top: 27px; position: relative; overflow: hidden;}
+.search_ad > ul {width:880px; height:64px;}
+.search_ad > ul > li {width:220px; height:100%; float:left;}
+.search_ad > ul > li > img {width:100%; height:100%;}
+
+.search_ad > span {position:absolute; bottom: 0; border: 1px solid #ccc; padding:0 2px;}
+.search_ad > span:not(:first-of-type):hover {border:1px solid #000;}
+.search_ad > .count {border:none; right:36px; font-size: 13px; bottom:2px;}
+.search_ad > .prev {right: 18px; cursor: pointer;}
+.search_ad > .next {right:0px; cursor: pointer;}
 
 
 /* 네비게이션 */
@@ -63,10 +90,25 @@ nav {width: 100%; height:50px; background-color: #5e6b9e;}
 .nav_bar {width: 1100px; height: 50px; position: relative; margin:0 auto; display: flex; justify-content: space-between;}
 
 .nav_main {display: flex; height: 50px; margin-left: 50px;}
-.nav_main > li > a {padding:17px 10px 0; font-size: 16px; color: #fff; font-weight: bold; display: inline-block;}
+.nav_main > li > a {padding:17px 10px; font-size: 16px; color: #fff; font-weight: bold; display: inline-block;}
+.nav_main > li:hover {background-color: #fff;}
+.nav_main > li:hover > a {color: #5e6b9e;}
+
+.nav_main > li > ul {position: absolute; top:50px; left:0; background-color: #fff; width: 100%; display: none;}
+.nav_main > li > ul > li > a {display: block; padding: 10px;}
+.nav_main > li > ul > li > a:hover {background-color: #eee;}
+
+.nav_main > .ebook {position: relative;}
+.nav_main > .gift {position: relative;}
+.nav_main > .record {position: relative;}
+.nav_main > .more {position: relative;}
+
+
+
+
 
 .nav_sub {display: flex; height: 50px; float: right;}
-.nav_sub > li > a {color:#d8dbe8; font-weight: bold; display: inline-block; padding:20px 9px 0;}
+.nav_sub > li > a {color:#d8dbe8; font-weight: bold; display: inline-block; padding:20px 9px 18px;}
 .nav_sub > li > a:hover {color: #fff;}
 
 

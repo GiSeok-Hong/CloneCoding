@@ -103,8 +103,18 @@
 
 
 /* 지금 뜨는 hot템 */
-.box7 {width:100%; height:300px; margin-top: 50px; background-color: rgb(243, 243, 243);}
-.box7 > .item {width:1100px; height:300px; margin:0 auto; background-color: yellowgreen;}
+.hot_item {width:100%; height:300px; margin-top: 50px; background-color: rgb(243, 243, 243);}
+.hot_item > .itembox {width:1100px; height:300px; margin:0 auto; display: flex; justify-content: space-between;}
+.hot_item > .itembox > .sub_tit {width:150px; height:150px; background-color: #5e6b9e; display: flex; justify-content: center; align-items: center; flex-direction: column; color: #fff;}
+.hot_item > .itembox > .sub_tit > span {font-size: 20px;}
+.hot_item > .itembox > .sub_tit > h2 {margin-top: 10px; font-size: 27px; text-align: center;}
+.hot_item > .itembox > .item {display: flex; justify-content: space-between; align-items: center; width:925px;}
+.hot_item > .itembox > .item > div {width: 50px; font-size: 40px; cursor: pointer; color: #dadada;}
+.hot_item > .itembox > .item > .next {text-align: right;}
+.hot_item > .itembox > .item > div:hover {color: #5e6b9e;}
+.hot_item > .itembox > .item > ul {display: flex; overflow: hidden;}
+.hot_item > .itembox > .item > ul > li {padding:5px 0;}
+
 
 
 /* 이럴 땐 이런 책 */

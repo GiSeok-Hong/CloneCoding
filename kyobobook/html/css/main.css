@@ -1,14 +1,23 @@
 @charset "utf-8";
 
 /* 슬라이드 */
-#slider {width:100%; height: 430px;}
-.slider_box {width:1100px; height: 430px; background-color: yellow; margin: 0 auto;}
-.slider_left {width:700px; height: 370px; background-color: green; float: left;}
-.slider_right {width:400px; height: 370px; background-color: blue; float: left;}
+#slider {width:100%; height: 430px; background-color:rgb(230, 233, 246)}
+.slider_box {width:1100px; height: 430px; margin: 0 auto; padding:30px 0;}
+.slider_left {width:770px; height: 370px; float: left;}
+.slider_left > .slide_show {width:770px; height: 330px; background-color: pink;}
+
+.slider_left > .slide_nav {width:770px; height: 40px; display: flex; }
+.slider_left > .slide_nav > li {width:110px; height:40px; text-align: center; border:1px solid #dadada; background-color: #fff;}
+.slider_left > .slide_nav > li:nth-of-type(even) {border-left: none; border-right: none;}
+.slider_left > .slide_nav > li > a {display: block; padding:14px 0; font-size: 12px; font-weight: bold;}
+
+
+
+.slider_right {width:280px; height: 370px; background-color: blue; float: left; margin-left: 50px;}
 
 
 /* 컨테이너 */
-#container {width:100%; background-color: #ccc;}
+#container {width:100%;}
 
 
 /* 슬라이드 아래 배너1 */
@@ -28,36 +37,64 @@
 
 
 /* 오늘의 책 */
-.today_book {width:100%; height:355px; margin-top: 50px;}
-.today_book > .item {width:1100px; height:355px; background-color: yellowgreen; margin:0 auto; position: relative;}
-.today_book > .item > .left {width:634px; height:355px; background-color: pink; float: left;}
-.today_book > .item > .right {width:466px; height:355px; background-color: white; float: left;}
+.today_book {width:100%; height:360px; margin-top: 50px;}
+.today_book > .itembox {width:1100px; height:360px; background-color: yellowgreen; margin:0 auto; position: relative;}
+.today_book > .itembox > .sub_tit {width:1100px; height:40px; }
+.today_book > .itembox > .sub_tit > h2 {font-size: 16px; float: left; cursor: pointer; margin-right: 25px;}
+.today_book > .itembox > .sub_tit > h2:hover {text-decoration: underline; color: blue;}
+.today_book > .itembox > .sub_tit > ul {display: flex;}
+.today_book > .itembox > .sub_tit > ul > li {margin-right: 10px;}
+.today_book > .itembox > .sub_tit > ul > li > a {display: block; padding:3px 10px; font-weight: bold;}
 
-.today_book > .item > .adv {width:85px; height:704px; background-color:cadetblue; position: absolute; top:0; left:-100px;}
+
+
+.today_book > .itembox > .left {width:725px; height:320px; background-color: pink; float: left;}
+.today_book > .itembox > .right {width:375px; height:320px; background-color: white; float: left;}
+.today_book > .itembox > .right > ul > li {width: 350px; text-align: center; float: right; border: 1px solid #dadada;}
+.today_book > .itembox > .right > ul > li:last-of-type {border-top: none;}
+
+.today_book > .itembox > .ad {width:85px; position: absolute; top:0; left:-100px;}
+.today_book > .itembox > .ad > ul {width:100%;}
+.today_book > .itembox > .ad > ul > li {width:100%; border: 1px solid #dadada; text-align: center; background-color: #fff;}
+.today_book > .itembox > .ad > ul > li:nth-of-type(2n) {border-top:none; border-bottom: none;}
+.today_book > .itembox > .ad > ul > li > button {font-size: 12px; width:97%; border-radius: 5px; border:none; margin-bottom: 5px; cursor: pointer; background-color: #ccc; color: #fff;}
+.today_book > .itembox > .ad > ul > li > button:hover {background-color: #eee; color: #000;}
+.today_book > .itembox > .ad > ul > li > a > img {width:100%;}
 
 
 /* 화제의 신간 */
-.box4 {width:100%; height:350px; margin-top: 50px;}
-.box4 > .item {width: 1100px; height:350px; background-color: bisque; margin:0 auto;}
-.box4 > .item > .itembox {width: 1100px; height:310px; background-color: violet; display: flex; justify-content: space-between;}
-.box4 > .item > .itembox > .imgbox {width: 24%; height:310px; background-color: red; }
+.new_book {width:100%; height:350px; margin-top: 50px;}
+.new_book > .itembox {width: 1100px; height:350px; background-color: bisque; margin:0 auto;}
+.new_book > .itembox > .sub_tit {width: 1100px; height: 40px;}
+.new_book > .itembox > .sub_tit > h2 {font-size: 16px; float: left; cursor: pointer; margin-right: 25px;}
+.new_book > .itembox > .sub_tit > h2:hover {text-decoration: underline; color: blue;}
+.new_book > .itembox > .sub_tit > ul {display: flex;}
+.new_book > .itembox > .sub_tit > ul > li {margin-right: 10px;}
+.new_book > .itembox > .sub_tit > ul > li > a {display: block; padding:3px 10px; font-weight: bold;}
+
+.new_book > .itembox > .item {width: 1100px; height:310px; background-color: violet; display: flex; justify-content: space-between;}
+.new_book > .itembox > .item > .imgbox {width: 24%; height:310px; background-color: red; }
 
 
 /* ㅇㅇㅇ님을 위한 Picks 추천 샘플 */
-.box5 {width:100%; height:400px; margin-top: 50px;}
-.box5 > .item {width:1100px; height:400px; margin: 0 auto; background-color: brown;}
-.box5 > .item > .itembox {width: 1100px; height: 310px; display: flex; justify-content: space-between;}
-.box5 > .item > .itembox > .imgbox {width:24%; height:310px; background-color: yellow;}
-.box5 > .item > .keyword_pick {width:1100px; height:50px; background-color: green;}
+.recommend_sample {width:100%; height:400px; margin-top: 50px;}
+.recommend_sample > .itembox {width:1100px; height:400px; margin: 0 auto; background-color: brown;}
+.recommend_sample > .itembox > .item {width: 1100px; height: 310px; display: flex; justify-content: space-between;}
+.recommend_sample > .itembox > .item > .imgbox {width:24%; height:310px; background-color: yellow;}
+.recommend_sample > .itembox > .keyword_pick {width:1100px; height:50px; background-color: green;}
 
 
 /* only 교보문고 */
-.box6 {width:100%; height:110px; margin-top: 50px;}
-.box6 > .item {width: 1100px; height: 110px; background-color: pink; margin: 0 auto;}
+.only_kbook {width:100%; height:110px; margin-top: 50px;}
+.only_kbook > .itembox {width: 1100px; height: 110px; background-color: pink; margin: 0 auto;}
+.only_kbook > .itembox > .sub_tit {width: 150px; height: 110px; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; float: left; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.only_kbook > .itembox > .sub_tit > span {font-size: 24px; color: #5e6b9e; font-weight: bold; display: block;}
+.only_kbook > .itembox > .sub_tit > h2 {font-size: 16px; margin-top: 5px;}
+.only_kbook > .itembox > .iconbox {width: 925px; height: 110px; float: right; border-top: 1px solid #dadada; border-bottom: 1px solid #dadada; display: flex; justify-content: center; align-items: center;}
 
 
 /* 지금 뜨는 hot템 */
-.box7 {width:100%; height:300px; margin-top: 50px;}
+.box7 {width:100%; height:300px; margin-top: 50px; background-color: rgb(243, 243, 243);}
 .box7 > .item {width:1100px; height:300px; margin:0 auto; background-color: yellowgreen;}
 
 
@@ -76,7 +113,7 @@
 
 
 /* 베스트셀러 */
-.box10 {width: 100%; height: 650px; margin-top: 50px;}
+.box10 {width: 100%; height: 650px; margin-top: 50px; background-color: rgb(218, 236, 240);}
 .box10 > .item {width:1100px; height:650px; background-color:blanchedalmond; margin: 0 auto;}
 .box10 > .item > .itembox > .left {width:750px; height: 510px; background-color: aqua; float: left;}
 .box10 > .item > .itembox > .right {width:350px; height: 510px; background-color: blueviolet; float: right;}

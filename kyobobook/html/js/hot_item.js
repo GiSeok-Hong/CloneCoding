@@ -7,7 +7,7 @@ $(document).ready(function(){
         for(var i in data){
           var url = data[i].url;
 
-          $(".hot_item ul").append( '<li><a href="#" target="_self">'+"<img src='img/"+data[i].url+ "' " + 'alt="item'+ (i+1) +'"></a></li>');
+          $(".hot_item ul").append( '<li><a href="#" target="_self">'+"<img src='img/"+url+ "' " + 'alt="item'+ i +'"></a></li>');
 
         }
       }

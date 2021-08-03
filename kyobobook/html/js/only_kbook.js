@@ -7,7 +7,7 @@ $(document).ready(function(){
         for(var i in data){
           var url = data[i].url;
 
-          $(".only_kbook ul").append( '<li><a href="#" target="_self">'+"<img src='img/"+data[i].url+ "' " + 'alt="icon'+ (i+1) +'"></a></li>');
+          $(".only_kbook ul").append( '<li><a href="#" target="_self">'+"<img src='img/"+url+ "' " + 'alt="icon'+ i +'"></a></li>');
 
         }
       }

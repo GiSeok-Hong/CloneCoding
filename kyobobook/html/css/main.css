@@ -212,10 +212,24 @@
 
 
 /* 스토리 : k */
-.story {width:100%; height:875px; margin-top: 50px;}
-.story > .itembox {width:1100px; height:875px; margin:0 auto; background-color: teal;}
+.story {width:100%; height:880px; margin-top: 50px;}
+.story > .itembox {width:1100px; height:880px; margin:0 auto;}
+.story > .itembox > .sub_tit {height: 40px; display: flex; align-items: center; justify-content: space-between;}
+.story > .itembox > .sub_tit > h2 {font-size: 18px; float: left; }
+.story > .itembox > .sub_tit > ul {display: flex;}
+.story > .itembox > .sub_tit > ul > li > a {display: block; padding:10px 20px; background-color: #fff; margin-left: 10px; border: 1px solid #dadada;}
+.story > .itembox > .sub_tit > ul > li > a:hover {border: 1px solid #5e6b9e;}
 .story > .itembox > ul {display: flex; flex-flow: row wrap;}
-.story > .itembox > ul > li {width: 25%; height: 280px; border: 1px solid black;}
+.story > .itembox > ul > li {width: 25%; height: 280px; }
+.story > .itembox > ul > li {display: flex; justify-content: center; align-items: center;}
+
+.story .item > a {display: block; width: 100%; height: 100%; text-align: center;}
+.story .item > a > div {width: 200px; height: 200px; position: relative; border: 1px solid #dadada; overflow: hidden; border-radius: 50%;}
+.story .item > a > div > img {width: 200px; height: 200px; transition: 0.3s;}
+.story .item > a .ribon {position: absolute; background-color: rgba(0, 0, 0, 0.5); color: #fff; bottom:0px; left:0; width:100%; height:40px; display: flex; justify-content: center; align-items: center;}
+.story .item > a > h5 {margin:10px 0;}
+.story .item > a:hover > h5 {text-decoration: underline;}
+.story .item > a:hover > div > img {transform: scale(1.1);}
 
 
 /* 베스트셀러 */

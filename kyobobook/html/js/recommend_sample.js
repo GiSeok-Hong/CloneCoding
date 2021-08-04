@@ -22,7 +22,7 @@ $.ajax({
     box.eq(i).append('<h6>' + msg.documents[i].authors + '</h6>');
     
     // 정가, 판매가
-    box.eq(i).append('<span>정가 : '+msg.documents[i].price+'</span><span>판매가 : '+msg.documents[i].sale_price+'</span>');
+    box.eq(i).append('<span>정가 : '+msg.documents[i].price+'원</span><span>판매가 : '+msg.documents[i].sale_price+'원</span>');
 
 
 

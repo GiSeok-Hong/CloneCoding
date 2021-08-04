@@ -1,0 +1,61 @@
+[{
+	"url": "story_1.jpg",
+  "category": "북캐스트",
+  "tit": "대체로 가난해서, 하지만",
+  "short": "대체로 행복해서"
+},{
+	"url": "story_2.jpg",
+  "category": "북캐스트",
+  "tit": "마음이 파랗게 물들어버렸어요",
+  "short": "그래도 우리, 함께 살아봐요"
+},{
+	"url": "story_3.jpg",
+  "category": "북캐스트",
+  "tit": "나의 워라밸 지수는?",
+  "short": "창의성 대가에게 배우는 워라밸"
+},{
+	"url": "story_4.jpg",
+  "category": "북캐스트",
+  "tit": "전국노래자랑부터 인공지능",
+  "short": "예능PD에게 콘텐츠를 묻다"
+},{
+	"url": "story_5.jpg",
+  "category": "북뉴스",
+  "tit": "작가와의 만남",
+  "short": "『별것 아닌 선의』이소영"
+},{
+	"url": "story_6.jpg",
+  "category": "북뉴스",
+  "tit": "작가와의 만남",
+  "short": "『강원국의 어른답게 말합니다』"
+},{
+	"url": "story_7.jpg",
+  "category": "북뉴스",
+  "tit": "작가와의 만남",
+  "short": "『조현병의 모든 것』권준수 교수"
+},{
+	"url": "story_8.jpg",
+  "category": "북뉴스",
+  "tit": "작가와의 만남",
+  "short": "『황금나무숲』이가라시 미키오"
+},{
+	"url": "story_9.jpg",
+  "category": "북모닝",
+  "tit": "오케팅",
+  "short": "특별하지 않아도 누구나 5%"
+},{
+	"url": "story_10.jpg",
+  "category": "북모닝",
+  "tit": "AI 피보팅",
+  "short": "AI는 어떻게 기업을 살리는가"
+},{
+	"url": "story_11.jpg",
+  "category": "북모닝",
+  "tit": "인구 미래 공존",
+  "short": "인구학의 눈으로 기획하는 미래"
+},{
+	"url": "story_12.jpg",
+  "category": "북모닝",
+  "tit": "왜 일하는가",
+  "short": "지금 당신이 가장 뜨겁게 물어"
+}]

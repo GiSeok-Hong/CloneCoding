@@ -14,6 +14,7 @@
   <script src="js/footer.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/slide_bottom.js"></script>
+  <script src="js/recommend_sample.js"></script>
   <script src="js/only_kbook.js"></script>
   <script src="js/hot_item.js"></script>
 
@@ -379,14 +380,19 @@
       <div class="today_book">
         <div class="itembox">
           <div class="sub_tit">
-            <h2>오늘의 책</h2>
+            <a href="#"><h2>오늘의 책</h2></a>
             <ul>
-              <li><a href="#">국내도서</a></li>
+              <li class="current"><a href="#">국내도서</a></li>
               <li><a href="#">eBook</a></li>
               <li><a href="#">sam</a></li>
             </ul>
           </div>
           <div class="left">
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
           </div>
           <div class="right">
             <ul>
@@ -411,9 +417,9 @@
       <div class="new_book">
         <div class="itembox">
           <div class="sub_tit">
-            <h2>화제의 신간</h2>
+            <a href="#"><h2>화제의 신간</h2></a>
             <ul>
-              <li><a href="#">국내도서</a></li>
+              <li class="current"><a href="#">국내도서</a></li>
               <li><a href="#">외국도서</a></li>
               <li><a href="#">eBook</a></li>
               <li><a href="#">sam</a></li>
@@ -433,15 +439,35 @@
       <!-- 추천 샘플 -->
       <div class="recommend_sample">
         <div class="itembox"> 
-          <h2>OOO님을 위한 추천</h2>
+          <div class="sub_tit">
+            <a href="#"><h2>OOO님을 위한 Picks 추천 샘플</h2></a>
+            <span>[로그인 하고 나만의 AI 맞춤추천 받아보세요]</span>
+          </div>
           <div class="item">
-            <div class="imgbox">추천 샘플1</div>
-            <div class="imgbox">추천 샘플2</div>
-            <div class="imgbox">추천 샘플3</div>
-            <div class="imgbox">추천 샘플4</div>
+            <div class="imgbox">
+              <span>감수성이 예민한 신중형</span>
+              <img src="img/recommend.png" alt="icon">
+              <ul>
+                <li>선호분야 : 시/에세이/소설</li>
+                <li>선호작가 : 김영하</li>
+                <li>독서주기 : 한달1.0권</li>
+                <li>독서등급 : LV.7</li>
+              </ul>
+            </div>
+            <div class="sample"></div>
+            <div class="sample"></div>
+            <div class="sample"></div>
           </div>
           <div class="keyword_pick">
-            키워드 pick
+            <span>키워드 pick</span>
+            <ul>
+              <li><a href="#">한국소설</a></li>
+              <li><a href="#">위로</a></li>
+              <li><a href="#">부자되는법</a></li>
+              <li><a href="#">마케팅 전략</a></li>
+              <li><a href="#">마르쿠스 아우렐리우스</a></li>
+              <li><a href="#">철학자</a></li>
+            </ul>
           </div>
         </div>
       </div> <!-- end .recommend_sample -->

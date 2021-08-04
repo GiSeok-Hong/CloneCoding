@@ -168,7 +168,7 @@
 .recommend_sample > .itembox > .keyword_pick > span {font-size: 13px; font-weight: bold; padding:20px;}
 .recommend_sample > .itembox > .keyword_pick > ul {display: flex;}
 .recommend_sample > .itembox > .keyword_pick > ul > li {margin-right: 10px;}
-.recommend_sample > .itembox > .keyword_pick > ul > li > a {display: block; padding:10px; background-color: #fff; border-radius: 10px; border:1px solid gray;}
+.recommend_sample > .itembox > .keyword_pick > ul > li > a {display: block; padding:10px; background-color: #fff; border-radius: 10px; border:1px solid #dadada;}
 .recommend_sample > .itembox > .keyword_pick > ul > li > a:hover {background-color: #5e6b9e; color: #fff; border: 1px solid #5e6b9e;}
 
 /* only 교보문고 */
@@ -205,10 +205,53 @@
 
 
 /* 이럴 땐 이런 책 */
-.box8 {width:100%; height:360px; margin-top: 50px;}
-.box8 > .item {width:1100px; height:360px; margin:0 auto; background-color: tomato;}
-.box8 > .item > .itembox {width:1100px; height:325px; background-color: tomato; display: flex; justify-content: space-between;}
-.box8 > .item > .itembox > .imgbox {width:24%; height:325px; background-color: yellow;}
+.this_case {width:100%; height:360px; margin-top: 50px;}
+.this_case > .itembox {width:1100px; height:360px; margin:0 auto; }
+.this_case > .itembox > .sub_tit {width: 1100px; height: 40px; display: flex; align-items: center;}
+.this_case > .itembox > .sub_tit > a > h2 {font-size: 18px;}
+.this_case > .itembox > .sub_tit > a > h2:hover {text-decoration: underline; color: #3c5fdf;}
+.this_case > .itembox > .item {width:1100px; height:320px; position: relative;}
+.this_case > .itembox > .item > .info {width:24%; height:320px; background-color: rgb(226, 242, 211); padding:30px 25px; display: flex; flex-direction: column; justify-content: center; float: left;}
+.this_case > .itembox > .item > .info > span {font-size: 30px;}
+.this_case > .itembox > .item > .info > h4 {font-size: 30px; margin:5px 0 20px;}
+.this_case > .itembox > .item > .info > div {border-top: 1px solid #000; padding-top: 20px;}
+.this_case > .itembox > .item > .info > div > p {font-size: 18px; line-height: 1.2;}
+
+/*  */
+.this_case > .itembox > .item > ul {width:825px; height: 100%; display: flex; justify-content: space-between; float: right;}
+.this_case > .itembox > .item > ul > li {width:32%; height: 100%; border: 1px solid #dadada;}
+/* 4번째 부터 6번째 까지 list 숨기기 */
+.this_case > .itembox > .item > ul > li:nth-of-type(n+4):nth-of-type(-n+6) {display: none;}
+.this_case > .itembox > .item > ul > li > .tit {height: 40px; display: flex; justify-content: space-between; align-items: center; color: #fff; background-color: #5e6b9e; padding:0 10px;}
+.this_case > .itembox > .item > ul > li > .tit > h6 {font-size: 13px;}
+.this_case > .itembox > .item > ul > li > .tit > ul {display: flex;}
+.this_case > .itembox > .item > ul > li > .tit > ul > li {font-size: 12px; border: 1px solid #dadada; border-radius: 10px; margin-left: 10px; padding:3px 6px;}
+.this_case > .itembox > .item > ul > li > .box {display: block; padding:15px; height: 280px;}
+.this_case > .itembox > .item > ul > li > .box > a {display: block; height: 60%; }
+.this_case > .itembox > .item > ul > li > .box > a > div {width: 100%; position: relative; height: 85%; overflow: hidden;}
+.this_case > .itembox > .item > ul > li > .box > a > div > img {width: 100%; position: absolute; top: -40px; left:0;}
+.this_case > .itembox > .item > ul > li > .box > a > p {margin-top:15px; font-weight: bold;}
+.this_case > .itembox > .item > ul > li > .box > a:hover > p {text-decoration: underline;}
+.this_case > .itembox > .item > ul > li > .box > ul {margin-top: 15px;}
+.this_case > .itembox > .item > ul > li > .box > ul > li {list-style: disc; margin-left: 20px; margin-bottom: 5px; padding-bottom: 2px;}
+.this_case > .itembox > .item > ul > li > .box > ul > li:not(:last-of-type) {border-bottom: 1px solid #dadada;}
+.this_case > .itembox > .item > ul > li > .box > ul > li > a {display: block;}
+.this_case > .itembox > .item > ul > li > .box > ul > li > a:hover {color: blue;}
+.hide {display: none;}
+
+/* 이럴 땐 이런 책 - 이전, 다음 버튼 */
+.this_case > .itembox > .item > .btn {position: absolute; top:50%; width: 30px; height:30px; font-size: 20px; cursor: pointer; color: #fff; background-color: #ccc; opacity: 0.8; padding:5px 0 0 8px; display: none;}
+.this_case > .itembox > .item > .btn:hover {background-color: #000; opacity: 0.7;}
+.this_case > .itembox > .item > .prev {left:275px;}
+.this_case > .itembox > .item > .next {right:0;}
+
+
+.this_case > .itembox > .item > .imgbox {width:24%; height:320px; background-color: yellow;}
+
+
+
+
+
 
 
 /* 스토리 : k */

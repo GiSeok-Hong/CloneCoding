@@ -94,9 +94,9 @@
 
 
 /* 오늘의 책 */
-.today_book {width:100%; height:360px; margin-top: 50px;}
-.today_book > .itembox {width:1100px; height:360px; background-color: yellowgreen; margin:0 auto; position: relative;}
-.today_book > .itembox > .sub_tit {width:1100px; height:40px; display: flex; align-items: center;}
+.today_book {width:100%; height:370px; margin-top: 50px;}
+.today_book > .itembox {width:1100px; height:370px; background-color: yellowgreen; margin:0 auto; position: relative;}
+.today_book > .itembox > .sub_tit {width:1100px; height:40px; display: flex; align-items: center; margin-bottom: 10px;}
 .today_book > .itembox > .sub_tit > a > h2 {font-size: 18px; float: left; cursor: pointer; margin-right: 25px;}
 .today_book > .itembox > .sub_tit > a > h2:hover {text-decoration: underline; color: #3c5fdf;}
 .today_book > .itembox > .sub_tit > ul {display: flex;}
@@ -123,7 +123,7 @@
 
 /* 화제의 신간 */
 .new_book {width:100%; height:350px; margin-top: 50px;}
-.new_book > .itembox {width: 1100px; height:350px; background-color: bisque; margin:0 auto;}
+.new_book > .itembox {width: 1100px; height:350px; margin:0 auto;}
 .new_book > .itembox > .sub_tit {width: 1100px; height: 40px; display: flex; align-items: center;}
 .new_book > .itembox > .sub_tit > a > h2 {font-size: 18px; float: left; cursor: pointer; margin-right: 25px;}
 .new_book > .itembox > .sub_tit > a > h2:hover {text-decoration: underline; color: #3c5fdf;}
@@ -133,8 +133,27 @@
 .new_book > .itembox > .sub_tit > ul > .current > a {color: #fff;}
 .new_book > .itembox > .sub_tit > ul > li > a {display: block; padding:10px; font-weight: bold; font-size: 14px;}
 
-.new_book > .itembox > .item {width: 1100px; height:310px; background-color: violet; display: flex; justify-content: space-between;}
-.new_book > .itembox > .item > .imgbox {width: 24%; height:310px; background-color: red; }
+.new_book > .itembox > .item {width: 1100px; height:300px; display: flex; justify-content: space-between; margin-top: 10px; overflow: hidden; position: relative;}
+.new_book > .itembox > .item > ul {width:1100px; display: flex; justify-content: space-between;}
+.new_book > .itembox > .item > ul > li {width: 24%; border: 1px solid #dadada; padding:10px; text-align: center;}
+.new_book > .itembox > .item > ul > li:hover {border: 1px solid #5e6b9e;}
+.new_book > .itembox > .item > ul > li:hover > a > div {opacity: 0.9;}
+.new_book > .itembox > .item > ul > li > a {position: relative; display: inline-block; width: 120px; height: 174px;}
+.new_book > .itembox > .item > ul > li > a > div {position: absolute; top:0; left: 0; padding:30px 10px; background-color: #5e6b9e; width:100%; height:100%; color: #fff; opacity: 0; transition: 0.3s;}
+.new_book > .itembox > .item > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+.new_book > .itembox > .item > ul > li > h5 > a:hover {text-decoration: underline;}
+.new_book > .itembox > .item > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
+.new_book > .itembox > .item > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
+.new_book > .itembox > .item > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
+
+    /* 5번째 부터 8번째 까지 list 숨기기 */ 
+.new_book > .itembox > .item > ul > li:nth-of-type(n+5):nth-of-type(-n+8) {display: none;}
+
+.new_book > .itembox > .item > .btn {position: absolute; top:50%; width:30px; height:30px; background-color: #ccc; color: #fff; opacity: 0.7; padding:5px 0 0 8px; cursor: pointer; display: none;}
+.new_book > .itembox > .item > .prev {left:0;}
+.new_book > .itembox > .item > .next {right:0;}
+.new_book > .itembox > .item > .btn:hover {background-color: #000; opacity: 0.7;}
+
 
 
 /* ㅇㅇㅇ님을 위한 Picks 추천 샘플 */

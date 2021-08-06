@@ -415,3 +415,27 @@
 .emotion > .itembox > ul > li > a > p > span {font-weight: bold;}
 .emotion > .itembox > ul > li > a:hover > p {text-decoration: underline;}
 
+
+/* 하단부 네비게이션 */
+.bot_nav {width:100%; height: 360px; margin-top: 50px;}
+.bot_nav > .itembox_top {width:100%; height: 40px; border-top: 2px solid #a3a3a3; border-bottom: 1px solid #dadada;}
+.bot_nav > .itembox_top >.notice {width:1100px; height:40px;  display: flex; justify-content: center; margin: 0 auto;}
+.bot_nav > .itembox_top >.notice > div {width:550px; height:40px; display: flex; align-items: center; margin: 0 auto; padding-left: 15px;}
+.bot_nav > .itembox_top >.notice > div > h3 {float: left;}
+.bot_nav > .itembox_top >.notice > div > h3 > a {font-size: 14px; padding-right: 30px; border-right: 1px solid #dadada;}
+.bot_nav > .itembox_top >.notice > div > a {font-size: 14px; color: #767676; display: block; margin-left: 30px; cursor: pointer;}
+.bot_nav > .itembox_top >.notice > div > a:hover {text-decoration: underline;}
+
+.bot_nav > .itembox {width:1100px; height:300px; margin:0 auto; }
+.bot_nav > .itembox > .service {width:100%; height:230px; display: flex; margin-top: 20px;}
+.bot_nav > .itembox > .service > div {width:20%; height:230px; padding:0 15px;}
+.bot_nav > .itembox > .service > div:nth-of-type(even) {border-right: 1px solid #dadada; border-left: 1px solid #dadada;}
+.bot_nav > .itembox > .service > div > h3 {margin-bottom: 20px; font-size: 15px;}
+.bot_nav > .itembox > .service > div > ul > li {margin-bottom: 10px;}
+.bot_nav > .itembox > .service > div > ul > li > a {font-size: 13px; color: #767676; display: block;}
+.bot_nav > .itembox > .service > div > ul > li > a:hover {text-decoration: underline;}
+
+.bot_nav > .itembox > .shortcut {width:100%; height:50px; margin-top: 20px; display: flex; justify-content: space-between;}
+.bot_nav > .itembox > .shortcut > div {width:215px; height:50px; display: flex; justify-content: center; align-items: center; border: 1px solid #dadada; cursor: pointer;}
+.bot_nav > .itembox > .shortcut > div > a {font-size: 13px; font-weight: bold;}
+.bot_nav > .itembox > .shortcut > div:hover {border: 1px solid #5e6b9e;}

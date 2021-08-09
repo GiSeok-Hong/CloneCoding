@@ -41,13 +41,18 @@ $(document).ready(function () {
     $(".search_ad > ul > li:last").prependTo(".search_ad > ul");
     $(".search_ad > ul").css({marginLeft:-220});
     $(".search_ad > ul").stop().animate({ marginLeft: 0 });
-    
+
+    var i = $(".search_ad > ul > li > a > img").attr("alt");
+    $(this).siblings(".count").text(i + " / " + Number($(".search_ad > ul > li:last").index() + 1));
   });
-  
+
   $(".search_ad > .next").click(function(){
     $(".search_ad > ul").stop().animate({marginLeft:-220},function(){
       $(".search_ad > ul > li:first").appendTo(".search_ad > ul");
-      $(".search_ad > ul").css({marginLeft:0});
+      $(".search_ad > ul").css({ marginLeft: 0 });
+      
+      var i = $(".search_ad > ul > li > a > img").attr("alt");
+      $(this).siblings(".count").text(i + " / " + Number($(".search_ad > ul > li:last").index() + 1));
     });
   });
 

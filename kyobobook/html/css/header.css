@@ -87,11 +87,12 @@ header {width:100%; margin:0 auto;}
 .search_ad > ul > li {width:220px; height:100%; float:left;}
 .search_ad > ul > li > img {width:100%; height:100%;}
 
-.search_ad > span {position:absolute; bottom: 0; border: 1px solid #ccc; padding:0 2px; background-color: #fff;}
-.search_ad > span:hover {border:1px solid #000;}
+.search_ad > div {position:absolute; bottom: 0; border: 1px solid #ccc; padding:0 2px; background-color: #fff;}
+.search_ad > div:hover {border:1px solid #000;}
 
 .search_ad > .prev {right: 18px; cursor: pointer;}
 .search_ad > .next {right:0px; cursor: pointer;}
+.search_ad > .count {position: absolute; right:40px; bottom: 2px; font-size: 12px;}
 
 
 /* 네비게이션 */

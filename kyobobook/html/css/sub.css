@@ -46,6 +46,7 @@
 
 
 #purchase > .itembox > .right {width:75%; height:100%; float: right; background-color: green;}
+#purchase > .itembox > .right > .top {width:100%; height:150px; margin-bottom: 30px; background-color: violet;}
 
 
 

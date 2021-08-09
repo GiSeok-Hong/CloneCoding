@@ -58,18 +58,17 @@ header {width:100%; margin:0 auto;}
 .logo {width:175px; height:49px; padding-top: 40px;}
 
 .search {position: relative;}
-.top_searched {display: flex; width:500px; justify-content: center; padding:20px 0 10px 0;}
+.top_searched {width:500px; padding:20px 0 10px 10px;}
 .top_searched > ul {display: flex;}
 .top_searched > ul > li {padding:0 12px 0;}
 .top_searched > ul > li:not(:last-of-type) { border-right: 1px solid #ccc;}
 .top_searched > ul > li > a:hover {color:blue;}
 
 
-
 .search > span {border: 1px solid #ccc; padding:0 2px; line-height: 10px; cursor: pointer; position: absolute; top:22px; display: block; padding: 1px 3px 2px; font-size: 14px;}
 .search > span:hover {border: 1px solid #000;}
-.search > .prev {right:19px;}
-.search > .next {right:0;}
+.search > .prev {right:29px;}
+.search > .next {right:10px;}
 
 
 .search_bar {width:500px; height: 44px; border: 3px solid skyblue; border-radius: 15px; position: relative; background-color: #fff;}

@@ -24,6 +24,16 @@ $(document).ready(function () {
 
   // 인기검색어
 
+  $('.search > .top_searched > ul:last').stop().hide();
+  $('.search > .prev').click(function(){
+		$('.search > .top_searched > ul').slice(1).prependTo('.search > .top_searched');
+		$('.search > .top_searched > ul').hide().filter(':lt(1)').show();
+	});
+	$('.search > .next').click(function(){
+		$('.search > .top_searched > ul').slice(0,1).appendTo('.search > .top_searched');
+		$('.search > .top_searched > ul').hide().filter(':lt(1)').show()
+	});
+
 
 
   // 헤더 광고

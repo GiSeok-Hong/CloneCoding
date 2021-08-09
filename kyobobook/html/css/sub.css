@@ -1,2 +1,43 @@
 @charset "utf-8";
 
+#purchase {width:1100px; margin:0 auto 50px; background-color: aqua; position: relative;}
+#purchase > .path_bar {width:100%; height:40px; margin-bottom: 50px; background-color: red; border-bottom: 1px solid #ddd}
+#purchase > .path_bar > ul {display: flex; align-items: center; height: 100%;}
+#purchase > .path_bar > ul > li {margin-right: 10px;}
+#purchase > .path_bar > ul > li > a {font-size: 14px; display: block; padding:5px 7px;}
+#purchase > .path_bar > ul > .box {border: 1px solid #ccc; position: relative;}
+#purchase > .path_bar > ul > .box > ul {position: absolute; top:27px; left:0; background-color: #fff; border: 1px solid #000; width:100%;}
+#purchase > .path_bar > ul > .box > ul > li > a {display: block; padding:5px 10px;}
+#purchase > .path_bar > ul > .box > ul > li > a:hover {background-color: #dadada;}
+#purchase > .path_bar > ul > .box > div {position: absolute; top:27px; left:0; background-color: #fff; display: flex; padding:5px 0; border: 1px solid #000;}
+#purchase > .path_bar > ul > .box > div > ul {width:120px;}
+#purchase > .path_bar > ul > .box > div > ul > li > a {display: block; padding:5px 10px;}
+#purchase > .path_bar > ul > .box > div > ul > li > a:hover {background-color: #dadada;}
+#purchase > .path_bar > ul > .box > div > ul:nth-of-type(2) {border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+
+
+
+#purchase > .itembox {width:100%; height:700px;}
+#purchase > .itembox > .left {width:20%; height:100%; float: left; background-color: yellow;}
+#purchase > .itembox > .right {width:75%; height:100%; float: right; background-color: green;}
+
+
+
+    /* 왼쪽 고정 광고 */
+#purchase > .ad {width:85px; position: absolute; left:-100px; top:90px;}
+#purchase > .ad > ul {width:100%;}
+#purchase > .ad > ul > li {width:100%; border: 1px solid #dadada; text-align: center; background-color: #fff;}
+#purchase > .ad > ul > li:nth-of-type(2n) {border-top:none; border-bottom: none;}
+#purchase > .ad > ul > li > button {font-size: 12px; width:97%; border-radius: 5px; border:none; margin-bottom: 5px; cursor: pointer; background-color: #ccc; color: #fff;}
+#purchase > .ad > ul > li > button:hover {background-color: #eee; color: #000;}
+#purchase > .ad > ul > li > a > img {width:100%;}
+
+
+
+
+#relation {width:1100px; height: 260px; margin: 0 auto 50px; background-color: violet;}
+
+
+
+
+#detail {width:1100px; height:2000px; margin:0 auto 50px; background-color: yellowgreen;}

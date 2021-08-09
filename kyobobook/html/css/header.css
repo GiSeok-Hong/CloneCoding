@@ -3,6 +3,12 @@
 #wrap {width:100%;}
 a {color:#000; font-size: 12px;}
 
+/* TOP 버튼 */
+#topBtn {display: none; position: fixed; bottom: 70px; right: 30px; font-size: 16px; border:none; background-color: #ccc; color:#fff; cursor:pointer; padding:10px; border-radius: 5px; z-index: 99;}
+#topBtn:hover {background-color: #5e6b9e;}
+#botBtn {display: none; position: fixed; bottom: 30px; right: 30px; font-size: 16px; border:none; background-color:#ccc; color:#fff; cursor:pointer; padding:10px; border-radius: 5px; z-index: 99;}
+#botBtn:hover {background-color: #5e6b9e;}
+
 /* 헤더 */
 header {width:100%; margin:0 auto;}
 

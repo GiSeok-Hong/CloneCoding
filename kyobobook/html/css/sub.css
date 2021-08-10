@@ -123,7 +123,24 @@
 
 
 
-#relation {width:1100px; height: 260px; margin: 0 auto 50px; background-color: violet;}
+
+/* 이 책을 구매하신 분들이 함께 구매하신 상품입니다 */
+#relation {width:1100px; height: 380px; margin: 0 auto 50px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding-top: 20px;}
+#relation > h2 {width:1100px; height: 20px; }
+#relation > ul {width:1100px; height: 320px; display: flex; position: relative; margin-top: 20px; justify-content: center;}
+#relation > ul > li {width:160px; height:100%; text-align: center; margin:0 9px;}
+#relation > ul > li > a {position: relative; display: inline-block; width: 120px; height: 174px;}
+#relation > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#relation > ul > li > h5 > a:hover {text-decoration: underline;}
+#relation > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
+#relation > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
+#relation > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
+#relation > ul > li > span:last-of-type {color: red;}
+    /* 버튼 */
+#relation > ul > div {position: absolute; top:40%; width: 50px; font-size: 40px; cursor: pointer; color: #dadada;}
+#relation > ul > div:hover {color: #5e6b9e;}
+#relation > ul > .prev {left:0;}
+#relation > ul > .next {right:0; text-align: right;}
 
 
 

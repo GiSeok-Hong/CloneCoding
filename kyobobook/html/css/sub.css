@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 #purchase {width:1100px; margin:0 auto 50px; position: relative;}
+    /* 경로 바 */
 #purchase > .path_bar {width:100%; height:50px; margin-bottom: 50px;  border-bottom: 1px solid #ddd}
 #purchase > .path_bar > ul {display: flex; align-items: center; height: 100%;}
 #purchase > .path_bar > ul > li {margin-right: 10px;}
@@ -15,8 +16,9 @@
 #purchase > .path_bar > ul > .novel > ul:nth-of-type(3) {left:300px; }
 #purchase > .path_bar > ul > .novel1 > ul:nth-of-type(2) {border-right: none; }
 
-
+    /* 아이템 박스 */
 #purchase > .itembox {width:100%; height:700px;}
+        /* 왼쪽 부분 */
 #purchase > .itembox > .left {width:20%; height:100%; float: left;}
 #purchase > .itembox > .left > .cover {width:100%; height: 385px;}
 #purchase > .itembox > .left > .cover > a > img {width:100%; }
@@ -42,13 +44,72 @@
 #purchase > .itembox > .left > .etc > ul > li > a:hover {background-color: #dadada;}
 
 
+        /* 오른쪽 부분 */
+#purchase > .itembox > .right {width:75%; height:100%; float: right;}
+#purchase > .itembox > .right > .top {width:100%; height:150px; margin-bottom: 30px;}
+#purchase > .itembox > .right > .top > ul {display: flex;}
+#purchase > .itembox > .right > .top > .category > li {font-size: 14px; padding:3px 6px; border: 1px solid #ccc; margin-right: 3px;}
+#purchase > .itembox > .right > .top > .category > li:first-of-type {background-color: #5e6b9e; color:#fff; border: 1px solid #5e6b9e;}
+#purchase > .itembox > .right > .top > .tit {margin:10px 0;}
+#purchase > .itembox > .right > .top > .tit > span:first-of-type {color: #3a60df; font-size: 24px;}
+#purchase > .itembox > .right > .top > .tit > span:last-of-type {color: #777; font-size: 12px; margin-left: 10px;}
+#purchase > .itembox > .right > .top > .author > li {font-size: 14px; margin-right: 10px; color: #777;}
+#purchase > .itembox > .right > .top > .author > li > a {font-size: 14px;}
+#purchase > .itembox > .right > .top > .author > li > a:hover {color: #3a60df; text-decoration: underline;}
+#purchase > .itembox > .right > .top > .score {margin:10px 0;}
+#purchase > .itembox > .right > .top > .score > span:first-of-type {background-image: url(../img/sub_good_score.png); width:25px; height:24px; background-position: -145px 0; display: inline-block;}
+#purchase > .itembox > .right > .top > .score > span:nth-of-type(2) {background-image: url(../img/sub_heart.gif); width: 54px; height:14px; display: inline-block;}
+#purchase > .itembox > .right > .top > .score > span:nth-of-type(3) {font-size: 14px;}
+#purchase > .itembox > .right > .top > .score > span:nth-of-type(4) {font-size: 14px; color: #3a60df; border:1px solid #ccc; padding:2px 4px; cursor: pointer;}
+#purchase > .itembox > .right > .top > .score > span:nth-of-type(4):hover {border: 1px solid #000;}
+#purchase > .itembox > .right > .top > .rank > a {font-size: 14px;}
+#purchase > .itembox > .right > .top > .rank > a > span {color: red;}
+#purchase > .itembox > .right > .top > .rank > span {font-size: 14px; margin:0 5px;}
+#purchase > .itembox > .right > .top > .rank > .popup {position: relative; border: 1px solid #ccc; padding:3px 6px; display: inline-block; cursor: pointer;}
+#purchase > .itembox > .right > .top > .rank > .popup > div {position: absolute; top:22px; left:0px; border: 2px solid #3a60df; width:420px; height: 60px; font-size: 13px; background-color: #fff; display: none;}
+#purchase > .itembox > .right > .top > .rank > .popup > div > h5 {margin:10px 10px 10px; font-size: 14px;}
+#purchase > .itembox > .right > .top > .rank > .popup > div > a {font-size: 13px; margin-left: 10px;}
+#purchase > .itembox > .right > .top > .rank > .popup > div > a:hover {color: #3a60df; text-decoration: underline;}
 
+#purchase > .itembox > .right > .middle {width:100%; height: 240px;  border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+#purchase > .itembox > .right > .middle > .price {width:70%; height:100%; float: left; padding:30px 0;}
+#purchase > .itembox > .right > .middle > .price > p {font-size: 14px; margin-bottom: 11px;}
+#purchase > .itembox > .right > .middle > .price > .sale_price > span:first-of-type {color: red; font-size: 20px;}
+#purchase > .itembox > .right > .middle > .price > .sale_price > span:last-of-type {color: #5e6b9e;}
+#purchase > .itembox > .right > .middle > .price > .tab {margin-left:41px;}
+#purchase > .itembox > .right > .middle > .price > p > .info {border: 1px solid #ccc; padding:1px 2px; cursor: pointer; position: relative;}
+#purchase > .itembox > .right > .middle > .event {width:30%; height:100%; float: right; padding:30px 0 30px 20px; border-left: 1px solid #ddd;}
+#purchase > .itembox > .right > .middle > .event > h5 {margin-bottom: 15px;}
+#purchase > .itembox > .right > .middle > .event > h5 > a {color: #5e6b9e; font-size: 14px;}
+#purchase > .itembox > .right > .middle > .event > h5 > a > span {color: red; }
+#purchase > .itembox > .right > .middle > .event > h5 > a:hover {color: #3a60df; text-decoration: underline; }
+#purchase > .itembox > .right > .middle > .event > ul > li {list-style: disc; margin-bottom: 10px; margin-left: 10px;}
+#purchase > .itembox > .right > .middle > .event > ul > li > a {font-size: 13px;}
+#purchase > .itembox > .right > .middle > .event > ul > li > a:hover {color: #3a60df; text-decoration: underline; }
 
+#purchase > .itembox > .right > .bottom {width:100%; height:160px; border-bottom: 1px solid #ddd; padding:30px 0;}
+#purchase > .itembox > .right > .bottom > p {font-size: 14px; margin-bottom: 11px;}
+#purchase > .itembox > .right > .bottom > .tab {margin-left:69px;}
+#purchase > .itembox > .right > .bottom > .tab > span:nth-of-type(1) {color: #fff; background-color: #5e6b9e; font-size: 12px; padding:1px 2px;}
+#purchase > .itembox > .right > .bottom > .tab > span:nth-of-type(2) {color: #3a60df;}
+#purchase > .itembox > .right > .bottom > p > .info {border: 1px solid #ccc; padding:1px 2px; cursor: pointer; position: relative;}
 
-#purchase > .itembox > .right {width:75%; height:100%; float: right; background-color: green;}
-#purchase > .itembox > .right > .top {width:100%; height:150px; margin-bottom: 30px; background-color: violet;}
-
-
+#purchase > .itembox > .right > .btnbox {width:100%; height:120px;  padding-top: 20px;}
+#purchase > .itembox > .right > .btnbox > .amount {height:30px;}
+#purchase > .itembox > .right > .btnbox > .amount > span {font-size: 14px;}
+#purchase > .itembox > .right > .btnbox > .amount > input {width:50px; height:24px; text-align: right; outline: none; }
+#purchase > .itembox > .right > .btnbox > .amount > button {width:24px; height:24px; color: #3a60df; font-weight: bold;}
+#purchase > .itembox > .right > .btnbox > ul {width:100%; height:70px; display: flex; justify-content: space-between; align-items: flex-end;}
+#purchase > .itembox > .right > .btnbox > ul > li {width:19%; height:50px; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;}
+#purchase > .itembox > .right > .btnbox > ul > li > a {font-size: 17px; display: block; padding:16px 22px;}
+#purchase > .itembox > .right > .btnbox > ul > li:first-of-type {background-color: #5e6b9e; border: 1px solid #5e6b9e;}
+#purchase > .itembox > .right > .btnbox > ul > li:first-of-type > a {color: #fff;}
+#purchase > .itembox > .right > .btnbox > ul > li:first-of-type:hover  {background-color: #fff; }
+#purchase > .itembox > .right > .btnbox > ul > li:first-of-type:hover > a {color: #5e6b9e;}
+#purchase > .itembox > .right > .btnbox > ul > li:nth-of-type(2) {background-color: #7b8ed1 ; border: 1px solid #7b8ed1 ;}
+#purchase > .itembox > .right > .btnbox > ul > li:nth-of-type(2) > a {color: #fff;}
+#purchase > .itembox > .right > .btnbox > ul > li:nth-of-type(2):hover {background-color: #fff ;}
+#purchase > .itembox > .right > .btnbox > ul > li:nth-of-type(2):hover > a {color: #7b8ed1;}
 
     /* 왼쪽 고정 광고 */
 #purchase > .ad {width:85px; position: absolute; left:-100px; top:100px;}

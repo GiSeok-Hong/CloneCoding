@@ -145,4 +145,45 @@
 
 
 
-#detail {width:1100px; height:2000px; margin:0 auto 50px; background-color: yellowgreen;}
+
+/* #info */
+#info {width:1100px; margin:0 auto 50px;}
+    /* 앵커 */
+#info .anchor {width:100%; height:40px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;}
+#info .anchor > li {width:25%; height: 100%; border: 1px solid #ddd; border-bottom: 1px solid #333; background-color: #eee;}
+#info .anchor > li > a {display: block; width: 100%; height: 100%; text-align: center; font-size: 15px; line-height: 40px; color: #333;}
+#info .anchor > .on {font-weight: bold; border-top: 1px solid #333; border-left: 1px solid #333;border-right: 1px solid #333; border-bottom: none; background-color: #fff;}
+#info .anchor > .on > a {color: #000;}
+
+
+
+    /* #info 자식 #event_info */
+#event_info {width:100%; height:470px; margin:0 auto 50px;}
+#event_info > h2 {margin-bottom: 20px;}
+#event_info > h2 > span {margin-bottom: 20px; color: #3c5fdf; font-size: 12px;}
+#event_info > .box {display: flex; flex-flow: row wrap; justify-content: space-between;}
+#event_info > .box > li {width: 49%; display: flex; margin-bottom: 20px;}
+#event_info > .box > li > div > a {display: block;}
+#event_info > .box > li > div > a > img {width:165px; height: 100px;}
+#event_info > .box > li > div > p {margin: 20px 0; font-size: 14px; cursor: pointer;}
+#event_info > .box > li > div > p:hover {color: #3a60df; text-decoration: underline;}
+#event_info > .box > li > div > span {font-size: 14px;}
+#event_info > .box > li > div:last-of-type {margin-left: 15px;}
+
+
+
+    /* #info 자식 #book_info */
+#book_info {width:100%; height:500px; margin:0 auto 50px; background-color: rgba(0, 255, 0, 0.7);}
+#book_info > table {width:100%; border-top:1px solid #ddd; border-collapse: collapse;}
+#book_info > table > tbody > tr > td {border: 1px solid #ddd; }
+/* #book_info > table > tbody > tr > td:first-of-type {border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;} */
+
+
+
+    /* #info 자식 #review */
+#review {width:100%; height:500px; margin:0 auto 50px; background-color: rgba(0, 0, 255, 0.7);}
+
+
+
+    /* #info 자식 exchange */
+#exchange {width:100%; height:500px; margin:0 auto 50px; background-color: rgba(0, 255, 255, 0.7);}

@@ -98,7 +98,7 @@
 #purchase > .itembox > .right > .btnbox > .amount {height:30px;}
 #purchase > .itembox > .right > .btnbox > .amount > span {font-size: 14px;}
 #purchase > .itembox > .right > .btnbox > .amount > input {width:50px; height:24px; text-align: right; outline: none; }
-#purchase > .itembox > .right > .btnbox > .amount > button {width:24px; height:24px; color: #3a60df; font-weight: bold;}
+#purchase > .itembox > .right > .btnbox > .amount > button {width:24px; height:24px; color: #3a60df; font-weight: bold; background-color: #fff; border: 1px solid #000; cursor: pointer;}
 #purchase > .itembox > .right > .btnbox > ul {width:100%; height:70px; display: flex; justify-content: space-between; align-items: flex-end;}
 #purchase > .itembox > .right > .btnbox > ul > li {width:19%; height:50px; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;}
 #purchase > .itembox > .right > .btnbox > ul > li > a {font-size: 17px; display: block; padding:16px 22px;}
@@ -130,6 +130,7 @@
 #relation > ul {width:1100px; height: 320px; display: flex; position: relative; margin-top: 20px; justify-content: center;}
 #relation > ul > li {width:160px; height:100%; text-align: center; margin:0 9px;}
 #relation > ul > li > a {position: relative; display: inline-block; width: 120px; height: 174px;}
+#relation > ul > li > a > img {border: 1px solid #777;}
 #relation > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
 #relation > ul > li > h5 > a:hover {text-decoration: underline;}
 #relation > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
@@ -149,7 +150,7 @@
 #infowrap {width:1100px; margin:0 auto 50px; display: flex;}
 /* #info */
 #info {width:900px;}
-    /* 앵커 */
+    /* 앵커 공통 */
 #info .anchor {width:100%; height:40px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;}
 #info .anchor > li {width:25%; height: 100%; border: 1px solid #ddd; border-bottom: 1px solid #333; background-color: #eee;}
 #info .anchor > li > a {display: block; width: 100%; height: 100%; text-align: center; font-size: 15px; line-height: 40px; color: #333;}
@@ -160,7 +161,7 @@
 
     /* #info 자식 #event_info */
 #event_info {width:100%; height:470px; margin:0 auto 50px;}
-#event_info > h2 {margin-bottom: 20px;}
+#event_info > h2 {margin-bottom: 20px; font-size: 18px;}
 #event_info > h2 > span {margin-bottom: 20px; color: #3c5fdf; font-size: 12px;}
 #event_info > .box {display: flex; flex-flow: row wrap; justify-content: space-between;}
 #event_info > .box > li {width: 49%; display: flex; margin-bottom: 20px;}
@@ -174,10 +175,113 @@
 
 
     /* #info 자식 #book_info */
-#book_info {width:100%; height:500px; margin:0 auto 50px; background-color: rgba(0, 255, 0, 0.7);}
-#book_info > table {width:100%; border-top:1px solid #ddd; border-collapse: collapse;}
-#book_info > table > tbody > tr > td {border: 1px solid #ddd; }
-/* #book_info > table > tbody > tr > td:first-of-type {border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;} */
+#book_info {width:100%;  margin:0 auto 50px; }
+#book_info > table {width:850px; border-top:1px solid #ddd; border-collapse: collapse;}
+#book_info > table > tbody > tr > td {border: 1px solid #ddd; height:30px; line-height: 30px; padding-left: 20px; border-right: none;}
+#book_info > table > tbody > tr > td:first-of-type {width:225px; text-align: center; padding-left: 0px; border-left: none;}
+#book_info > table > tbody > tr > td > a  {font-size: 16px;}
+#book_info > table > tbody > tr > td > a:hover  {color: #3a60df;}
+
+#book_info > h2 {margin-top: 40px; font-size: 18px;}
+#book_info > h3 {font-size: 14px; color: #777; margin:25px 0 15px;}
+#book_info > p > a {font-size: 12px; }
+#book_info > p > a:hover {color: #3a60df; }
+
+#book_info > .tag {display: flex;}
+#book_info > .tag > li {border: 1px solid #333; margin-right: 10px; border-radius: 10px;}
+#book_info > .tag > li > a {display: block; width: 100%; height: 100%; padding: 5px 8px;}
+#book_info > .tag > li:hover {background-color: #5e6b9e; border: 1px solid #5e6b9e;}
+#book_info > .tag > li:hover > a {color: #fff;}
+
+#book_info > .short {margin:40px 0 20px 0; font-size: 14px; font-weight: bold; color: #333; line-height: 22px;}
+
+#book_info > .summary {font-size: 12px; width: 850px; line-height: 22px;}
+
+#book_info > .video {margin:30px 0;}
+#book_info > .video > h3 {font-size: 14px; color: #777; margin-bottom: 20px;}
+#book_info > .video > p {font-size: 12px; color: #777; line-height: 22px; margin-top: 10px;}
+
+#book_info > .author {width: 850px;}
+#book_info > .author > h2 {font-size: 18px; margin-bottom: 20px;}
+#book_info > .author > .itembox {display: flex; margin-bottom: 20px;}
+#book_info > .author > .itembox > .imgbox {width:150px; height: 200px;}
+#book_info > .author > .itembox > .imgbox > img {width:100%; height: 100%;}
+#book_info > .author > .itembox > .introduce {padding:20px 0 20px 20px; width: 700px;}
+#book_info > .author > .itembox > .introduce > h3 {font-size: 14px; width: 339px; float: left;}
+#book_info > .author > .itembox > .introduce > h3 > a {font-size: 14px;}
+#book_info > .author > .itembox > .introduce > h3 > a:hover {color: #3a60df;}
+#book_info > .author > .itembox > .introduce > span { font-size: 13px; border: 1px solid #5e6b9e; padding: 3px 6px; border-radius: 5px; cursor: pointer;}
+#book_info > .author > .itembox > .introduce > span:hover {background-color: #5e6b9e; color: #fff;}
+#book_info > .author > .itembox > .introduce > p {font-size: 12px; color: #777; line-height: 22px; margin-top: 20px;}
+#book_info > .author > .etc {width:850px; border: 1px solid #ddd; padding:20px;}
+#book_info > .author > .etc > h3 {font-size: 14px; margin-bottom: 20px;}
+#book_info > .author > .etc > h3 > a {font-size: 14px;}
+#book_info > .author > .etc > h3 > a:hover {color: #3a60df;}
+#book_info > .author > .etc > ul {display: flex; position: relative; justify-content: space-around; height: 280px;}
+        /* 리스트  */
+#book_info > .author > .etc > ul > li {width: 150px; text-align: center;}
+#book_info > .author > .etc > ul > li > a {position: relative;}
+#book_info > .author > .etc > ul > li > a > img {border: 1px solid #000;}
+#book_info > .author > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#book_info > .author > .etc > ul > li > h5 > a:hover {text-decoration: underline;}
+#book_info > .author > .etc > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
+#book_info > .author > .etc > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
+#book_info > .author > .etc > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
+#book_info > .author > .etc > ul > li > span:last-of-type {color: red;}
+        /* 버튼 */
+#book_info > .author > .etc > ul > div {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:30%;}
+#book_info > .author > .etc > ul > div:hover {color: #5e6b9e;}
+#book_info > .author > .etc > ul > .prev {left:0;}
+#book_info > .author > .etc > ul > .next {right:0; text-align: right;}
+
+#book_info > .translator {margin-top: 40px; width: 850px;}
+#book_info > .translator > .introduce {padding:20px 0; margin-bottom: 20px;}
+#book_info > .translator > .introduce > h3 {font-size: 14px; width: 504px; float: left;}
+#book_info > .translator > .introduce > h3 > a {font-size: 14px;}
+#book_info > .translator > .introduce > h3 > a:hover {color: #3a60df;}
+#book_info > .translator > .introduce > span { font-size: 13px; border: 1px solid #5e6b9e; padding: 3px 6px; border-radius: 5px; cursor: pointer;}
+#book_info > .translator > .introduce > span:hover {background-color: #5e6b9e; color: #fff;}
+#book_info > .translator > .introduce > p {font-size: 12px; color: #777; line-height: 22px; margin-top: 20px;}
+#book_info > .translator > .etc {width:850px; border: 1px solid #ddd; padding:20px;}
+#book_info > .translator > .etc > h3 {font-size: 14px; margin-bottom: 20px;}
+#book_info > .translator > .etc > h3 > a {font-size: 14px;}
+#book_info > .translator > .etc > h3 > a:hover {color: #3a60df;}
+#book_info > .translator > .etc > ul {display: flex; position: relative; justify-content: space-around; height: 280px;}
+        /* 리스트  */
+#book_info > .translator > .etc > ul > li {width: 150px; text-align: center;}
+#book_info > .translator > .etc > ul > li > a {position: relative;}
+#book_info > .translator > .etc > ul > li > a > img {border: 1px solid #000;}
+#book_info > .translator > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#book_info > .translator > .etc > ul > li > h5 > a:hover {text-decoration: underline;}
+#book_info > .translator > .etc > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
+#book_info > .translator > .etc > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
+#book_info > .translator > .etc > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
+#book_info > .translator > .etc > ul > li > span:last-of-type {color: red;}
+        /* 버튼 */
+#book_info > .translator > .etc > ul > div {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:30%;}
+#book_info > .translator > .etc > ul > div:hover {color: #5e6b9e;}
+#book_info > .translator > .etc > ul > .prev {left:0;}
+#book_info > .translator > .etc > ul > .next {right:0; text-align: right;}
+#book_info > .textbox {width:850px; font-size: 12px; margin: 20px 0 10px; line-height: 22px;}
+
+#book_info > .bookcard {width:850px; display: flex; margin-top: 20px; justify-content: space-between;}
+#book_info > .bookcard > .big {width:420px; height: 420px; position: relative;}
+#book_info > .bookcard > .big > img {width:100%; height: 100%;}
+#book_info > .bookcard > .big > .count {position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background-color: rgba(253, 253, 253, 0.7); text-align: center; line-height: 40px;}
+#book_info > .bookcard > ul {width: 420px; height: 420px; display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between; position: relative;}
+#book_info > .bookcard > ul > li {width: 200px; height: 200px; border: 5px solid #ccc; cursor: pointer;}
+#book_info > .bookcard > ul > li > img {width: 100%; height: 100%;}
+#book_info > .bookcard > ul > li:hover {border: 5px solid #5e6b9e;}
+#book_info > .bookcard > ul > div {position: absolute; width: 40px; font-size: 40px; cursor: pointer; color: #dadada; top:45%; background-color: rgba(0, 0, 0, 0.5); display: none;}
+#book_info > .bookcard > ul:hover > div {display: block;}
+#book_info > .bookcard > ul > div:hover {background-color: rgba(0, 0, 0, 0.8);}
+#book_info > .bookcard > ul > .prev {left:0;}
+#book_info > .bookcard > ul > .next {right:0; text-align: right;}
+
+
+
+
+
 
 
 
@@ -192,5 +296,5 @@
 
 
 
-
+/* 오른쪽 광고 */
 #infowrap > .ad {width:200px; height:1500px; background-color: yellowgreen; }

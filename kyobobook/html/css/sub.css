@@ -275,8 +275,8 @@
 #book_info > .bookcard > ul > div {position: absolute; width: 40px; font-size: 40px; cursor: pointer; color: #dadada; top:45%; background-color: rgba(0, 0, 0, 0.5); display: none;}
 #book_info > .bookcard > ul:hover > div {display: block;}
 #book_info > .bookcard > ul > div:hover {background-color: rgba(0, 0, 0, 0.8);}
-#book_info > .bookcard > ul > .prev {left:0;}
-#book_info > .bookcard > ul > .next {right:0; text-align: right;}
+#book_info > .bookcard > ul > .prev {left:0; padding-left:5px;}
+#book_info > .bookcard > ul > .next {right:0; text-align: right; padding-right: 5px;}
 
 
 
@@ -291,7 +291,15 @@
 
 
     /* #info 자식 exchange */
-#exchange {width:100%; height:500px; margin:0 auto 50px; background-color: rgba(0, 255, 255, 0.7);}
+#exchange {width:100%; margin:0 auto; }
+#exchange > h2 {font-size: 18px; margin-bottom: 20px;}
+#exchange > p {font-size: 12px; margin-bottom: 15px;}
+#exchange > table {width: 900px; border-collapse: collapse; border: 1px solid #ddd; font-size: 12px; line-height: 20px;}
+#exchange > table > tbody > tr > th {width:225px; border: 1px solid #ddd; padding:10px; vertical-align: middle;}
+#exchange > table > tbody > tr > td {border: 1px solid #ddd; padding:10px; vertical-align: middle;}
+#exchange > table > tbody > tr > td > ul > li {list-style: disc; margin-left:20px; margin-bottom: 5px;}
+#exchange > table > tbody > tr > td > span {font-weight: bold;}
+#exchange > table > tbody > tr > td > span > a:hover {color: #3a60df; text-decoration: underline;}
 
 
 

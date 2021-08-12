@@ -18,6 +18,7 @@
   <script src="js/event_info.js"></script>
   <script src="js/book_info.js"></script>
   <script src="js/changepic.js"></script>
+  <script src="js/review_list.js"></script>
 
 </head>
 <body>
@@ -719,7 +720,6 @@
 
 
 
-
           <div id="review">
             <ul class="anchor">
               <li><a href="#event_info">이벤트</a></li>
@@ -727,6 +727,71 @@
               <li class="on"><a href="#review">회원리뷰</a></li>
               <li><a href="#exchange">교환/반품/품절</a></li>
             </ul>
+            <h2>Klover 리뷰</h2>
+            <!-- 평점 구간 -->
+            <div class="score">
+              <div class="tit">
+                <h3>구매 후 Klover 리뷰 작성 시, 리워드를 제공합니다.</h3>
+                <span>안내</span>
+                <button>리뷰쓰기</button>
+              </div>
+              <!-- 클로버 및 이모티콘 -->
+              <div class="level">
+                <div class="level_5">
+                  <div class="klover">
+                    <span></span>
+                    <p><span>9.7</span> / 10</p>
+                  </div>
+                  <ul class="level_bar">
+                    <li class="heart_4"><div><span></span></div></li>
+                    <li class="heart_3"><div><span></span></div></li>
+                    <li class="heart_2"><div><span></span></div></li>
+                    <li class="heart_1"><div><span></span></div></li>
+                  </ul>
+                </div>  
+                <div class="emotion">
+                  <div class="emotion1"><div class="bar"></div><span>좋아요</span></div>
+                  <div class="emotion2"><div class="bar"></div><span>잘읽혀요</span></div>
+                  <div class="emotion3"><div class="bar"></div><span>정독해요</span></div>
+                  <div class="emotion4"><div class="bar"></div><span>기발해요</span></div>
+                  <div class="emotion5"><div class="bar"></div><span>유용해요</span></div>
+                  <div class="emotion6"><div class="bar"></div><span>기타</span></div>
+                </div>
+              </div> <!-- end .level-->
+            </div> <!-- end .score -->
+
+            <!-- 북로그 리뷰 -->
+            <div class="book_log">
+              <div class="tit">
+                <h2>북로그 리뷰</h2>
+                <span>전체보기</span>
+                <span>쓰러가기</span>
+              </div> 
+
+              <div class="info">
+                <p>
+                  <b>북로그 리뷰는 본인 인증 후 작성 가능합니다.</b> <br>
+                  책이나 타인에 대해 근거 없이 비방을 하거나 타인의 명예를 훼손할 수 있는 내용은 비공개 처리 될 수 있습니다. <br>
+                  ※ 북로그 리뷰 리워드 제공 2021. 4. 1 종료
+                </p>
+              </div>
+              <!-- 유저 리뷰 -->
+              <ul class="review_list">
+              </ul>
+              <!-- 페이지 넘버 -->
+              <ul class="page">
+                <div>
+                  <span><i class="fas fa-angle-double-left"></i></span>
+                  <span><i class="fas fa-angle-left"></i></span>
+                </div>
+                <li class="on">1</li><li>|</li><li>2</li><li>|</li><li>3</li><li>|</li><li>4</li><li>|</li><li>5</li><li>|</li>
+                <li>6</li><li>|</li><li>7</li><li>|</li><li>8</li><li>|</li><li>9</li><li>|</li><li>10</li>
+                <div>
+                  <span><i class="fas fa-angle-right"></i></span>
+                  <span><i class="fas fa-angle-double-right"></i></span>
+                </div>
+              </ul>
+            </div>
           </div> <!-- end #review-->
 
 

@@ -386,4 +386,34 @@
 
 
 /* 오른쪽 광고 */
-#infowrap > .ad {width:200px; height:1500px; background-color: yellowgreen; }
+#infowrap > .ad {width:200px; height:1500px; padding-top: 40px;}
+#infowrap > .ad > ul {width:100%; padding:20px 10px; border: 1px solid #ddd;}
+#infowrap > .ad > ul:not(:first-of-type) {border-top:none;}
+#infowrap > .ad > ul > h4 {font-size: 13px; float: left; margin-bottom: 15px;}
+#infowrap > .ad > ul > span {font-size: 13px; float: right; cursor: pointer;}
+#infowrap > .ad > ul > span:hover {color: #3c5fdf; text-decoration: underline;}
+#infowrap > .ad > ul > li {display: flex; width: 100%; margin-bottom: 30px;}
+#infowrap > .ad > ul > li > .imgbox {width:70px;}
+#infowrap > .ad > ul > li > .imgbox > a {width:100%;}
+#infowrap > .ad > ul > li > .imgbox > a > img {width:100%; border: 1px solid #eee;}
+#infowrap > .ad > ul > li > div:last-of-type {width:100px; margin-left: 10px;}
+#infowrap > .ad > ul > li > div > h5 {margin-bottom: 7px;}
+#infowrap > .ad > ul > li > div > h5 > a {font-size: 12px;}
+#infowrap > .ad > ul > li > div > h5 > a:hover {text-decoration: underline;}
+#infowrap > .ad > ul > li > div > h6 {font-size: 11px; margin-bottom: 7px;}
+#infowrap > .ad > ul > li > div > span:first-of-type {font-size: 11px; display: block; text-decoration: line-through; color: #ccc;margin-bottom: 5px;}
+#infowrap > .ad > ul > li > div > span:last-of-type {font-size: 11px; color: red;}
+
+/*
+<div class="imgbox">
+  <a>
+    <img>
+  </a>
+</div>
+<div>
+  <h5><a href="#">   </a></h5>
+  <h6>     </h6>
+  <span></span>
+  <span></span>
+</div>
+*/

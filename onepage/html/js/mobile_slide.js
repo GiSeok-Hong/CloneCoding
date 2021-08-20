@@ -8,24 +8,11 @@ $(document).ready(function () {
 
   function mobile_slide() {
 
-    // exhibiz 이미지 길이 3564px  나머지 344
-    if (box_1.children("img").height() % box_1_height < box_1_height) {
-      margin_plus1 += box_1.children("img").height() % box_1_height;
-    } else {
-      margin_plus1 += box_1_height;
-    };
-
-    // piquant 이미지 길이 2769px  나머지 9
-    // if (box_2.children("img").height() % box_2_height < box_2_height) {
-    //   margin_plus2 += box_2.children("img").height() % box_2_height;
-    // } else {
-    //   margin_plus2 += box_2_height;
-    // };
-
-    // 속도 조절을 위해 margin_plus2는 460px로 고정값 줌
+    // 속도 조절을 위해 고정값 줌
+    margin_plus1 += 442;
     margin_plus2 += 460;
 
-    // 3564px - 460px = 3104px
+    // 3559px - 460px = 3099px
     if (margin_plus1 >= box_1.children("img").height() - box_1_height) {
         margin_plus1 = 0;
     }

@@ -17,9 +17,9 @@
 /* section-countdown */
 #section-countdown {width:100%; background:linear-gradient(to right, #ec167f, #883ff9);}
 #section-countdown > .container {width:1200px; height: 190px; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
-#section-countdown > .container > .itembox {width: 31%; text-align: center; display: flex; flex-direction: column;}
-#section-countdown > .container > .itembox > span:nth-of-type(1) {font-size: 72px; margin-bottom: 10px; color: #fff; }
-#section-countdown > .container > .itembox > span:nth-of-type(2) {font-size: 15px; color:#eee;}
+#section-countdown > .container > .itembox {width: 25%; text-align: center; display: flex; flex-direction: column;}
+#section-countdown > .container > .itembox > span:nth-of-type(1) {font-size: 60px; margin-bottom: 10px; color: #fff; }
+#section-countdown > .container > .itembox > span:nth-of-type(2) {font-size: 35px; color:#eee;}
 
 
 /* section-about */

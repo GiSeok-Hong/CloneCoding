@@ -87,9 +87,9 @@
 #section-schedule > .container > .itembox > ul > li {padding:15px 30px; background-color: #202020; cursor: pointer; border: 1px solid #101010;}
 #section-schedule > .container > .itembox > ul > li:nth-of-type(1) {border-radius: 5px 0 0 5px;}
 #section-schedule > .container > .itembox > ul > li:nth-of-type(5) {border-radius: 0 5px 5px 0;}
-#section-schedule > .container > .itembox > ul > li:hover {background-color: #ec167f; color: #fff;}
-#section-schedule > .container > .itembox > ul > li:hover > h3 > span {color: #fff;}
-#section-schedule > .container > .itembox > ul > li:hover > h4 {color: #fff;}
+#section-schedule > .container > .itembox > ul > .current {background-color: #ec167f; color: #fff;}
+#section-schedule > .container > .itembox > ul > .current > h3 > span {color: #fff;}
+#section-schedule > .container > .itembox > ul > .current > h4 {color: #fff;}
 #section-schedule > .container > .itembox > ul > li > h3 {font-size: 22px; color:#fff;}
 #section-schedule > .container > .itembox > ul > li > h3 > span {color:#ec167f;}
 #section-schedule > .container > .itembox > ul > li > h4 {font-size: 12px; color:#aaa;}

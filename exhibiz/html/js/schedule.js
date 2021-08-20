@@ -1,42 +1,12 @@
-$(function(){
-  $(".sc-btn1").click(function(){
-    $(".tab1").show();
-    $(".tab2").hide();
-    $(".tab3").hide();
-    $(".tab4").hide();
-    $(".tab5").hide();
-  });
+$(function () {
 
-  $(".sc-btn2").click(function(){
-    $(".tab2").show();
-    $(".tab1").hide();
-    $(".tab3").hide();
-    $(".tab4").hide();
-    $(".tab5").hide();
-  });
-
-  $(".sc-btn3").click(function(){
-    $(".tab3").show();
-    $(".tab1").hide();
-    $(".tab2").hide();
-    $(".tab4").hide();
-    $(".tab5").hide();
-  });
-
-  $(".sc-btn4").click(function(){
-    $(".tab4").show();
-    $(".tab1").hide();
-    $(".tab2").hide();
-    $(".tab3").hide();
-    $(".tab5").hide();
-  });
-
-  $(".sc-btn5").click(function(){
-    $(".tab5").show();
-    $(".tab1").hide();
-    $(".tab2").hide();
-    $(".tab3").hide();
-    $(".tab4").hide();
+  $("#section-schedule > .container > .itembox > ul > li").stop().mouseover(function () {
+    i = $(this).index();
+    $(this).eq();
+    $('#section-schedule > .container > .itembox > .tabs > .tab').stop().hide();
+    $('#section-schedule > .container > .itembox > .tabs > .tab').eq(i).stop().show();
+    $('#section-schedule > .container > .itembox > ul > li').removeClass('current');
+		$(this).addClass('current');
   });
 
 });

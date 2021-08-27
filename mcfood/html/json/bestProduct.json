@@ -1,0 +1,41 @@
+[{
+	"title": "고기완자전",
+	"subtitle": "두툼하게 차있는 육즙",
+	"price": "5,300원",
+	"url": "best1.jpg"
+}, {
+	"title": "진미채볶음",
+	"subtitle": "밑반찬계의 센터",
+	"price": "5,000원",
+	"url": "best2.jpg"
+}, {
+	"title": "무생채",
+	"subtitle": "비빔밥에 넣어 쓱싹",
+	"price": "3,000원",
+	"url": "best3.jpg"
+}, {
+	"title": "메추리알조림",
+	"subtitle": "대표적인 국민반찬",
+	"price": "4,200원",
+	"url": "best4.jpg"
+}, {
+	"title": "그린샐러드",
+	"subtitle": "몸이 가벼워지는 기분",
+	"price": "3,900원",
+	"url": "best5.jpg"
+}, {
+	"title": "치킨텐더샐러드",
+	"subtitle": "간단한 아침메뉴로 추천",
+	"price": "4,900원",
+	"url": "best6.jpg"
+}, {
+	"title": "찌개용양념된장",
+	"subtitle": "된장찌개 정말 쉬워요",
+	"price": "5,500원",
+	"url": "best7.jpg"
+}, {
+	"title": "미니카프레제",
+	"subtitle": "신선함을 한 입에 쏙",
+	"price": "5,900원",
+	"url": "best8.jpg"
+}]

@@ -26,12 +26,12 @@ $(document).ready(function () {
   $('#relation > ul > li').filter(':gt(5)').hide();
   
   // 이전, 다음 버튼
-  $('#relation > ul > .prev').click(function(){
+  $('#relation > .prev').click(function(){
     // 가장 뒤의 6개를 잘라서 앞으로 붙임
 		$('#relation > ul > li').slice(-6).prependTo('#relation > ul');
 		$('#relation > ul > li').hide().filter(':lt(6)').show();
 	});
-	$('#relation > ul > .next').click(function(){
+	$('#relation > .next').click(function(){
     // 인덱스 0번에서 5번까지 잘라서 마지막에 붙임
 		$('#relation > ul > li').slice(0,6).appendTo('#relation > ul');
 		$('#relation > ul > li').hide().filter(':lt(6)').show()

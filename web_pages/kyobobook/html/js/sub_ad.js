@@ -7,7 +7,7 @@ $(document).ready(function () {
     headers:{Authorization: "KakaoAK bc5789bb714b0042c7805de6ae8b6934"}
   })
   .done(function( msg ) {
-    var box = $("#infowrap > .ad > .original > li")
+    var box = $("#infowrap > .ad > .original > ul > li")
 
     for(var i=0; i < box.length; i++){
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
     headers:{Authorization: "KakaoAK bc5789bb714b0042c7805de6ae8b6934"}
   })
   .done(function( msg ) {
-    var box = $("#infowrap > .ad > .best > li")
+    var box = $("#infowrap > .ad > .best > ul > li")
 
     for(var i=0; i < box.length; i++){
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
     headers:{Authorization: "KakaoAK bc5789bb714b0042c7805de6ae8b6934"}
   })
   .done(function( msg ) {
-    var box = $("#infowrap > .ad > .new > li")
+    var box = $("#infowrap > .ad > .new > ul > li")
 
     for(var i=0; i < box.length; i++){
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -449,13 +449,13 @@
                 <a href="#">국내도서 주간베스트 <span>34</span>위</a>
                 <span>|</span>
                 <a href="#">소설 주간베스트 <span>10</span>위</a>
-                <span class="popup">
+                <div class="popup">
                   주요 일간지 북섹션 추천도서 
                   <div>
                     <h5>추천 내역 안내</h5>
                     <a href="#">주요 일간지 북섹션 추천도서</a> > 2021년 5월 주요일간지 소개도서
                   </div>
-                </span>
+                </div>
               </div>
             </div> <!-- end .top-->
 
@@ -527,10 +527,10 @@
       <div id="relation">
         <h2>이 책을 구매하신 분들이 함께 구매하신 상품입니다</h2>
         <ul>
-          <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
-          <div class="btn next"><i class="fas fa-chevron-right"></i></div>
           <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
         </ul>
+        <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="btn next"><i class="fas fa-chevron-right"></i></div>
       </div> <!-- end #relation -->
 
 
@@ -619,7 +619,7 @@
 
             <div class="video">
               <h3>▶ 『문명. 1』 북트레일러</h3>
-              <iframe src="https://www.youtube.com/embed/cBbdQclZnLM?wmode=transparent" frameborder="0" width="850px" height="500px"></iframe>
+              <iframe src="https://www.youtube.com/embed/cBbdQclZnLM?wmode=transparent" width="850" height="500"></iframe>
               <p>
                 *출판사의 사정에 따라 서비스가 변경 또는 중지될 수 있습니다.<br>
                 *window7의 경우 사운드 연결이 없을시, 동영상 재생에 오류가 발생할 수 있습니다. 이어폰, 스피커 등이 연결되어 있는지 확인 하시고 재생하시기 바랍니다.
@@ -645,9 +645,9 @@
                 <h3><a href="#">베르나르 베르베르의 다른 작품 </a><i class="fas fa-chevron-right"></i></h3>
                 <ul>
                   <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-                  <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
-                  <div class="btn next"><i class="fas fa-chevron-right"></i></div>
                 </ul>
+                <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="btn next"><i class="fas fa-chevron-right"></i></div>
               </div>
             </div> <!-- end .author -->
 
@@ -665,9 +665,9 @@
                 <h3><a href="#">전미연의 다른 작품 </a><i class="fas fa-chevron-right"></i></h3>
                 <ul>
                   <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-                  <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
-                  <div class="btn next"><i class="fas fa-chevron-right"></i></div>
                 </ul>
+                <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="btn next"><i class="fas fa-chevron-right"></i></div>
               </div>
             </div> <!-- end .translator-->
 
@@ -717,9 +717,9 @@
               </div>
               <ul>
                 <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-                <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
-                <div class="btn next"><i class="fas fa-chevron-right"></i></div>
               </ul>
+              <div class="btn prev"><i class="fas fa-chevron-left"></i></div>
+              <div class="btn next"><i class="fas fa-chevron-right"></i></div>
             </div>
           </div> <!-- end #book_info -->
 
@@ -787,16 +787,16 @@
               </ul>
               <!-- 페이지 넘버 -->
               <ul class="page">
-                <div>
+                <li class="btn">
                   <span><i class="fas fa-angle-double-left"></i></span>
                   <span><i class="fas fa-angle-left"></i></span>
-                </div>
+                </li>
                 <li class="on">1</li><li>|</li><li>2</li><li>|</li><li>3</li><li>|</li><li>4</li><li>|</li><li>5</li><li>|</li>
                 <li>6</li><li>|</li><li>7</li><li>|</li><li>8</li><li>|</li><li>9</li><li>|</li><li>10</li>
-                <div>
+                <li class="btn">
                   <span><i class="fas fa-angle-right"></i></span>
                   <span><i class="fas fa-angle-double-right"></i></span>
-                </div>
+                </li>
               </ul>
             </div>
           </div> <!-- end #review-->
@@ -896,24 +896,29 @@
         <!-- 오른쪽 광고들 -->
         <div class="ad">
           <!-- 이 책의 원서/번역서 -->
-          <ul class="original">
+          <div class="original">
             <h4>이 책의 원서/번역서</h4>
-            <li></li>
-          </ul> <!-- end .original -->
+            <ul>
+              <li></li>
+            </ul> <!-- end .original -->
+          </div>
 
           <!-- 이 분야의 베스트 -->
-          <ul class="best">
+          <div class="best">
             <h4>이 분야의 베스트</h4><span>더보기+</span>
-            <li></li><li></li><li></li><li></li><li></li>
-          </ul> <!-- end .best -->
+            <ul>
+              <li></li><li></li><li></li><li></li><li></li>
+            </ul> <!-- end .best -->
+          </div>
 
           <!-- 이 분야의 신간 -->
-          <ul class="new">
+          <div class="new">
             <h4>이 분야의 신간</h4><span>더보기+</span>
-            <li></li><li></li><li></li><li></li><li></li>
-          </ul> <!-- end .new -->
-
-        </div>
+            <ul>
+              <li></li><li></li><li></li><li></li><li></li>
+            </ul> <!-- end .new -->
+          </div>
+        </div> <!-- end .ad -->
      </div> <!-- end #infowrap -->
     </div> <!-- end #container -->
 

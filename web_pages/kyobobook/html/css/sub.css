@@ -65,7 +65,7 @@
 #purchase > .itembox > .right > .top > .rank > a {font-size: 14px;}
 #purchase > .itembox > .right > .top > .rank > a > span {color: red;}
 #purchase > .itembox > .right > .top > .rank > span {font-size: 14px; margin:0 5px;}
-#purchase > .itembox > .right > .top > .rank > .popup {position: relative; border: 1px solid #ccc; padding:3px 6px; display: inline-block; cursor: pointer;}
+#purchase > .itembox > .right > .top > .rank > .popup {position: relative; border: 1px solid #ccc; padding:3px 6px; display: inline-block; cursor: pointer; font-size: 14px;}
 #purchase > .itembox > .right > .top > .rank > .popup > div {position: absolute; top:22px; left:0px; border: 2px solid #3a60df; width:420px; height: 60px; font-size: 13px; background-color: #fff; display: none;}
 #purchase > .itembox > .right > .top > .rank > .popup > div > h5 {margin:10px 10px 10px; font-size: 14px;}
 #purchase > .itembox > .right > .top > .rank > .popup > div > a {font-size: 13px; margin-left: 10px;}
@@ -125,7 +125,7 @@
 
 
 /* 이 책을 구매하신 분들이 함께 구매하신 상품입니다 */
-#relation {width:1100px; height: 380px; margin: 0 auto 50px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding-top: 20px;}
+#relation {width:1100px; height: 380px; margin: 0 auto 50px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding-top: 20px; position: relative}
 #relation > h2 {width:1100px; height: 20px; }
 #relation > ul {width:1100px; height: 320px; display: flex; position: relative; margin-top: 20px; justify-content: center;}
 #relation > ul > li {width:160px; height:100%; text-align: center; margin:0 9px;}
@@ -138,10 +138,10 @@
 #relation > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
 #relation > ul > li > span:last-of-type {color: red;}
     /* 버튼 */
-#relation > ul > div {position: absolute; top:40%; width: 50px; font-size: 40px; cursor: pointer; color: #dadada;}
-#relation > ul > div:hover {color: #5e6b9e;}
-#relation > ul > .prev {left:0;}
-#relation > ul > .next {right:0; text-align: right;}
+#relation > .btn {position: absolute; top:40%; width: 50px; font-size: 40px; cursor: pointer; color: #dadada;}
+#relation > .btn:hover {color: #5e6b9e;}
+#relation > .prev {left:0;}
+#relation > .next {right:0; text-align: right;}
 
 
 
@@ -213,7 +213,7 @@
 #book_info > .author > .itembox > .introduce > span { font-size: 13px; border: 1px solid #5e6b9e; padding: 3px 6px; border-radius: 5px; cursor: pointer;}
 #book_info > .author > .itembox > .introduce > span:hover {background-color: #5e6b9e; color: #fff;}
 #book_info > .author > .itembox > .introduce > p {font-size: 12px; color: #777; line-height: 22px; margin-top: 20px;}
-#book_info > .author > .etc {width:850px; border: 1px solid #ddd; padding:20px;}
+#book_info > .author > .etc {width:850px; border: 1px solid #ddd; padding:20px; position: relative;}
 #book_info > .author > .etc > h3 {font-size: 14px; margin-bottom: 20px;}
 #book_info > .author > .etc > h3 > a {font-size: 14px;}
 #book_info > .author > .etc > h3 > a:hover {color: #3a60df;}
@@ -229,10 +229,10 @@
 #book_info > .author > .etc > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
 #book_info > .author > .etc > ul > li > span:last-of-type {color: red;}
         /* 버튼 */
-#book_info > .author > .etc > ul > div {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:30%;}
-#book_info > .author > .etc > ul > div:hover {color: #5e6b9e;}
-#book_info > .author > .etc > ul > .prev {left:0;}
-#book_info > .author > .etc > ul > .next {right:0; text-align: right;}
+#book_info > .author > .etc > .btn {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:45%;}
+#book_info > .author > .etc > .btn:hover {color: #5e6b9e;}
+#book_info > .author > .etc > .prev {left:20px;}
+#book_info > .author > .etc > .next {right:20px; text-align: right;}
 
 #book_info > .translator {margin-top: 40px; width: 850px;}
 #book_info > .translator > .introduce {padding:20px 0; margin-bottom: 20px;}
@@ -242,7 +242,7 @@
 #book_info > .translator > .introduce > span { font-size: 13px; border: 1px solid #5e6b9e; padding: 3px 6px; border-radius: 5px; cursor: pointer;}
 #book_info > .translator > .introduce > span:hover {background-color: #5e6b9e; color: #fff;}
 #book_info > .translator > .introduce > p {font-size: 12px; color: #777; line-height: 22px; margin-top: 20px;}
-#book_info > .translator > .etc {width:850px; border: 1px solid #ddd; padding:20px;}
+#book_info > .translator > .etc {width:850px; border: 1px solid #ddd; padding:20px; position: relative;}
 #book_info > .translator > .etc > h3 {font-size: 14px; margin-bottom: 20px;}
 #book_info > .translator > .etc > h3 > a {font-size: 14px;}
 #book_info > .translator > .etc > h3 > a:hover {color: #3a60df;}
@@ -258,13 +258,13 @@
 #book_info > .translator > .etc > ul > li > span:first-of-type {text-decoration: line-through; color: #ccc;}
 #book_info > .translator > .etc > ul > li > span:last-of-type {color: red;}
         /* 버튼 */
-#book_info > .translator > .etc > ul > div {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:30%;}
-#book_info > .translator > .etc > ul > div:hover {color: #5e6b9e;}
-#book_info > .translator > .etc > ul > .prev {left:0;}
-#book_info > .translator > .etc > ul > .next {right:0; text-align: right;}
+#book_info > .translator > .etc > .btn {position: absolute; width: 30px; font-size: 30px; cursor: pointer; color: #dadada; top:45%;}
+#book_info > .translator > .etc > .btn:hover {color: #5e6b9e;}
+#book_info > .translator > .etc > .prev {left:20px;}
+#book_info > .translator > .etc > .next {right:20px; text-align: right;}
 #book_info > .textbox {width:850px; font-size: 12px; margin: 20px 0 10px; line-height: 22px;}
 
-#book_info > .bookcard {width:850px; display: flex; margin-top: 20px; justify-content: space-between;}
+#book_info > .bookcard {width:850px; display: flex; margin-top: 20px; justify-content: space-between; position: relative;}
 #book_info > .bookcard > .big {width:420px; height: 420px; position: relative;}
 #book_info > .bookcard > .big > img {width:100%; height: 100%;}
 #book_info > .bookcard > .big > .count {position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background-color: rgba(253, 253, 253, 0.7); text-align: center; line-height: 40px;}
@@ -272,11 +272,11 @@
 #book_info > .bookcard > ul > li {width: 200px; height: 200px; border: 5px solid #ccc; cursor: pointer;}
 #book_info > .bookcard > ul > li > img {width: 100%; height: 100%;}
 #book_info > .bookcard > ul > li:hover {border: 5px solid #5e6b9e;}
-#book_info > .bookcard > ul > div {position: absolute; width: 40px; font-size: 40px; cursor: pointer; color: #dadada; top:45%; background-color: rgba(0, 0, 0, 0.5); display: none;}
-#book_info > .bookcard > ul:hover > div {display: block;}
-#book_info > .bookcard > ul > div:hover {background-color: rgba(0, 0, 0, 0.8);}
-#book_info > .bookcard > ul > .prev {left:0; padding-left:5px;}
-#book_info > .bookcard > ul > .next {right:0; text-align: right; padding-right: 5px;}
+        /* 버튼 */
+#book_info > .bookcard > .btn {position: absolute; width: 40px; font-size: 40px; cursor: pointer; color: #dadada; top:45%; background-color: rgba(0, 0, 0, 0.5);}
+#book_info > .bookcard > .btn:hover {background-color: rgba(0, 0, 0, 0.8);}
+#book_info > .bookcard > .prev {left:430px; padding-left:5px;}
+#book_info > .bookcard > .next {right:0; text-align: right; padding-right: 5px;}
 
 
 
@@ -360,11 +360,12 @@
 #review > .book_log > .review_list > li > .tit > span:first-of-type > a {font-weight: bold; margin-right: 10px;}
 #review > .book_log > .review_list > li > .tit > span > a:hover {color: #3c5fdf; text-decoration: underline;}
 #review > .book_log > .review_list > li > .tit > span:last-of-type {color: red;}
+        /* 페이지 넘버 */
 #review > .book_log > .page {display: flex; justify-content: center; margin-bottom: 20px; align-items: center;}
 #review > .book_log > .page > li {margin:0 5px; font-size: 13px;}
-#review > .book_log > .page > li:nth-of-type(odd) {cursor: pointer; padding:0 3px;}
+#review > .book_log > .page > li:nth-of-type(even) {cursor: pointer; padding:0 3px;}
 #review > .book_log > .page > .on {color: red; font-weight: bold;}
-#review > .book_log > .page > div > span {font-size: 13px; border: 1px solid #ddd; padding:1px 5px; cursor: pointer;}
+#review > .book_log > .page > .btn > span {font-size: 13px; border: 1px solid #ddd; padding:1px 5px; cursor: pointer;}
 
 
 
@@ -387,22 +388,23 @@
 
 /* 오른쪽 광고 */
 #infowrap > .ad {width:200px; height:1500px; padding-top: 40px;}
-#infowrap > .ad > ul {width:100%; padding:20px 10px; border: 1px solid #ddd;}
-#infowrap > .ad > ul:not(:first-of-type) {border-top:none;}
-#infowrap > .ad > ul > h4 {font-size: 13px; float: left; margin-bottom: 15px;}
-#infowrap > .ad > ul > span {font-size: 13px; float: right; cursor: pointer;}
-#infowrap > .ad > ul > span:hover {color: #3c5fdf; text-decoration: underline;}
-#infowrap > .ad > ul > li {display: flex; width: 100%; margin-bottom: 30px;}
-#infowrap > .ad > ul > li > .imgbox {width:70px;}
-#infowrap > .ad > ul > li > .imgbox > a {width:100%;}
-#infowrap > .ad > ul > li > .imgbox > a > img {width:100%; border: 1px solid #eee;}
-#infowrap > .ad > ul > li > div:last-of-type {width:100px; margin-left: 10px;}
-#infowrap > .ad > ul > li > div > h5 {margin-bottom: 7px;}
-#infowrap > .ad > ul > li > div > h5 > a {font-size: 12px;}
-#infowrap > .ad > ul > li > div > h5 > a:hover {text-decoration: underline;}
-#infowrap > .ad > ul > li > div > h6 {font-size: 11px; margin-bottom: 7px;}
-#infowrap > .ad > ul > li > div > span:first-of-type {font-size: 11px; display: block; text-decoration: line-through; color: #ccc;margin-bottom: 5px;}
-#infowrap > .ad > ul > li > div > span:last-of-type {font-size: 11px; color: red;}
+#infowrap > .ad > div {width:100%; border: 1px solid #ddd; padding:20px 10px;}
+#infowrap > .ad > div > h4 {font-size: 13px; float: left; margin-bottom: 15px;}
+#infowrap > .ad > div > span {font-size: 13px; float: right; cursor: pointer;}
+#infowrap > .ad > div > span:hover {color: #3c5fdf; text-decoration: underline;}
+
+#infowrap > .ad > div > ul {width:100%; }
+#infowrap > .ad > div > ul > li {display: flex; width: 100%; margin-bottom: 30px;}
+#infowrap > .ad > div > ul > li > .imgbox {width:70px;}
+#infowrap > .ad > div > ul > li > .imgbox > a {width:100%;}
+#infowrap > .ad > div > ul > li > .imgbox > a > img {width:100%; border: 1px solid #eee;}
+#infowrap > .ad > div > ul > li > div:last-of-type {width:100px; margin-left: 10px;}
+#infowrap > .ad > div > ul > li > div > h5 {margin-bottom: 7px;}
+#infowrap > .ad > div > ul > li > div > h5 > a {font-size: 12px;}
+#infowrap > .ad > div > ul > li > div > h5 > a:hover {text-decoration: underline;}
+#infowrap > .ad > div > ul > li > div > h6 {font-size: 11px; margin-bottom: 7px;}
+#infowrap > .ad > div > ul > li > div > span:first-of-type {font-size: 11px; display: block; text-decoration: line-through; color: #ccc;margin-bottom: 5px;}
+#infowrap > .ad > div > ul > li > div > span:last-of-type {font-size: 11px; color: red;}
 
 /*
 <div class="imgbox">

@@ -26,12 +26,12 @@ $(document).ready(function () {
   $('#book_info > .author > .etc > ul > li').filter(':gt(3)').hide();
   
   // 이전, 다음 버튼
-  $('#book_info > .author > .etc > ul > .prev').click(function(){
+  $('#book_info > .author > .etc > .prev').click(function(){
     // 가장 뒤의 4개를 잘라서 앞으로 붙임
 		$('#book_info > .author > .etc > ul > li').slice(-4).prependTo('#book_info > .author > .etc > ul');
 		$('#book_info > .author > .etc > ul > li').hide().filter(':lt(4)').show();
 	});
-	$('#book_info > .author > .etc > ul > .next').click(function(){
+	$('#book_info > .author > .etc > .next').click(function(){
     // 인덱스 0번에서 3번까지 잘라서 마지막에 붙임
 		$('#book_info > .author > .etc > ul > li').slice(0,4).appendTo('#book_info > .author > .etc > ul');
 		$('#book_info > .author > .etc > ul > li').hide().filter(':lt(4)').show()
@@ -67,12 +67,12 @@ $(document).ready(function () {
   $('#book_info > .translator > .etc > ul > li').filter(':gt(3)').hide();
   
   // 이전, 다음 버튼
-  $('#book_info > .translator > .etc > ul > .prev').click(function(){
+  $('#book_info > .translator > .etc > .prev').click(function(){
     // 가장 뒤의 4개를 잘라서 앞으로 붙임
     $('#book_info > .translator > .etc > ul > li').slice(-4).prependTo('#book_info > .translator > .etc > ul');
     $('#book_info > .translator > .etc > ul > li').hide().filter(':lt(4)').show();
   });
-  $('#book_info > .translator > .etc > ul > .next').click(function(){
+  $('#book_info > .translator > .etc > .next').click(function(){
     // 인덱스 0번에서 3번까지 잘라서 마지막에 붙임
     $('#book_info > .translator > .etc > ul > li').slice(0,4).appendTo('#book_info > .translator > .etc > ul');
     $('#book_info > .translator > .etc > ul > li').hide().filter(':lt(4)').show()
@@ -90,6 +90,9 @@ $(document).ready(function () {
   */
 
 
+
+
+  // 북카드 json
   $.ajax({
     url: "json/bookcard.json",
     dataType: "json",
@@ -107,13 +110,23 @@ $(document).ready(function () {
   // 처음 4개의 리스트를 제외하고 나머지 숨김
   $('#book_info > .bookcard > ul > li').filter(':gt(3)').hide();
 
+  // 버튼 숨기기
+  $('#book_info > .bookcard > .btn').stop().hide();
+
+  // 버튼 show
+  $('#book_info > .bookcard').stop().mouseover(function () {
+    $('#book_info > .bookcard > .btn').stop().show();
+  }).mouseout(function () {
+    $('#book_info > .bookcard > .btn').stop().hide();
+  });
+
   // 이전, 다음 버튼
-  $('#book_info > .bookcard > ul > .prev').click(function(){
+  $('#book_info > .bookcard > .prev').click(function(){
     // 가장 뒤의 4개를 잘라서 앞으로 붙임
 		$('#book_info > .bookcard > ul > li').slice(-4).prependTo('#book_info > .bookcard > ul');
 		$('#book_info > .bookcard > ul > li').hide().filter(':lt(4)').show();
 	});
-	$('#book_info > .bookcard > ul > .next').click(function(){
+	$('#book_info > .bookcard > .next').click(function(){
     // 인덱스 0번에서 3번까지 잘라서 마지막에 붙임
 		$('#book_info > .bookcard > ul > li').slice(0,4).appendTo('#book_info > .bookcard > ul');
 		$('#book_info > .bookcard > ul > li').hide().filter(':lt(4)').show()

@@ -41,38 +41,38 @@ $(document).ready(function () {
   
   
     // 버튼 show / hide
-    $(".today_book > .itembox > .left > ul > li > ul").mouseover(function () {
-      $(".today_book > .itembox > .left > ul > li > ul > div").show();
+    $(".today_book > .itembox > .left > ul > li").mouseover(function () {
+      $(".today_book > .itembox > .left > ul > li > .btn").show();
     }).mouseout(function () {
-      $(".today_book > .itembox > .left > ul > li > ul > div").hide();
+      $(".today_book > .itembox > .left > ul > li > .btn").hide();
     });
   
   
   // 슬라이드 이전
-  $('.today_book > .itembox > .left > ul > li > ul > .prev').click(function () {
-    var i = $(this).parent().children("li:visible").index();
+  $('.today_book > .itembox > .left > ul > li > .prev').click(function () {
+    var i = $(this).siblings("ul").children("li:visible").index();
     i--;
     if(i < 0 ){
       i = 0
     }
-    $(this).parent().children("li").stop().hide();
-    $(this).parent().children("li").eq(i).stop().show();
+    $(this).siblings("ul").children("li").stop().hide();
+    $(this).siblings("ul").children("li").eq(i).stop().show();
     // 아래 쪽 수 카운트
-    $(this).parent().siblings(".textbox").find(".count").text(Number(i + 1) + " / " + Number($(this).parent().children("li:last").index() + 1));
-    });
+    $(this).siblings(".textbox").find(".count").text(Number(i + 1) + " / " + Number($(this).siblings("ul").children("li:last").index() + 1));
+  });
     
   
   // 슬라이드 다음
-  $('.today_book > .itembox > .left > ul > li > ul > .next').click(function () {
-    var i = $(this).parent().children("li:visible").index();
+  $('.today_book > .itembox > .left > ul > li > .next').click(function () {
+    var i = $(this).siblings("ul").children("li:visible").index();
     i++;
-    if(i > $(this).parent().children("li:last").index()){
-      i = $(this).parent().children("li:last").index();
+    if(i > $(this).siblings("ul").children("li:last").index()){
+      i = $(this).siblings("ul").children("li:last").index();
     }
-    $(this).parent().children("li").stop().hide();
-    $(this).parent().children("li").eq(i).stop().show();
+    $(this).siblings("ul").children("li").stop().hide();
+    $(this).siblings("ul").children("li").eq(i).stop().show();
     // 아래 쪽 수 카운트
-    $(this).parent().siblings(".textbox").find(".count").text(Number(i + 1) + " / " + Number($(this).parent().children("li:last").index() + 1));
+    $(this).siblings(".textbox").find(".count").text(Number(i + 1) + " / " + Number($(this).siblings("ul").children("li:last").index() + 1));
   });
   
 }); // end

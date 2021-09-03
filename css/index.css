@@ -12,7 +12,7 @@
 
 /* home */
 .section01 {background:linear-gradient(120deg, #0184d4, #42a4e1);}
-.section01 > .home_wrap {width:99vw; height:100vh; margin:0 auto; position: relative; overflow: hidden;}
+.section01 > .home_wrap {width:auto; height:100vh; margin:0 auto; position: relative; overflow: hidden;}
 
 .section01 > .home_wrap > .imgbox {width:300px; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
 .section01 > .home_wrap > .imgbox > img {width:100%;}

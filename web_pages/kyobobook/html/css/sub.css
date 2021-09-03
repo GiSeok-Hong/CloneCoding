@@ -94,6 +94,7 @@
 #purchase > .itembox > .right > .bottom > .tab > span:nth-of-type(2) {color: #3a60df;}
 #purchase > .itembox > .right > .bottom > p > .info {border: 1px solid #ccc; padding:1px 2px; cursor: pointer; position: relative;}
 
+        /* 버튼 */
 #purchase > .itembox > .right > .btnbox {width:100%; height:120px;  padding-top: 20px;}
 #purchase > .itembox > .right > .btnbox > .amount {height:30px;}
 #purchase > .itembox > .right > .btnbox > .amount > span {font-size: 14px;}
@@ -101,7 +102,7 @@
 #purchase > .itembox > .right > .btnbox > .amount > button {width:24px; height:24px; color: #3a60df; font-weight: bold; background-color: #fff; border: 1px solid #000; cursor: pointer;}
 #purchase > .itembox > .right > .btnbox > ul {width:100%; height:70px; display: flex; justify-content: space-between; align-items: flex-end;}
 #purchase > .itembox > .right > .btnbox > ul > li {width:19%; height:50px; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;}
-#purchase > .itembox > .right > .btnbox > ul > li > a {font-size: 17px; display: block; padding:16px 22px;}
+#purchase > .itembox > .right > .btnbox > ul > li > a {font-size: 17px; display: block; width:100%; height:100%; text-align: center; line-height: 50px;}
 #purchase > .itembox > .right > .btnbox > ul > li:first-of-type {background-color: #5e6b9e; border: 1px solid #5e6b9e;}
 #purchase > .itembox > .right > .btnbox > ul > li:first-of-type > a {color: #fff;}
 #purchase > .itembox > .right > .btnbox > ul > li:first-of-type:hover  {background-color: #fff; }
@@ -131,7 +132,7 @@
 #relation > ul > li {width:160px; height:100%; text-align: center; margin:0 9px;}
 #relation > ul > li > a {position: relative; display: inline-block; width: 120px; height: 174px;}
 #relation > ul > li > a > img {border: 1px solid #777;}
-#relation > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#relation > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0; line-height: 1.2;}
 #relation > ul > li > h5 > a:hover {text-decoration: underline;}
 #relation > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
 #relation > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
@@ -222,7 +223,7 @@
 #book_info > .author > .etc > ul > li {width: 150px; text-align: center;}
 #book_info > .author > .etc > ul > li > a {position: relative;}
 #book_info > .author > .etc > ul > li > a > img {border: 1px solid #000;}
-#book_info > .author > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#book_info > .author > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0; line-height: 1.2;}
 #book_info > .author > .etc > ul > li > h5 > a:hover {text-decoration: underline;}
 #book_info > .author > .etc > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
 #book_info > .author > .etc > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}
@@ -251,7 +252,7 @@
 #book_info > .translator > .etc > ul > li {width: 150px; text-align: center;}
 #book_info > .translator > .etc > ul > li > a {position: relative;}
 #book_info > .translator > .etc > ul > li > a > img {border: 1px solid #000;}
-#book_info > .translator > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0;}
+#book_info > .translator > .etc > ul > li > h5 > a {font-size: 13px; display: block; margin:10px 0; line-height: 1.2;}
 #book_info > .translator > .etc > ul > li > h5 > a:hover {text-decoration: underline;}
 #book_info > .translator > .etc > ul > li > h6 {font-size: 13px; margin-bottom: 7px;}
 #book_info > .translator > .etc > ul > li > span {display: block; font-size: 12px; margin-bottom: 5px;}

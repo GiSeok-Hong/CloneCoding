@@ -3,6 +3,7 @@ $(document).ready(function () {
   // 전시회 개최일    ex) 1640012400000
   var countDownDate = new Date("December 20, 2021 24:00:00").getTime();
 
+  // var countDownDate = new Date("September 24, 2021 24:00:00").getTime();
 
   function countDown() {
 
@@ -38,10 +39,12 @@ $(document).ready(function () {
 
 
     // 남은 일 표시
-    if (days1 < 100) {
-      days2 = "0" + days2;
+    if (days1 < 100 && days1 >= 10) {
+      // days2 = "0" + days2; // -> 09, 이런식으로 출력이 됨   
+      days1 = "0" + days1;
+      days2 = days1.toString().split("")
     } else if (days1 < 10) {
-      days2 = "00" + days2
+      days2 = "00" + days2;
     };
     $("#section-countdown > .container > .itembox").eq(0).children(".countdown").html("<span>" + days2[0] + "</span><span>" + days2[1] + "</span><span>" + days2[2] + "</span>");
 

@@ -28,7 +28,7 @@ p {color:#707070;}
   header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
   header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
   .bar > .search {display: flex;}
-  .bar > .search > input {border:none; border-radius: 10px; margin:0 15px;}
+  .bar > .search > input {border:none; border-radius: 10px; margin:0 15px; outline: none; width:160px; padding:0 10px;}
   .bar > .search > div > a {color:#fff;}
 
   header > .bar > .gnb {display: none;}
@@ -55,7 +55,7 @@ p {color:#707070;}
   header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
   header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
   .bar > .search {display: flex; height:30px; align-items: center;}
-  .bar > .search > input {border:none; border-radius: 10px; margin:0 10px; width:82px; height: 30px;}
+  .bar > .search > input {border:none; border-radius: 10px; margin:0 10px; width:82px; height: 30px; outline: none; padding:0 10px;}
   .bar > .search > div > a {color:#fff;}
   .bar > .search > div > a > img {width: 20px;}
 
@@ -79,6 +79,6 @@ p {color:#707070;}
   header > .bar > .gnb > ul > li > .submenu > li > a {color:#666; font-size: 13px;}
   header > .bar > .gnb > ul > li > .submenu > li:hover > a {color:#eee; }
   .bar > .search {display: flex; align-items: center; height: 30px;}
-  .bar > .search > input {border:none; border-radius: 10px; margin:0 15px; height: 30px;}
+  .bar > .search > input {border:none; border-radius: 10px; margin:0 15px; height: 30px; outline: none; width:160px; padding:0 10px;}
   .bar > .search > div > a {color:#fff;}
 }
